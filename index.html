@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB FISIKA MODERN</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="assets/flaticon/css/uicons-brands.css">
+
+</head>
+<body>
+
+    <!-- menu -->
+        <nav class="menu">
+            <a href="index.html" class="menu-logo">RAD<span>LAB.</span></a>
+            
+            <!-- Sidebar -->
+            <div class="menu-nav">
+                <a href="javascript:void(0)" id="close-menu"><i data-feather="x"></i></a>
+                <div class="dropdown">
+                    <a href="web.html"><i data-feather="user"></i>Profil</a>
+                </div>
+                <div class="dropdown">
+                    <a href="materi.html"><i data-feather="book-open"></i>Materi</a>
+                </div>
+                <div class="dropdown">
+                    <a href="simulasi.html"><i data-feather="monitor"></i>Simulasi</a>
+                </div>
+                
+                <div class="dropdown">
+                    <a href="soal.html"><i data-feather="edit-3"></i>Soal</a>
+                </div>
+                <div class="dropdown">
+                    <a href="deteksi.html"><i data-feather="eye"></i>Deteksi</a>
+                </div>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="menu-search">
+                <i data-feather="search"></i>
+                <input type="text" placeholder="Cari materi..."/>
+            </div>
+
+            <!-- menu tambahan -->
+            <!-- Buttton to toggle side -->
+            <div class="menu-tambahan">
+                <a href="javascript:void(0)" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+        </nav>
+        <!-- menu end -->
+
+<!-- Section profil -->
+    <section class="section-content" id="profil">
+        <div class="profil-wrapper reveal">
+
+            <div class="profil-teks">
+
+                <h1 class="profil-judul">Edukasi Radiasi dalam Kehidupan Sehari-hari</h1>
+
+                <p class="profil-deskripsi">RADLAB adalah platform pembelajaran modern untuk memahami radiasi mulai dari sinar matahari, gadget, hingga aplikasi medis dengan pendekatan visual dan interaktif.</p>
+
+                <p><a href="materi.html" class="tbl-biru">Mulai Belajar</a></p>
+            </div>
+
+            <!-- video card -->
+             <div class="profil-video">
+                <div class="video-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/animasi home.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section video terkait -->
+<section class="section-content" id="about">
+        <div class="tengah">
+            <h2 class="judul-konten reveal">Tingkatkan Pengalaman Belajarmu</h2>
+
+            <div class="container-grid reveal">
+
+                <div class="konten-card search-item" data-search="mengenal radiasi"> 
+                    <img src="assets/mengenal-radiasi.png"alt="Thumbnail Video 1">
+                    <div class="konten-info">
+                        <h3>Materi: Mengenal Radiasi</h3>
+                        <a href="materi.html" class="tombol-tonton">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <div class="konten-card search-item" data-search="soal radiasi fisika">
+                    <img src="assets/quiz.png" alt="Thumbnail Artikel 2">
+                    <div class="konten-info">
+                        <h3>Soal</h3>
+                        <a href="soal.html" class="tombol-baca">Coba kerjakan</a>
+                    </div>
+                </div>
+
+                <div class="konten-card search-item" data-search="simulasi">
+                    <img src="assets/radiasi-matahari.png" alt="Thumbnail Simulasi 3">
+                    <div class="konten-info">
+                        <h3>Simulasi: Efek Compton</h3>
+                        <a href="simulasi.html" class="tombol-tonton">Coba Simulasi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Section Profil 2 -->
+    <section class="highlight-section">
+        <div class="highlight-container reveal">
+
+        <!-- GAMBAR -->
+        <div class="highlight-image">
+            <img src="assets/mengenal-radiasi.png" alt="Ilustrasi Radiasi">
+        </div>
+
+        <!-- TEKS -->
+        <div class="highlight-content reveal">
+            <h2>Peran Radiasi dalam Kehidupan Modern</h2>
+            <p>
+                Radiasi tidak hanya dipelajari secara teori dalam fisika modern, tetapi juga memiliki peran penting dalam dunia medis, industri, hingga teknologi komunikasi.
+            </p>
+            <p>
+                Dengan memahami konsep dasar radiasi, mahasiswa dapat melihat keterkaitan antara teori fisika dan penerapannya di dunia nyata.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section baru -->
+    <section class="section-content" id="materi-populer">
+    <div class="tengah">
+        <div class="header-slider reveal">
+            <h2 class="judul-konten">Materi Terpopuler</h2>
+            <div class="slider-nav">
+                <button id="slide-left" class="nav-btn"><i data-feather="chevron-left"></i></button>
+                <button id="slide-right" class="nav-btn"><i data-feather="chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="slider-container reveal">
+            <div class="slider-wrapper" id="slider-materi">
+                <div class="konten-card slider-item">
+                    <img src="assets/mengenal-radiasi.png" alt="Materi 1">
+                    <div class="konten-info">
+                        <h3>Pengantar Radiasi</h3>
+                    </div>
+                </div>
+                <div class="konten-card slider-item">
+                    <img src="assets/jenis-jenis.png" alt="Materi 2">
+                    <div class="konten-info">
+                        <h3>Jenis Radiasi</h3>
+                    </div>
+                </div>
+                <div class="konten-card slider-item">
+                    <img src="assets/radiasi-matahari.png" alt="Materi 3">
+                    <div class="konten-info">
+                        <h3>Radiasi Matahari dan Paparan Sehari-hari</h3>
+                    </div>
+                </div>
+                <div class="konten-card slider-item">
+                    <img src="assets/tubuh dan materi.png" alt="Materi 4">
+                    <div class="konten-info">
+                        <h3>Interaksi Radiasi dengan Tubuh dan Materi</h3>
+                    </div>
+                </div>
+                <div class="konten-card slider-item">
+                    <img src="assets/teknologi modern (1).png" alt="Materi 4">
+                    <div class="konten-info">
+                        <h3>Pemanfaatan Radiasi dalam Teknologi Modern</h3>
+                    </div>
+                </div>
+                <div class="konten-card slider-item">
+                    <img src="assets/perlindungan-diri.png" alt="Materi 4">
+                    <div class="konten-info">
+                        <h3>Keselematan Radiasi dan Perlindungan Diri</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pusat-tombol-materi reveal">
+            <a href="materi.html" class="tbl-biru">Lihat Semua</a>
+        </div>
+    </div>
+    </section>
+
+    <!-- SECTION SWIPE -->
+    <section class="section-content" id="materi-populer">
+    <div class="tengah">
+        <div class="header-slider reveal">
+            <h2 class="judul-konten">Soal Terpopuler</h2>
+            <div class="slider-nav">
+                <button id="slide-left" class="nav-btn"><i data-feather="chevron-left"></i></button>
+                <button id="slide-right" class="nav-btn"><i data-feather="chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="slider-container reveal">
+            <div class="slider-wrapper" id="slider-materi">
+                <div class="konten-card slider-item">
+                    <img src="assets/10.png" alt="Materi 2">
+                    <div class="konten-info">
+                        <h3>Jenis Radiasi</h3>
+                    </div>
+                </div>
+                <div class="konten-card slider-item">
+                    <img src="assets/11.png" alt="Materi 3">
+                    <div class="konten-info">
+                        <h3>Radiasi Matahari dan Paparan Sehari-hari</h3>
+                    </div>
+                </div>
+                <div class="konten-card slider-item">
+                    <img src="assets/12.png" alt="Materi 4">
+                    <div class="konten-info">
+                        <h3>Interaksi Radiasi dengan Tubuh dan Materi</h3>
+                    </div>
+                </div>
+                <div class="konten-card slider-item">
+                    <img src="assets/13.png" alt="Materi 4">
+                    <div class="konten-info">
+                        <h3>Pemanfaatan Radiasi dalam Teknologi Modern</h3>
+                    </div>
+                </div>
+                <div class="konten-card slider-item">
+                    <img src="assets/14.png" alt="Materi 4">
+                    <div class="konten-info">
+                        <h3>Keselematan Radiasi dan Perlindungan Diri</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pusat-tombol reveal">
+            <a href="soal.html" class="tbl-biru">Lihat Semua</a>
+        </div>
+    </div>
+    </section>
+
+    <!-- footer kontak -->
+     <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3 class="radlab">RAD<span>LAB</span></h3>
+                    <p>Jl. Dr. Setiabudhi No. 229 Bandung 40154 Jawa Barat - Indonesia.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Panduan</h3>
+                    <p>Syarat & Ketentuan</p>
+                    <p>Kebijakan Privasi</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Tentang Kami</h3>
+                    <p><a href="Kontak-kami.html">Kontak kami</a></p>
+                    <p>Tentang RADLAB</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosial Media Kami</h3>
+                    <a href="https://www.instagram.com/radlab.idn?igsh=MWF5bG95azBib3gzaQ==" target="_blank"><p><i class="fi fi-brands-instagram"></i></p>
+                    </a>
+                    <a href="https://wa.me/089673154219" target="_blank"><i class="fi fi-brands-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/faathir-abid-firdaus-12578b30b" target="_blank"><i class="fi fi-brands-twitter-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/faathir-abid-firdaus-12578b30b" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <!-- copyright -->
+      <div class="copyright">
+        <div class="wrapper">
+            &copy; 2025. <b>RADLAB </b>All Rights Reserved  <p>Icons by Flaticon and Feather</p>
+        </div>
+      </div>
+
+      <!-- feather icons -->
+       <script>
+            feather.replace();
+       </script>
+
+       <!-- javascript -->
+        <script src="web.js"></script>
+
+</body>
+</html>
