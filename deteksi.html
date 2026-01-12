@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETEKSI | RADLAB</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="assets/flaticon/css/uicons-brands.css">
+
+
+</head>
+<body>
+
+            <!-- menu -->
+    <nav class="menu">
+        <a href="index.html" class="menu-logo">RAD<span>LAB.</span></a>
+        
+        <!-- Sidebar -->
+        <div class="menu-nav">
+            <a href="javascript:void(0)" id="close-menu"><i data-feather="x"></i></a>
+            <div class="dropdown">
+                <a href="web.html"><i data-feather="user"></i>Profil</a>
+            </div>
+            <div class="dropdown">
+                <a href="materi.html"><i data-feather="book-open"></i>Materi</a>
+            </div>
+             <div class="dropdown">
+                <a href="simulasi.html"><i data-feather="monitor"></i>Simulasi</a>
+             </div>
+            
+             <div class="dropdown">
+                <a href="soal.html"><i data-feather="edit-3"></i>Soal</a>
+             </div>
+             <div class="dropdown">
+                <a href="deteksi.html"><i data-feather="eye"></i>Deteksi</a>
+             </div>
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div class="menu-search">
+            <i data-feather="search"></i>
+            <input type="text" placeholder="Cari materi..."/>
+        </div>
+
+        <!-- menu tambahan -->
+        <!-- Buttton to toggle side -->
+        <div class="menu-tambahan">
+            <a href="javascript:void(0)" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+<!-- menu end -->
+
+    <!-- DETEKSI CAHAYA & EYE STRAIN -->
+    <section class="section-content eye-section">
+        <div class="tengah">
+
+            <!-- breadcumb -->
+            <div class="breadcrumb-wrapper-deteksi">
+                <nav class="breadcrumb-deteksi">
+                    <a href="index.html">Home</a>
+                    <span>></span>
+                    <span class="current">Deteksi</span>
+                </nav>
+            </div>
+
+            <h2 class="judul-konten reveal">Simulasi Eye Strain akibat Paparan Cahaya</h2>
+            <p class="subjudul reveal">
+            Data diperoleh dari sensor BH1750 dan ditampilkan sebagai simulasi edukasi
+            </p>
+
+            <div class="eye-grid reveal">
+
+            <!-- PANEL DATA -->
+            <div class="eye-card utama">
+                <h3>Data Sensor</h3>
+
+                <div class="nilai">
+                <span>Intensitas Cahaya</span>
+                <h1 id="luxValue">0</h1>
+                <small>lux</small>
+                </div>
+
+                <div class="nilai">
+                <span>Eye Strain Index (ESI)</span>
+                <!-- wktu dari arduino -->
+                <h2 id="esiValue">0.00</h2> 
+                </div>
+                <!-- indikator esi -->
+                <span id="esiNumber" class="status aman">0.00</span>
+                <p id="esiIndicator" class="esi-status">-</p>
+
+                <p id="distanceInfo" class="estimasi">Estimasi jarak: -</p>
+
+                <button class="reset-btn" onclick="resetSimulation()">
+                Reset Simulasi
+                </button>
+                <button class="reset-btn" onclick="connectSerial()">
+                Hubungkan Arduino
+                </button>
+            </div>
+
+            <!-- PANEL GRAFIK -->
+            <div class="eye-card">
+                <h3>Grafik ESI Real-time</h3>
+                <!-- LINE CHART SMOOTH -->
+                <canvas id="lineChart" width="360" height="180"></canvas>
+                <!-- BAR CHART REALTIME -->
+                <canvas id="barChart" width="360" height="60" style="margin-top:10px;"></canvas>
+            </div>
+            </div>
+
+            <p class="catatan reveal">
+            *Simulasi ini bersifat edukatif dan bukan alat diagnosis medis.
+            </p>
+        </div>
+    </section>
+
+        
+
+    <!-- footer kontak -->
+     <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3 class="radlab">RAD<span>LAB</span></h3>
+                    <p>Jl. Dr. Setiabudhi No. 229 Bandung 40154 Jawa Barat - Indonesia.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Panduan</h3>
+                    <p>Syarat & Ketentuan</p>
+                    <p>Kebijakan Privasi</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Tentang Kami</h3>
+                    <p><a href="Kontak-kami.html">Kontak kami</a></p>
+                    <p>Tentang RADLAB</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosial Media Kami</h3>
+                    <a href="https://www.instagram.com/fathirabid_?igsh=MTVpZngwZHJib3Y4eQ==" target="_blank"><p><i class="fi fi-brands-instagram"></i></p>
+                    </a>
+                    <a href="https://wa.me/089673154219" target="_blank"><i class="fi fi-brands-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/faathir-abid-firdaus-12578b30b" target="_blank"><i class="fi fi-brands-twitter-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/faathir-abid-firdaus-12578b30b" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <!-- copyright -->
+      <div class="copyright">
+        <div class="wrapper">
+            &copy; 2025. <b>RADLAB </b>All Rights Reserved  <p>Icons by Flaticon and Feather</p>
+        </div>
+      </div>
+
+      <!-- feather icons -->
+       <script>
+            feather.replace();
+       </script>
+
+       <!-- javascript -->
+        <script src="web.js"></script>
+        <script src="deteksi.js"></script>
+    
+</body>
+</html>
