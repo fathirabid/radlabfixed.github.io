@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- style -->
-    <link rel="stylesheet" href="hmtl.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="assets/flaticon/css/uicons-brands.css">
 
 
@@ -22,41 +22,43 @@
 <body>
 
         <!-- menu -->
-        <nav class="menu">
-            <a href="web.html" class="menu-logo">RAD<span>LAB.</span></a>
-            <!-- Sidebar -->
-            <div class="menu-nav">
-                <a href="web.html">Profil</a>
-                <div class="dropdown">
-                    <a href="materi.html">Materi</a>
-                </div>
-                <div class="dropdown">
-                    <a href="simulasi.html">Simulasi</a>
-                </div>
-                
-                <div class="dropdown">
-                    <a href="soal.html">Soal</a>
-                </div>
-                <div class="dropdown">
-                    <a href="deteksi.html">Deteksi</a>
-                </div>
-
-                <a href="#kontak"></a> 
+    <nav class="menu">
+        <a href="index.html" class="menu-logo">RAD<span>LAB.</span></a>
+        
+        <!-- Sidebar -->
+        <div class="menu-nav">
+            <a href="javascript:void(0)" id="close-menu"><i data-feather="x"></i></a>
+            <div class="dropdown">
+                <a href="index.html"><i data-feather="user"></i>Profil</a>
             </div>
-
-            <!-- SEARCH BAR -->
-            <div class="menu-search">
-                <i data-feather="search"></i>
-                <input type="text" placeholder="Cari materi..."/>
+            <div class="dropdown">
+                <a href="materi.html"><i data-feather="book-open"></i>Materi</a>
             </div>
+             <div class="dropdown">
+                <a href="simulasi.html"><i data-feather="monitor"></i>Simulasi</a>
+             </div>
+            
+             <div class="dropdown">
+                <a href="soal.html"><i data-feather="edit-3"></i>Soal</a>
+             </div>
+             <div class="dropdown">
+                <a href="deteksi.html"><i data-feather="eye"></i>Deteksi</a>
+             </div>
+        </div>
 
-            <!-- menu tambahan -->
-            <!-- Buttton to toggle side -->
-            <div class="menu-tambahan">
-                <a href="#menu" id="list-menu"><i data-feather="menu"></i></a>
-            </div>
-        </nav>
-    <!-- menu end -->
+        <!-- SEARCH BAR -->
+        <div class="menu-search">
+            <i data-feather="search"></i>
+            <input type="text" placeholder="Cari materi..."/>
+        </div>
+
+        <!-- menu tambahan -->
+        <!-- Buttton to toggle side -->
+        <div class="menu-tambahan">
+            <a href="javascript:void(0)" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+<!-- menu end -->
 
 
     <!-- section soal -->
@@ -66,7 +68,7 @@
             <!-- breadcumb -->
             <div class="breadcrumb-wrapper">
                 <nav class="breadcrumb-soal">
-                    <a href="web.html">Home</a>
+                    <a href="index.html">Home</a>
                     <span>></span>
                     <span class="current">Soal</span>
                 </nav>
