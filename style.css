@@ -2632,7 +2632,7 @@ a.tbl-biru:hover {
 
     /* Memastikan video card tampil penuh dan cantik */
     .profil-video {
-        width: 80%;
+        width: 100%;
         margin-top: 20px;
     }
 
@@ -2653,7 +2653,7 @@ a.tbl-biru:hover {
     }
 
     .highlight-image {
-      width: 80%;
+      width: 90%;
     }
     
     .highlight-container {
@@ -2700,27 +2700,488 @@ a.tbl-biru:hover {
     .materi-header-wrapper {
         margin-left: 0 !important;
         margin-right: 0 !important;
-        text-align: center;
+        text-align: left;
         padding: 0 20px;
+        margin-left: 10px;
+        margin-bottom: 30px;
     }
 
     .materi-header {
         margin: 20px auto 15px !important;
         border-bottom: 1px solid rgba(255,255,255,0.1);
         padding-bottom: 10px !important;
-        justify-content: center !important; /* Judul di tengah */
+        justify-content: left !important; /* Judul di tengah */
     }
 
     .materi-header h1 {
         font-size: 20px !important; /* Mengecilkan ukuran judul */
         line-height: 1.3;
+        text-align: left;
+        margin-left: 7px;
     }
 
+    /* SECTION ARTIKEL */
+    .layout-artikel-border {
+        display: flex;
+        flex-direction: column; /* Artikel di atas, Sidebar di bawah */
+        padding: 0 15px;
+    }
 
+    /* 2. Penyesuaian Artikel */
+    .artikel-center {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin-top: 80px !important; /* Memberi ruang untuk navbar fixed */
+    }
 
+    /* Reset margin breadcrumb di mobile agar tidak terlalu jauh ke bawah */
+    .artikel-center .breadcrumb {
+        margin-top: 20px !important;
+        font-size: 11px;
+        text-align: left;
+    }
 
+    .judul-artikel {
+        font-size: 24px !important; /* Ukuran judul lebih proporsional di HP */
+        line-height: 1.3;
+        text-align: left;
+    }
 
-    /* 5. Footer Section */
+    .meta-artikel {
+        font-size: 12px;
+        text-align: left;
+        display: flex;
+        flex-direction: column; /* Stack info ke bawah agar tidak terpotong */
+        gap: 5px;
+        border-bottom: 1px solid var(--border-soft);
+        padding-bottom: 15px;
+    }
+
+    .gambar-artikel-besar {
+        border-radius: 12px;
+        margin: 20px 0 !important;
+    }
+
+    /* Tipografi isi artikel */
+    .artikel p {
+        font-size: 15px !important;
+        line-height: 1.7;
+        text-align: left; /* Lebih nyaman dibaca di layar sempit daripada justify */
+    }
+
+    .artikel h2 {
+        font-size: 20px !important;
+    }
+
+    .artikel h3 {
+        font-size: 18px !important;
+    }
+
+    /* 3. Penyesuaian Sidebar (Daftar Materi) */
+    .sidebar-artikel {
+        margin-left: 0 !important; /* Hapus margin besar dari desktop */
+        margin-top: 40px !important;
+        padding: 15px;
+        max-width: 100% !important;
+        width: 100% !important;
+        background: rgba(255, 255, 255, 0.03); /* Lebih subtle di mobile */
+    }
+
+    .sidebar-artikel h4 {
+        text-align: center;
+        border-bottom: 1px solid var(--border-soft);
+        padding-bottom: 10px;
+    }
+
+    .sidebar-artikel ul li {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .sidebar-artikel a {
+        font-size: 13px !important;
+        display: block;
+    }
+
+    /* /////////// */
+    /* SIMULASI */
+    /* ///////// */
+    .simulasi-page {
+        padding: 80px 0 40px !important; /* Kurangi padding atas agar tidak terlalu jauh dari nav */
+    }
+
+    /* 2. Penyesuaian Breadcrumb */
+    .breadcrumb-wrapper {
+        margin: 20px auto 15px ;
+        margin-left: 10px;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .breadcrumb-simulasi {
+        font-size: 12px;
+    }
+
+    /* 3. Header Simulasi (Judul & Deskripsi) */
+    .simulasi-header {
+        margin-right: 0 !important; /* Hapus margin desktop */
+        text-align: left;
+        padding: 0 20px;
+        max-width: 100% !important;
+    }
+
+    .simulasi-header h1 {
+        font-size: 22px !important; /* Perkecil ukuran judul */
+        margin-bottom: 12px;
+    }
+
+    .simulasi-header p {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    /* 4. Frame Simulasi (Point Penting) */
+    .simulasi-frame {
+        margin-left: 10px !important;  /* Beri sedikit margin agar tidak menempel layar */
+        margin-right: 10px !important;
+        margin-top: 20px;
+        border-radius: 12px;
+        height: auto;
+    }
+
+    .simulasi-frame iframe {
+        height: 400px !important; /* Tinggi disesuaikan untuk layar HP */
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    /* 5. Credit PhET */
+    .phet-credit {
+        font-size: 11px;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+
+    /* //////// */
+    /* SOAL ATAU QUIZ */
+    /* //////// */
+    .soal-header-wrapper {
+        margin-left: 7px;
+        margin-right: 0 !important;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .soal-header {
+        justify-content: left !important;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding-bottom: 15px !important;
+    }
+
+    .soal-header h1 {
+        font-size: 22px !important;
+    }
+
+    /* 2. Grid Soal menjadi 1 kolom */
+    .soal-grid {
+        grid-template-columns: 1fr !important; /* Memaksa satu kolom ke bawah */
+        gap: 20px;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        margin-top: 25px !important;
+    }
+
+    /* 3. Penyesuaian Kartu Soal (Card) */
+    .soal-card {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .soal-card h3 {
+        font-size: 17px !important;
+        margin-bottom: 15px !important;
+        line-height: 1.4;
+    }
+
+    /* 4. Info Pill (Soal & Waktu) */
+    .soal-info {
+        display: flex;
+        justify-content: space-between; /* Agar rapi kiri-kanan */
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .soal-info .info-item {
+        flex: 1;
+        min-width: unset !important; /* Reset lebar minimum desktop */
+        padding: 8px;
+        flex-direction: row !important; /* Berjejer horizontal di dalam pill */
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .soal-info .info-item small {
+        margin-top: 0 !important; /* Reset margin dari desktop */
+        font-size: 11px;
+    }
+
+    /* 5. Progress Bar */
+    .progress-wrapper {
+        margin-top: 10px;
+    }
+
+    .progress-bar {
+        height: 8px; /* Sedikit lebih tebal agar terlihat jelas */
+    }
+
+    /* 6. Tombol Mulai */
+    .btn-mulai {
+        padding: 14px 0 !important; /* Lebih tinggi agar mudah ditekan jari */
+        font-size: 14px;
+        margin-top: 15px;
+        letter-spacing: 0.5px;
+    }
+
+    /* QUIZ AKTIF */
+    .quiz-wrapper {
+        margin: 60px auto 20px !important; /* Kurangi margin atas */
+        padding: 0 15px;
+        min-height: auto;
+    }
+
+    /* 2. Tombol Keluar (X) */
+    .exit-quiz-btn {
+        left: 15px !important; /* Geser ke dalam layar */
+        top: -50px; /* Letakkan di atas kartu kuis */
+        width: 35px;
+        height: 35px;
+    }
+
+    /* 3. Kartu Kuis */
+    .quiz-card {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    /* 4. Progress Bar Mobile */
+    .quiz-progress {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .quiz-progress-bar {
+        width: 100% !important;
+    }
+
+    /* 5. Header Kuis (Info & Timer) */
+    .quiz-header {
+        flex-direction: column; /* Tumpuk info dan timer */
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .quiz-timer {
+        width: 100%; /* Timer memenuhi lebar layar mobile */
+        justify-content: center;
+        padding: 10px;
+        background: rgba(99, 102, 241, 0.15); /* Lebih kontras */
+    }
+
+    /* 6. Konten Soal */
+    .quiz-question {
+        font-size: 15px !important;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* 7. Opsi Jawaban (Button-like) */
+    .quiz-options {
+        gap: 10px;
+    }
+
+    .option {
+        padding: 12px 15px;
+        font-size: 14px;
+        border-radius: 10px;
+        min-height: 50px; /* Agar mudah ditekan jari */
+    }
+
+    /* 8. Navigasi Footer (Tombol Kembali/Lanjut) */
+    .quiz-footer {
+        display: flex;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .quiz-footer button {
+        flex: 1; /* Tombol berbagi ruang sama rata */
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* 9. Modal Pop-up (Exit & Submit) */
+    .exit-modal-card, .modal-card {
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    .exit-actions, .modal-actions {
+        flex-direction: column; /* Tombol di modal jadi tumpuk */
+        gap: 10px;
+    }
+
+    .exit-actions button, .modal-actions button {
+        width: 100%;
+    }
+
+    .result-wrapper {
+        display: block !important; /* Gunakan block agar elemen mengalir ke bawah secara alami */
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* BAGIAN SKOR (Sisi Kiri di Desktop) */
+    .score-section, .score { 
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 25px !important;
+        float: none !important; /* Hapus float jika ada */
+    }
+
+    /* BAGIAN DETAIL NOMOR (Sisi Kanan di Desktop) */
+    .detail-section, .result-grid-container {
+        width: 100% !important;
+        margin-top: 20px !important;
+        float: none !important;
+    }
+
+    /* MERAPIKAN KOTAK NOMOR JAWABAN */
+    .result-grid {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important; /* 5 kotak per baris */
+        gap: 8px !important;
+        max-width: 280px !important; /* Agar kotak tidak terlalu lebar di layar HP */
+        margin: 0 auto !important; /* Membuat grid berada tepat di tengah */
+    }
+
+    /* JUDUL "Detail Jawaban Per Soal" */
+    .result-wrapper h3 {
+        display: block !important;
+        text-align: center !important;
+        width: 100% !important;
+        margin: 15px 0 !important;
+    }
+
+    /* TOMBOL LIHAT PEMBAHASAN */
+    .btn-review {
+        display: block !important;
+        width: 100% !important;
+        margin-top: 30px !important;
+    }
+
+    /* ////////// */
+    /* DETEKSI */
+    /* ///////// */
+    .section-content.eye-section {
+        padding-top: 40px !important; /* Disamakan dengan section lain */
+        margin-top: 50px;    /* Menghapus margin-top 80px */
+    }
+
+    .breadcrumb-wrapper-deteksi {
+        margin: 20px auto 10px ;
+        padding: 0 15px !important;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .result-wrapper {
+        display: flex !important;
+        flex-direction: column !important; 
+        align-items: center !important;
+        gap: 25px !important;
+        padding: 10px !important;
+        text-align: center !important;
+    }
+
+    /* Membuat area skor mengambil lebar penuh */
+    .score, .score-info {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    /* Merapikan Grid Nomor Soal agar tidak tumpang tindih */
+    .result-grid {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important; /* Tetap 5 kolom tapi di bawah skor */
+        gap: 8px !important;
+        width: 100% !important;
+        max-width: 280px !important; /* Membatasi lebar agar kotak tetap simetris */
+        margin: 0 auto !important;
+    }
+
+    /* 2. PERBAIKAN HALAMAN DETEKSI (deteksi.html) */
+    /* Mengubah grid deteksi menjadi satu kolom vertikal */
+    .eye-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 0 10px !important;
+    }
+
+    /* Panel Data Sensor */
+    .eye-card.utama {
+        width: 100% !important;
+        padding: 20px !important;
+        text-align: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Panel Grafik */
+    .eye-card:not(.utama) {
+        width: 100% !important;
+        padding: 15px !important;
+        overflow: hidden; /* Mencegah grafik meluber keluar kartu */
+    }
+
+    /* Penyesuaian Canvas Grafik agar pas dengan layar HP */
+    .eye-card canvas {
+        width: 100% !important; /* Paksa grafik selebar layar HP */
+        height: auto !important; /* Jaga proporsi grafik */
+        margin-left: 0 !important; /* Hapus margin kiri dari desktop */
+        display: block !important;
+    }
+
+    /* Angka-angka indikator di perkecil sedikit agar proporsional */
+    .nilai h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .nilai h2 {
+        font-size: 1.8rem !important;
+    }
+
+    /* Indikator status (ESI Number) */
+    #esiNumber, #esiIndicator {
+        display: inline-block !important;
+        margin: 10px auto !important;
+        width: auto !important;
+    }
+
+    /* Tombol Reset & Hubungkan disusun tumpuk */
+    .reset-btn {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+        padding: 12px !important;
+    }
+
+    /* /////////////// */
+    /* Footer Section */
+    /* /////////////// */
     .footer {
         gap: 20px;
         padding-bottom: 20px;
