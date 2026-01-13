@@ -34,7 +34,8 @@ window.onload = () => {
 async function initModel() {
     try {
         console.log("🧠 Memuat model ONNX...");
-        session = await ort.InferenceSession.create('C:\Users\HP\OneDrive\Documents\GitHub\radlabfixed.github.io\model_esi.onnx');
+        // Cukup tulis nama filenya saja jika berada di folder yang sama
+        session = await ort.InferenceSession.create('./model_esi.onnx');
         console.log("✅ Model ESI berhasil dimuat!");
     } catch (e) {
         console.error("❌ Gagal memuat model:", e);
