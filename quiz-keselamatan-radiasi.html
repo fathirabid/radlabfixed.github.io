@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ Jenis Radiasi</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="assets/flaticon/css/uicons-brands.css">
+
+</head>
+<body>
+
+        
+    <!-- section Jenis radiasi soal -->
+            <section class="quiz-wrapper reveal">
+                <button id="exitQuiz" class="exit-quiz-btn" title="Kembali ke Soal">
+                <i data-feather="x"></i>
+                </button>
+
+            <div class="quiz-card reveal">
+
+                <!-- progress bar -->
+                <div class="quiz-progress">
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-track">
+                            <div class="quiz-progress-fill" id="progressFill"></div>
+                        </div>
+                    </div>
+                    <span id="progressText">1 / 15</span>
+                </div>
+
+                <!-- HEADER -->
+                <div class="quiz-header">
+                    <div class="quiz-info">
+                        <h3>Quiz Keselamatan Radiasi dan Perlindungan Diri</h3>
+                        <p>Nomor <span id="current">1</span> / <span id="total">15</span></p>
+                    </div>
+
+                    <div class="quiz-timer">
+                        <i data-feather="clock"></i>
+                        <span id="timer">10:00</span>
+                    </div>
+                </div>
+
+                <!-- SOAL -->
+                 <div class="quiz-content" id="quizContent">
+                    <div class="quiz-question" id="question">
+                    Loading soal...
+                    </div>
+                    <!-- OPSI -->
+                    <div class="quiz-options" id="options"></div>
+                </div>
+
+                <!-- FOOTER -->
+                <div class="quiz-footer">
+                    <button class="btn-prev" id="prevBtn">Kembali</button>
+                    <button class="btn-next" id="nextBtn">Selanjutnya</button>
+                </div>
+
+            </div>
+            </section>
+
+            <!-- EXIT MODAL -->
+            <div id="exitModal" class="exit-modal hidden">
+            <div class="exit-modal-card">
+                <div class="exit-icon">
+                <i data-feather="log-out"></i>
+                </div>
+
+                <h3>Kamu yakin mau mengakhiri latihan ini?</h3>
+                <p>
+                Tenang, kamu bisa melanjutkan lagi dengan semua progress kamu masih ada
+                </p>
+
+                <div class="exit-actions">
+                <button id="cancelExit" class="btn-cancel">Batal</button>
+                <button id="confirmExit" class="btn-exit">Akhiri Latihan</button>
+                </div>
+            </div>
+            </div>
+
+            <!-- MODAL SUBMIT QUIZ -->
+            <div id="submitModal" class="modal-overlay hidden">
+            <div class="modal-card">
+
+                <div class="modal-icon">
+                <i data-feather="send"></i>
+                </div>
+
+                <h3>Submit dan lihat hasil quiz?</h3>
+                <p>
+                Setelah submit, kamu tidak bisa mengubah jawaban lagi.
+                Pastikan semua soal sudah kamu isi.
+                </p>
+
+                <div class="modal-actions">
+                <button id="cancelSubmit" class="btn-secondary">
+                    Kembali ke Quiz
+                </button>
+                <button id="confirmSubmit" class="btn-primary">
+                    Submit Quiz
+                </button>
+                </div>
+
+            </div>
+            </div>
+
+      <!-- feather icons -->
+       <script>
+            feather.replace();
+       </script>
+
+       <!-- javascript -->
+        <script src="web.js"></script>
+        <script src="QUIZ KESELAMATAN RADIASI.js"></script>
+    
+</body>
+</html>

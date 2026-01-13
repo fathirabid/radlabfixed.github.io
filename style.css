@@ -330,7 +330,6 @@ body {
 }
 
 /* section profil */
-
 .section-content {
     padding: 80px 20px;
     background: linear-gradient(135deg, #0f172a, #020617);
@@ -414,6 +413,7 @@ a.tbl-biru {
     color: rgb(110, 193, 241);
     cursor: pointer;
     font-weight: bold;
+    font-size: 14px;
     color: #010101;
 }
 
@@ -1995,7 +1995,7 @@ a.tbl-biru:hover {
 
 /* GAMBAR */
 .highlight-image img {
-  max-width: 780px;
+  max-width: 800px;
   width: 100%;
   border-radius: 16px;
 }
@@ -2024,7 +2024,6 @@ a.tbl-biru:hover {
   line-height: 1.8;
   color: var(--text-muted);
   margin-bottom: 12px;
-  text-align: justify;
 }
 
 
@@ -2526,6 +2525,112 @@ a.tbl-biru:hover {
     text-align: center;
     font-size: 0.85rem;
     color: #9ca3af;
+}
+
+/* Styling Tabel Lux */
+.info-lux-section {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.tabel-scroll {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+.tabel-lux {
+    width: 100%;
+    border-collapse: collapse;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
+
+.tabel-lux th, .tabel-lux td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.tabel-lux th {
+    background-color: #2563eb; /* Warna biru senada dengan tombol Hubungkan */
+    color: white;
+    font-weight: bold;
+}
+
+.tabel-lux tr:hover {
+    background-color: #262626;
+}
+
+.tabel-lux td:first-child {
+    font-weight: bold;
+    color: #facc15; /* Warna kuning agar angka lux menonjol */
+}
+
+/* Styling Prototype Section */
+.prototype-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.prototype-image-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #333;
+    background: #000;
+}
+
+.prototype-image-wrapper img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.prototype-image-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(37, 99, 235, 0.8); /* Warna biru tema */
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.prototype-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.prototype-description li {
+    margin-bottom: 12px;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    padding-left: 25px;
+    position: relative;
+}
+
+.prototype-description li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .prototype-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 

@@ -60,7 +60,7 @@
             <a href="javascript:void(0)" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
     </nav>
-<!-- menu end -->
+    <!-- menu end -->
 
     <!-- DETEKSI CAHAYA & EYE STRAIN -->
     <section class="section-content eye-section">
@@ -126,6 +126,73 @@
             <p class="catatan reveal">
             *Simulasi ini bersifat edukatif dan bukan alat diagnosis medis.
             </p>
+
+            <div class="eye-card info-lux-section reveal" style="margin-top: 30px;">
+                <h3>Referensi Intensitas Cahaya (Lux)</h3>
+                <div class="tabel-scroll">
+                    <table class="tabel-lux">
+                        <thead>
+                            <tr>
+                                <th>Pencahayaan (Lux)</th>
+                                <th>Kondisi / Lingkungan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0.0001 - 0.002</td>
+                                <td>Malam hari (Langit mendung/cerah tanpa bulan)</td>
+                            </tr>
+                            <tr>
+                                <td>20 - 50</td>
+                                <td>Tempat umum dengan lingkungan gelap</td>
+                            </tr>
+                            <tr>
+                                <td>80 - 100</td>
+                                <td>Lorong gedung / Kondisi mendung sangat gelap</td>
+                            </tr>
+                            <tr>
+                                <td>320 - 500</td>
+                                <td>Standar penerangan kantor / Ruang kerja</td>
+                            </tr>
+                            <tr>
+                                <td>1000</td>
+                                <td>Hari mendung / Pencahayaan studio TV</td>
+                            </tr>
+                            <tr>
+                                <td>10.000 - 25.000</td>
+                                <td>Siang hari (Tidak terkena matahari langsung)</td>
+                            </tr>
+                            <tr>
+                                <td>32.000 - 100.000</td>
+                                <td>Sinar matahari langsung</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="eye-card prototype-section reveal" style="margin-top: 30px;">
+                <h3>Hasil Prototype Hardware</h3>
+                <p class="subjudul" style="margin-bottom: 15px;">Integrasi Sensor BH1750 dengan Microcontroller Arduino</p>
+                
+                <div class="prototype-container">
+                    <div class="prototype-image-wrapper">
+                        <img src="assets/img/prototype.jpg" alt="Prototype RADLAB" id="prototypeImg">
+                        <div class="image-overlay">
+                            <span>Sensor BH1750 & Arduino</span>
+                        </div>
+                    </div>
+                    
+                    <div class="prototype-description">
+                        <ul>
+                            <li><strong>Sensor BH1750:</strong> Mendeteksi intensitas cahaya secara presisi dalam satuan Lux.</li>
+                            <li><strong>Proses AI:</strong> Data dikirim ke web untuk diprediksi menggunakan Machine Learning (kecerdasan buatan) model Random Forest.</li>
+                            <li><strong>Feedback LED:</strong> Lampu pada alat akan berubah warna sesuai tingkat ESI di layar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
