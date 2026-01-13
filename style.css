@@ -2285,188 +2285,135 @@ a.tbl-biru:hover {
   text-decoration: underline;
 }
 
-/* SECTION DETEKSI */
+/* ================================================= */
+/* SECTION DETEKSI - LAYOUT UTAMA                    */
+/* ================================================= */
+
 .breadcrumb-wrapper-deteksi {
-  margin: 0 auto 16px; /* hapus margin-top besar */
-  padding: 0 16px;     /* biar sejajar dengan section lain */
-  font-size: 14px;
-  color: var(--muted);
-  max-width: 1200px;   /* optional, biar rapi sesuai kontainer */
+    margin: 0 auto 16px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: var(--muted);
+    max-width: 1200px;
 }
 
-.breadcrumb-deteksi a {
-  color: var(--accent1);
-}
+.breadcrumb-deteksi a { color: var(--accent1); }
+.breadcrumb-deteksi span { margin: 0 6px; }
+.breadcrumb-deteksi .current { color: var(--text); font-weight: 500; }
 
-.breadcrumb-deteksi span {
-  margin: 0 6px;
-}
-
-.breadcrumb-deteksi .current {
-  color: var(--text);
-  font-weight: 500;
-}
-
-/* eye strain */
-.eye-section {
-  margin-top: 80px;
-}
+.eye-section { margin-top: 80px; }
 
 .eye-section .subjudul {
-  text-align: center;
-  color: #9ca3af;
-  margin-bottom: 40px;
+    text-align: center;
+    color: #9ca3af;
+    margin-bottom: 40px;
 }
 
 .eye-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
-/* CARD */
+/* ================================================= */
+/* KARTU DATA SENSOR (KIRI)                          */
+/* ================================================= */
+
 .eye-card {
-  background: #0f172a;
-  border: 1px solid #1e293b;
-  border-radius: 16px;
-  padding: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 .eye-card.utama {
-  text-align: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 20px;
 }
 
 .eye-card h3 {
-  margin-bottom: 20px;
-  color: #e5e7eb;
-  text-align: center;
+    margin-bottom: 10px;
+    color: #e5e7eb;
 }
 
-/* ==============================
-   CHART CONTAINER
-============================== */
-.eye-card canvas {
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    background: #f9fafb;
+/* Blok Intensitas Cahaya (Lux) */
+.nilai-blok {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.nilai-blok span {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.nilai-blok h1 {
+    font-size: 3.5rem;
+    margin: 5px 0;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.nilai-blok small { color: #9ca3af; }
+
+/* Estimasi Jarak */
+.estimasi-teks {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+.garis-pemisah {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid var(--border-soft);
+    margin: 15px 0;
+}
+
+/* Durasi Paparan */
+.durasi-paragraf {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+/* Area ESI */
+.label-kecil {
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.esi-display {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-left: 85px;
+    gap: 15px;
+    margin-top: 5px;
 }
 
-/* LABEL X & Y */
-.chart-label {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    fill: #374151;
-}
-
-#barChart {
-    background: #f3f4f6;
-    border-radius: 6px;
-}
-
-/* NILAI */
-.nilai span {
-  color: #9ca3af;
-  font-size: 0.9rem;
-}
-
-.nilai h1 {
-  font-size: 3rem;
-  margin: 5px 0;
-}
-
-.nilai h2 {
-  font-size: 2rem;
-  margin-top: 5px;
-}
-
-/* STATUS */
-.status {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-weight: bold;
-  color: white;
-}
-
-.status.aman { background: #16a34a; }
-.status.waspada { background: #ca8a04; }
-.status.bahaya { background: #dc2626; }
-
-/* BUTTON */
-.reset-btn {
-  margin-top: 20px;
-  padding: 10px 22px;
-  background: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.reset-btn:hover {
-  background: #1e40af;
-}
-
-.estimasi {
-  margin-top: 10px;
-  color: #cbd5f5;
-}
-
-/* CATATAN */
-.catatan {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #9ca3af;
-}
-
-/* ==============================
-   ESI INDICATOR
-============================== */
-.esi-status {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  border-radius: 12px;
-  font-weight: bold;
-  color: white;
-  border: 2px solid transparent;
-}
-
-.esi-status.aman { background: #22c55e; border-color: #16a34a; }
-.esi-status.waspada { background: #3b82f6; border-color: #2563eb; }
-.esi-status.lelah { background: #facc15; border-color: #ca8a04; color: #1f2937; }
-.esi-status.sangat-lelah { background: #ef4444; border-color: #b91c1c; }
-
-/* ==============================
-   ESI NUMBER (angka) - span
-============================== */
+/* Kotak Angka ESI */
 #esiNumber {
     display: inline-block;
     padding: 8px 16px;
     border-radius: 12px;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
-    min-width: 80px;
+    min-width: 90px;
     transition: all 0.3s ease;
+    background-color: #22c55e; /* Default Green */
 }
 
-/* Warna sesuai level */
-#esiNumber.aman { background-color: #22c55e; }       /* hijau */
-#esiNumber.waspada { background-color: #3b82f6; }   /* biru */
-#esiNumber.lelah { background-color: #facc15; color: #111; } /* kuning */
-#esiNumber.sangat-lelah { background-color: #ef4444; }  /* merah */
-
-/* ==============================
-   ESI INDICATOR (teks) - p
-============================== */
+/* Teks Status ESI */
 #esiIndicator {
     display: inline-block;
     padding: 6px 14px;
@@ -2478,30 +2425,75 @@ a.tbl-biru:hover {
     transition: all 0.3s ease;
 }
 
-/* Warna + border sesuai level */
-#esiIndicator.aman {
-    background-color: #16a34a;
-    border-color: #22c55e;
-}
-#esiIndicator.waspada {
-    background-color: #3b82f6;
-    border-color: #60a5fa;
-}
-#esiIndicator.lelah {
-    background-color: #facc15;
-    color: #111;
-    border-color: #fcd34d;
-}
-#esiIndicator.sangat-lelah {
-    background-color: #ef4444;
-    border-color: #f87171;
-}
+/* Level Warna ESI */
+.aman { background-color: #22c55e !important; border-color: #16a34a; }
+.waspada { background-color: #3b82f6 !important; border-color: #2563eb; }
+.lelah { background-color: #facc15 !important; border-color: #ca8a04; color: #1f2937 !important; }
+.sangat-lelah { background-color: #ef4444 !important; border-color: #b91c1c; }
 
-/* Hover efek biar interaktif */
 #esiIndicator:hover, #esiNumber:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
+
+/* ================================================= */
+/* KARTU GRAFIK (KANAN)                              */
+/* ================================================= */
+
+.eye-card canvas {
+    width: 100% !important;
+    max-width: 360px;
+    height: auto !important;
+    margin: 0 auto 15px auto !important;
+    display: block;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #f9fafb;
+}
+
+.eye-card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#barChart {
+    background: #f3f4f6;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* ================================================= */
+/* TOMBOL & CATATAN                                  */
+/* ================================================= */
+
+.aksi-tombol {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.reset-btn {
+    padding: 10px 22px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.reset-btn:hover { background: #1e40af; }
+
+.catatan {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
 
 
 /* section footer  */

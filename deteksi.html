@@ -83,30 +83,32 @@
             <!-- PANEL DATA -->
             <div class="eye-card utama">
                 <h3>Data Sensor</h3>
-
-                <div class="nilai">
-                <span>Intensitas Cahaya</span>
-                <h1 id="luxValue">0</h1>
-                <small>lux</small>
+                <div class="nilai-blok">
+                    <span>Intensitas Cahaya</span>
+                    <h1 id="luxValue">0</h1>
+                    <small>lux</small>
+                    <p id="distanceInfo" class="estimasi-teks">Estimasi jarak: -</p>
                 </div>
 
-                <div class="nilai">
-                <span>Eye Strain Index (ESI)</span>
-                <!-- wktu dari arduino -->
-                <h2 id="esiValue">0.00</h2> 
+                <hr class="garis-pemisah">
+
+                <div class="nilai-blok">
+                    <p id="exposureDuration" class="durasi-paragraf">Durasi Paparan: 0 menit</p>
+                    <span class="label-kecil">Eye Strain Index (ESI)</span>
+                    <div></div>
+                    <span id="esiNumber" class="angka-esi">0.00</span>
+                    <p id="esiIndicator" class="indikator-string">-</p>
                 </div>
-                <!-- indikator esi -->
-                <span id="esiNumber" class="status aman">0.00</span>
-                <p id="esiIndicator" class="esi-status">-</p>
+                    <!-- indikator esi -->
+                    
 
-                <p id="distanceInfo" class="estimasi">Estimasi jarak: -</p>
-
-                <button class="reset-btn" onclick="resetSimulation()">
-                Reset Simulasi
-                </button>
-                <button class="reset-btn" onclick="connectSerial()">
-                Hubungkan Arduino
-                </button>
+                <div class="aksi-tombol"><button class="reset-btn" onclick="resetSimulation()">
+                    Reset Simulasi
+                    </button>
+                    <button class="reset-btn" onclick="connectSerial()">
+                    Hubungkan Arduino
+                    </button>
+                </div>
             </div>
 
             <!-- PANEL GRAFIK -->
@@ -172,9 +174,10 @@
        </script>
 
        <!-- javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+
         <script src="web.js"></script>
         <script src="deteksi.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
 
     
 </body>
