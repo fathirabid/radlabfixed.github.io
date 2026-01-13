@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 30; //  menit
+let timeLeft = 30 * 20; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -13,94 +13,174 @@ const timerEl = document.getElementById("timer");
 // ======================
 const quizData = [
   {
-    question: "Pada simulasi Blackbody Spectrum, suhu benda dinaikkan dari 3000 K menjadi 8000 K. Perubahan utama yang terlihat pada grafik adalah …",
+    question: "Pernyataan yang paling tepat menjelaskan mengapa radiasi tidak selalu berbahaya bagi manusia adalah …",
     options: [
-      "Puncak spektrum bergeser ke panjang gelombang lebih besar",
-      "Intensitas radiasi menurun dan warna tetap merah",
-      "Puncak spektrum bergeser ke panjang gelombang lebih pendek",
-      "Warna cahaya menjadi lebih gelap",
+      "Radiasi hanya berbahaya jika berasal dari alam",
+      "Semua radiasi dapat dimanfaatkan tanpa risiko",
+      "Bahaya radiasi bergantung pada dosis, jenis, dan cara penggunaannya",
+      "Radiasi berbahaya hanya pada bidang kesehatan",
     ],
     answer: 3,
-    explanation: "C. Pada simulasi Blackbody Spectrum, ketika suhu dinaikkan dari 3000 K menjadi 8000 K, terlihat bahwa puncak kurva spektrum berpindah ke arah panjang gelombang yang lebih pendek. Hal ini menandakan bahwa energi radiasi yang dipancarkan semakin besar dan warna cahaya bergeser dari merah menuju biru. Fenomena ini sesuai dengan konsep bahwa benda yang lebih panas memancarkan radiasi dengan energi lebih tinggi, sehingga jawaban yang benar adalah C."
+    explanation: "Pernyataan yang paling tepat menjelaskan mengapa radiasi tidak selalu berbahaya bagi manusia adalah Bahaya radiasi bergantung pada dosis, jenis, dan cara penggunaannya"
   },
   {
-    question: "Dengan menggunakan simulasi Blackbody Spectrum, warna cahaya yang dominan pada suhu sangat tinggi mendekati 10.000 K adalah …",
+    question: "Prinsip utama yang dimanfaatkan dalam radiologi diagnostik sehingga tulang tampak lebih jelas dibandingkan jaringan lunak pada foto rontgen adalah …",
     options: [
-      "Merah",
-      "Oranye",
-      "Kuning",
-      "Biru",
-    ],
-    answer: 4,
-    explanation: "D. Saat suhu pada simulasi mendekati 10.000 K, warna cahaya yang ditampilkan berubah menjadi kebiruan. Warna biru menunjukkan radiasi dengan energi yang tinggi dan panjang gelombang yang pendek. Inilah alasan mengapa bintang yang sangat panas tampak berwarna biru. Berdasarkan pengamatan simulasi, jawaban yang tepat adalah D."
-  },
-  {
-    question: "Saat jumlah gas rumah kaca pada simulasi Greenhouse Effect ditambah, perubahan yang paling tepat adalah …",
-    options: [
-      "Lebih banyak panas keluar ke luar angkasa",
-      "Suhu permukaan Bumi menurun",
-      "Panas lebih banyak terperangkap di atmosfer",
-      "Radiasi Matahari tidak mencapai Bumi",
-    ],
-    answer: 3,
-    explanation: "C. Pada simulasi Greenhouse Effect, ketika jumlah gas rumah kaca ditambah, terlihat bahwa lebih banyak radiasi panas yang terperangkap di atmosfer dan tidak langsung keluar ke luar angkasa. Akibatnya, suhu permukaan Bumi meningkat. Hal ini menunjukkan bahwa gas rumah kaca berfungsi menahan panas, sehingga jawaban yang benar adalah C."
-  },
-  {
-    question: "Jika jumlah gas rumah kaca dikurangi pada simulasi, maka yang terjadi adalah …",
-    options: [
-      "Suhu Bumi meningkat drastis",
-      "Panas lebih mudah keluar dari atmosfer",
-      "Cahaya Matahari terpantul seluruhnya",
-      "Cahaya Matahari terpantul seluruhnya",
+      "Hamburan Compton yang sama pada semua jaringan",
+      "Perbedaan kemampuan penyerapan sinar X oleh jaringan",
+      "Produksi pasangan di dalam tulang",
+      "Emisi radiasi sekunder dari jaringan lunak",
     ],
     answer: 2,
-    explanation: "B. Jika jumlah gas rumah kaca pada simulasi dikurangi, maka panas yang dipancarkan oleh permukaan Bumi lebih mudah lepas ke luar angkasa. Akibatnya, suhu permukaan menurun. Dari pengamatan ini dapat disimpulkan bahwa gas rumah kaca sangat berperan dalam menjaga suhu Bumi, sehingga jawaban yang tepat adalah B."
+    explanation: "Prinsip utama yang dimanfaatkan dalam radiologi diagnostik sehingga tulang tampak lebih jelas dibandingkan jaringan lunak pada foto rontgen adalah Perbedaan kemampuan penyerapan sinar X oleh jaringan"
   },
   {
-    question: "Saat kamu memilih mode “Additive Mixing” (pencampuran tambah), tiga slider warna utama adalah merah (R), hijau (G), dan biru (B). Jika kamu menggeser semua slider ke nilai tertinggi sekaligus (R = 100, G = 100, B = 100), warna yang dihasilkan akan menjadi …",
+    question: "Radioterapi dapat menghancurkan sel kanker tetapi tetap berusaha melindungi jaringan sehat di sekitarnya karena …",
     options: [
-      "Hitam",
-      "Merah",
-      "Putih",
-      "Hijau",
+      " Sel kanker tidak menyerap radiasi",
+      "Radiasi hanya bekerja pada sel sehat",
+      "Berkas radiasi dapat difokuskan dan dosisnya direncanakan secara presisi",
+      "Jaringan sehat kebal terhadap radiasi",
     ],
     answer: 3,
-    explanation: "C. Ketika semua slider warna merah, hijau, dan biru dinaikkan ke nilai maksimum pada mode Additive Mixing, simulasi menunjukkan warna putih. Hal ini terjadi karena pada pencampuran cahaya secara aditif, penjumlahan cahaya merah, hijau, dan biru dengan intensitas penuh menghasilkan cahaya putih. Inilah alasan layar televisi dan ponsel menggunakan sistem RGB untuk menghasilkan berbagai warna."
+    explanation: "Radioterapi dapat menghancurkan sel kanker tetapi tetap berusaha melindungi jaringan sehat di sekitarnya karena Berkas radiasi dapat difokuskan dan dosisnya direncanakan secara presisi"
   },
   {
-    question: "Jika kamu mematikan warna hijau (G) dan biru (B) (nilai 0), dan hanya menaikkan nilai merah (R) pada mode “Additive Mixing”, warna yang terlihat pada layar akan cenderung …",
+    question: "Perbedaan utama antara CT scan dan PET scan adalah …",
     options: [
-      "Biru",
-      "Kuning",
-      "Merah",
-      "Putih",
+      "CT scan menggunakan zat radioaktif, PET scan tidak",
+      "CT scan menampilkan fungsi organ, PET scan menampilkan struktur",
+      "CT scan menekankan citra anatomi, sedangkan PET scan menilai fungsi/metabolisme",
+      "Keduanya sama-sama hanya menampilkan tulang",
     ],
     answer: 3,
-    explanation: "C. Saat hanya cahaya merah yang dinyalakan dan cahaya hijau serta biru dimatikan, warna yang terlihat pada simulasi adalah merah. Ini membuktikan bahwa tanpa campuran cahaya lain, warna yang tampak akan sama dengan warna sumber cahaya yang aktif. Simulasi membantu siswa memahami bahwa warna cahaya tidak selalu hasil campuran, tetapi bisa berasal dari satu komponen saja."
+    explanation: "Perbedaan utama antara CT scan dan PET scan adalah CT scan menekankan citra anatomi, sedangkan PET scan menilai fungsi/metabolisme"
   },
   {
-    question: "Saat kamu menyesuaikan frekuensi gelombang radio dalam simulasi, apa yang terjadi pada jarak antara puncak gelombang (panjang gelombang)?...",
+    question: "Penggunaan radiasi dalam radiografi industri dianggap penting karena …",
     options: [
-      "Semakin tinggi frekuensi → panjang gelombang semakin besar",
-      "Semakin tinggi frekuensi → panjang gelombang semakin kecil",
-      "Frekuensi tidak berpengaruh pada panjang gelombang",
-      "Panjang gelombang tetap sama di semua frekuensi",
+      "kecepatan rambat Dapat memperbaiki cacat pada logam",
+      "Mampu mendeteksi kerusakan internal tanpa merusak objek",
+      "Menghasilkan panas untuk menguji kekuatan bahan",
+      "Hanya digunakan pada material plastik",
     ],
     answer: 2,
-    explanation: "B. Dalam gelombang, frekuensi dan panjang gelombang berbanding terbalik. Ini bisa kamu lihat langsung di simulasi ketika mengubah nilai frekuensi; semakin tinggi frekuensi semakin rapat gelombangnya (panjang gelombang menurun). Jadi jawaban yang benar adalah B."
+    explanation: "Penggunaan radiasi dalam radiografi industri dianggap penting karena mampu mendeteksi kerusakan internal tanpa merusak objek"
   },
   {
-    question: "Dalam simulasi Radio Waves, gelombang yang memiliki frekuensi lebih rendah secara umum cenderung memiliki …",
+    question: "Salah satu kesalahpahaman tentang iradiasi pangan adalah anggapan bahwa makanan menjadi radioaktif. Pernyataan yang paling tepat untuk meluruskan hal tersebut adalah …",
     options: [
-      "Panjang gelombang lebih pendek",
-      "Panjang gelombang lebih panjang",
-      "Energi lebih besar daripada frekuensi tinggi",
-      "Tidak dipengaruhi panjang gelombang",
+      "Radiasi diserap permanen oleh makanan",
+      "Radiasi hanya menghangatkan makanan",
+      "Radiasi melewati makanan dan tidak meninggalkan radioaktivitas",
+      "Radiasi berubah menjadi zat kimia baru di dalam makanan",
+    ],
+    answer: 3,
+    explanation: "Salah satu kesalahpahaman tentang iradiasi pangan adalah anggapan bahwa makanan menjadi radioaktif. Pernyataan yang paling tepat untuk meluruskan hal tersebut adalah radiasi melewati makanan dan tidak meninggalkan radioaktivitas"
+  },
+  {
+    question: "Iradiasi fitosanitasi dalam perdagangan internasional dianggap lebih menguntungkan dibandingkan penggunaan pestisida kimia karena …",
+    options: [
+      "Membuat tanaman tumbuh lebih cepat",
+      "Menghilangkan seluruh unsur kimia pada produk",
+      "Mengendalikan hama tanpa residu kimia berbahaya",
+      "Menjadikan produk pertanian radioaktif",
+    ],
+    answer: 3,
+    explanation: "Iradiasi fitosanitasi dalam perdagangan internasional dianggap lebih menguntungkan dibandingkan penggunaan pestisida kimia karena mengendalikan hama tanpa residu kimia berbahaya"
+  },
+  {
+    question: "Gelombang radio dan gelombang mikro dapat digunakan untuk komunikasi jarak jauh terutama karena …",
+    options: [
+      "Bersifat radiasi pengion",
+      "Mampu membawa informasi melalui proses modulasi sinyal",
+      "Memiliki energi sangat besar",
+      "Dapat merusak molekul udara",
     ],
     answer: 2,
-    explanation: "B. Gelombang radio frekuensi rendah memiliki panjang gelombang lebih besar. Simulasi menunjukkan gelombang yang lebih lebar/longgar pada frekuensi rendah. Ini sesuai dengan hubungan λ= v/f. Jadi jawaban yang tepat adalah B."
+    explanation: "Gelombang radio dan gelombang mikro dapat digunakan untuk komunikasi jarak jauh terutama karena mampu membawa informasi melalui proses modulasi sinyal"
+  },
+  {
+    question: "Perbedaan utama pemanfaatan radiasi pada pembangkit listrik tenaga nuklir dibandingkan dengan radiografi atau iradiasi pangan adalah …",
+    options: [
+      "Radiasi hanya digunakan pada tahap akhir proses",
+      "Radiasi berfungsi sebagai sumber panas dari reaksi fisi inti",
+      "Radiasi digunakan untuk membunuh mikroorganisme",
+      "Radiasi tidak memerlukan sistem pengendalian",
+    ],
+    answer: 2,
+    explanation: "Perbedaan utama pemanfaatan radiasi pada pembangkit listrik tenaga nuklir dibandingkan dengan radiografi atau iradiasi pangan adalah radiasi berfungsi sebagai sumber panas dari reaksi fisi inti"
+  },
+  {
+    question: "Penggunaan sinar X dan neutron dalam penelitian material canggih bertujuan utama untuk …",
+    options:[
+      "Menghancurkan struktur material",
+      "Menghasilkan energi listrik",
+      "Menyelidiki susunan atom dan sifat material",
+      "Mengurangi massa material",
+    ],
+    answer:3,
+    explanation: "Penggunaan sinar X dan neutron dalam penelitian material canggih bertujuan utama untuk menyelidiki susunan atom dan sifat material"
+
+  },
+  {
+    question: "Pemanfaatan radiasi pada sistem pemindai bagasi di bandara dianggap aman bagi penumpang karena …",
+    options: [
+    "Radiasi yang digunakan bersifat radioaktif",
+    "Paparan radiasi diatur sangat rendah dan berada di bawah batas keselamatan",
+    "Radiasi hanya mengenai benda logam",
+    "Radiasi tidak berinteraksi dengan tubuh manusia",
+  ],
+  answer: 2,
+  explanation: "Pemanfaatan radiasi pada sistem pemindai bagasi di bandara dianggap aman bagi penumpang karena Paparan radiasi diatur sangat rendah dan berada di bawah batas keselamatan"
+  },
+  {
+    question: "Prinsip utama yang digunakan dalam penanggalan radiokarbon (carbon-14 dating) adalah …",
+    options: [
+      "Perbedaan massa jenis bahan organik",
+      "Perbandingan intensitas cahaya yang dipantulkan objek",
+      "Laju peluruhan radioaktif isotop karbon-14 yang tetap",
+      "Perubahan warna bahan organik seiring waktu",
+    ],
+    answer: 3,
+    explanation: "Prinsip utama yang digunakan dalam penanggalan radiokarbon (carbon-14 dating) adalah Laju peluruhan radioaktif isotop karbon-14 yang tetap"
+  },
+  {
+    question: "Dosimeter digital digunakan di lingkungan kerja yang melibatkan radiasi terutama untuk …",
+    options: [
+      "Menghilangkan radiasi di sekitar pekerja",
+      "Menghasilkan radiasi untuk keperluan industri",
+      "Memantau akumulasi dosis radiasi yang diterima pekerja",
+      "Mengubah radiasi menjadi energi listrik",
+    ],
+    answer: 3,
+    explanation: "Dosimeter digital digunakan di lingkungan kerja yang melibatkan radiasi terutama untuk Memantau akumulasi dosis radiasi yang diterima pekerja"
+  },
+  {
+    question: "Pernyataan yang paling tepat membedakan radiasi yang digunakan dalam keamanan penerbangan dengan radiasi yang berperan dalam efek rumah kaca adalah …",
+    options: [  
+      "Keduanya merupakan radiasi pengion",
+      "Radiasi pemindai bandara bersifat radioaktif, radiasi rumah kaca tidak",
+      "Efek rumah kaca melibatkan radiasi inframerah non-ionisasi yang diserap atmosfer",
+      "Radiasi bandara menyebabkan pemanasan global",
+    ],
+    answer: 3,
+    explanation:  "Pernyataan yang paling tepat membedakan radiasi yang digunakan dalam keamanan penerbangan dengan radiasi yang berperan dalam efek rumah kaca adalah Efek rumah kaca melibatkan radiasi inframerah non-ionisasi yang diserap atmosfer"
+  },
+  {
+    question: "Efek rumah kaca terjadi karena …",
+    options: [
+      "Radiasi pengion dari Matahari terperangkap di atmosfer",
+      "Radiasi inframerah dari permukaan Bumi diserap dan dipancarkan kembali oleh gas rumah kaca",
+      "Gelombang radio dipantulkan oleh awan",
+      "Sinar X Matahari menembus atmosfer dan memanaskan Bumi",
+    ],
+    answer: 2,
+    explanation: "Efek rumah kaca terjadi karena Radiasi inframerah dari permukaan Bumi diserap dan dipancarkan kembali oleh gas rumah kaca"
   },
 ];
+
+
 
 // letak variabel global
 let index = 0;

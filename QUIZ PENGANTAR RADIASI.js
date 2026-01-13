@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 30; //  menit
+let timeLeft = 30 * 20; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -13,94 +13,174 @@ const timerEl = document.getElementById("timer");
 // ======================
 const quizData = [
   {
-    question: "Pada simulasi Blackbody Spectrum, suhu benda dinaikkan dari 3000 K menjadi 8000 K. Perubahan utama yang terlihat pada grafik adalah …",
+    question: "Radiasi didefinisikan sebagai energi yang dipancarkan dari suatu sumber dan dapat merambat melalui ruang. Pernyataan yang paling tepat untuk menjelaskan mekanisme perambatan radiasi adalah …",
     options: [
-      "Puncak spektrum bergeser ke panjang gelombang lebih besar",
-      "Intensitas radiasi menurun dan warna tetap merah",
-      "Puncak spektrum bergeser ke panjang gelombang lebih pendek",
-      "Warna cahaya menjadi lebih gelap",
+      "radiasi hanya dapat merambat jika memiliki massa",
+      "radiasi selalu memerlukan medium untuk merambat",
+      "radiasi merupakan bentuk perpindahan energi dalam bentuk gelombang atau partikel",
+      "radiasi hanya dapat merambat melalui udara",
     ],
     answer: 3,
-    explanation: "C. Pada simulasi Blackbody Spectrum, ketika suhu dinaikkan dari 3000 K menjadi 8000 K, terlihat bahwa puncak kurva spektrum berpindah ke arah panjang gelombang yang lebih pendek. Hal ini menandakan bahwa energi radiasi yang dipancarkan semakin besar dan warna cahaya bergeser dari merah menuju biru. Fenomena ini sesuai dengan konsep bahwa benda yang lebih panas memancarkan radiasi dengan energi lebih tinggi, sehingga jawaban yang benar adalah C."
+    explanation: "Radiasi didefinisikan sebagai energi yang dipancarkan dari suatu sumber dan dapat merambat melalui ruang. Pernyataan yang paling tepat untuk menjelaskan mekanisme perambatan radiasi adalah radiasi merupakan bentuk perpindahan energi dalam bentuk gelombang atau partikel"
   },
   {
-    question: "Dengan menggunakan simulasi Blackbody Spectrum, warna cahaya yang dominan pada suhu sangat tinggi mendekati 10.000 K adalah …",
+    question: "Banyak orang menganggap radiasi selalu berasal dari ledakan nuklir. Pernyataan yang paling tepat untuk meluruskan anggapan tersebut adalah …",
     options: [
-      "Merah",
-      "Oranye",
-      "Kuning",
-      "Biru",
+      "radiasi hanya dihasilkan oleh reaktor nuklir",
+      "radiasi tidak ditemukan di lingkungan alami",
+      "sumber radiasi terbesar berasal dari senjata nuklir",
+      "radiasi juga berasal dari sumber alami seperti matahari dan unsur radioaktif",
     ],
     answer: 4,
-    explanation: "D. Saat suhu pada simulasi mendekati 10.000 K, warna cahaya yang ditampilkan berubah menjadi kebiruan. Warna biru menunjukkan radiasi dengan energi yang tinggi dan panjang gelombang yang pendek. Inilah alasan mengapa bintang yang sangat panas tampak berwarna biru. Berdasarkan pengamatan simulasi, jawaban yang tepat adalah D."
+    explanation: "Banyak orang menganggap radiasi selalu berasal dari ledakan nuklir. Pernyataan yang paling tepat untuk meluruskan anggapan tersebut adalah radiasi juga berasal dari sumber alami seperti matahari dan unsur radioaktif"
   },
   {
-    question: "Saat jumlah gas rumah kaca pada simulasi Greenhouse Effect ditambah, perubahan yang paling tepat adalah …",
+    question: "Radiasi kosmik tidak menimbulkan bahaya besar bagi kehidupan di Bumi karena …",
     options: [
-      "Lebih banyak panas keluar ke luar angkasa",
-      "Suhu permukaan Bumi menurun",
-      "Panas lebih banyak terperangkap di atmosfer",
-      "Radiasi Matahari tidak mencapai Bumi",
+      "atmosfer Bumi menyerap dan mengurangi sebagian besar radiasi kosmik ",
+      "seluruh radiasi kosmik terperangkap di luar angkasa",
+      "radiasi kosmik memiliki energi sangat kecil",
+      "radiasi kosmik tidak dapat menembus makhluk hidup",
     ],
-    answer: 3,
-    explanation: "C. Pada simulasi Greenhouse Effect, ketika jumlah gas rumah kaca ditambah, terlihat bahwa lebih banyak radiasi panas yang terperangkap di atmosfer dan tidak langsung keluar ke luar angkasa. Akibatnya, suhu permukaan Bumi meningkat. Hal ini menunjukkan bahwa gas rumah kaca berfungsi menahan panas, sehingga jawaban yang benar adalah C."
+    answer: 1,
+    explanation: "Radiasi kosmik tidak menimbulkan bahaya besar bagi kehidupan di Bumi karena atmosfer Bumi menyerap dan mengurangi sebagian besar radiasi kosmik"
   },
   {
-    question: "Jika jumlah gas rumah kaca dikurangi pada simulasi, maka yang terjadi adalah …",
+    question: "Unsur radioaktif alami seperti uranium dan radon dapat memancarkan radiasi tanpa pengaruh luar karena …",
     options: [
-      "Suhu Bumi meningkat drastis",
-      "Panas lebih mudah keluar dari atmosfer",
-      "Cahaya Matahari terpantul seluruhnya",
-      "Cahaya Matahari terpantul seluruhnya",
-    ],
-    answer: 2,
-    explanation: "B. Jika jumlah gas rumah kaca pada simulasi dikurangi, maka panas yang dipancarkan oleh permukaan Bumi lebih mudah lepas ke luar angkasa. Akibatnya, suhu permukaan menurun. Dari pengamatan ini dapat disimpulkan bahwa gas rumah kaca sangat berperan dalam menjaga suhu Bumi, sehingga jawaban yang tepat adalah B."
-  },
-  {
-    question: "Saat kamu memilih mode “Additive Mixing” (pencampuran tambah), tiga slider warna utama adalah merah (R), hijau (G), dan biru (B). Jika kamu menggeser semua slider ke nilai tertinggi sekaligus (R = 100, G = 100, B = 100), warna yang dihasilkan akan menjadi …",
-    options: [
-      "Hitam",
-      "Merah",
-      "Putih",
-      "Hijau",
-    ],
-    answer: 3,
-    explanation: "C. Ketika semua slider warna merah, hijau, dan biru dinaikkan ke nilai maksimum pada mode Additive Mixing, simulasi menunjukkan warna putih. Hal ini terjadi karena pada pencampuran cahaya secara aditif, penjumlahan cahaya merah, hijau, dan biru dengan intensitas penuh menghasilkan cahaya putih. Inilah alasan layar televisi dan ponsel menggunakan sistem RGB untuk menghasilkan berbagai warna."
-  },
-  {
-    question: "Jika kamu mematikan warna hijau (G) dan biru (B) (nilai 0), dan hanya menaikkan nilai merah (R) pada mode “Additive Mixing”, warna yang terlihat pada layar akan cenderung …",
-    options: [
-      "Biru",
-      "Kuning",
-      "Merah",
-      "Putih",
-    ],
-    answer: 3,
-    explanation: "C. Saat hanya cahaya merah yang dinyalakan dan cahaya hijau serta biru dimatikan, warna yang terlihat pada simulasi adalah merah. Ini membuktikan bahwa tanpa campuran cahaya lain, warna yang tampak akan sama dengan warna sumber cahaya yang aktif. Simulasi membantu siswa memahami bahwa warna cahaya tidak selalu hasil campuran, tetapi bisa berasal dari satu komponen saja."
-  },
-  {
-    question: "Saat kamu menyesuaikan frekuensi gelombang radio dalam simulasi, apa yang terjadi pada jarak antara puncak gelombang (panjang gelombang)?...",
-    options: [
-      "Semakin tinggi frekuensi → panjang gelombang semakin besar",
-      "Semakin tinggi frekuensi → panjang gelombang semakin kecil",
-      "Frekuensi tidak berpengaruh pada panjang gelombang",
-      "Panjang gelombang tetap sama di semua frekuensi",
+      "mengalami reaksi kimia dengan unsur lain",
+      "inti atomnya tidak stabil dan mengalami peluruhan",
+      "memiliki jumlah proton yang sangat besar",
+      "terpapar sinar matahari secara terus-menerus",
     ],
     answer: 2,
-    explanation: "B. Dalam gelombang, frekuensi dan panjang gelombang berbanding terbalik. Ini bisa kamu lihat langsung di simulasi ketika mengubah nilai frekuensi; semakin tinggi frekuensi semakin rapat gelombangnya (panjang gelombang menurun). Jadi jawaban yang benar adalah B."
+    explanation: "Unsur radioaktif alami seperti uranium dan radon dapat memancarkan radiasi tanpa pengaruh luar karena inti atomnya tidak stabil dan mengalami peluruhan"
   },
   {
-    question: "Dalam simulasi Radio Waves, gelombang yang memiliki frekuensi lebih rendah secara umum cenderung memiliki …",
+    question: "Radiasi dari tubuh manusia, misalnya yang berasal dari kalium-40, tidak berbahaya bagi kesehatan karena …",
     options: [
-      "Panjang gelombang lebih pendek",
-      "Panjang gelombang lebih panjang",
-      "Energi lebih besar daripada frekuensi tinggi",
-      "Tidak dipengaruhi panjang gelombang",
+      "tidak termasuk radiasi",
+      "tidak memiliki energi sama sekali",
+      "berasal dari proses buatan manusia",
+      "intensitas dan energi radiasinya sangat kecil",
+    ],
+    answer: 4,
+    explanation: "Radiasi dari tubuh manusia, misalnya yang berasal dari kalium-40, tidak berbahaya bagi kesehatan karena intensitas dan energi radiasinya sangat kecil"
+  },
+  {
+    question: "Sinar-X diklasifikasikan sebagai radiasi elektromagnetik dan radiasi pengion karena …",
+    options: [
+      "memiliki massa dan muatan listrik",
+      "berasal dari peluruhan inti atom",
+      "mampu menghasilkan ion saat berinteraksi dengan materi",
+      "tidak dapat merambat di ruang hampa",
+    ],
+    answer: 3,
+    explanation: "Sinar-X diklasifikasikan sebagai radiasi elektromagnetik dan radiasi pengion karena mampu menghasilkan ion saat berinteraksi dengan materi"
+  },
+  {
+    question: "Perbedaan utama antara radiasi elektromagnetik dan radiasi partikel berdasarkan massa adalah …",
+    options: [
+      "radiasi elektromagnetik tidak memiliki massa, sedangkan radiasi partikel memiliki massa",
+      "radiasi partikel tidak membawa energi kinetik",
+      "radiasi elektromagnetik memiliki energi lebih besar",
+      "radiasi partikel tidak dapat berinteraksi dengan materi",
+    ],
+    answer: 1,
+    explanation: "Perbedaan utama antara radiasi elektromagnetik dan radiasi partikel berdasarkan massa adalah radiasi elektromagnetik tidak memiliki massa, sedangkan radiasi partikel memiliki massa"
+  },
+  {
+    question: "Radiasi non-pengion umumnya dianggap lebih aman dibandingkan radiasi pengion karena …",
+    options: [
+      "tidak dapat merambat di ruang hampa",
+      "energinya tidak cukup untuk mengionisasi atom",
+      "tidak berasal dari sumber buatan",
+      "selalu memiliki intensitas sangat kecil",
     ],
     answer: 2,
-    explanation: "B. Gelombang radio frekuensi rendah memiliki panjang gelombang lebih besar. Simulasi menunjukkan gelombang yang lebih lebar/longgar pada frekuensi rendah. Ini sesuai dengan hubungan λ= v/f. Jadi jawaban yang tepat adalah B."
+    explanation: "Radiasi non-pengion umumnya dianggap lebih aman dibandingkan radiasi pengion karena energinya tidak cukup untuk mengionisasi atom"
+  },
+  {
+    question: "Paparan radiasi yang tidak langsung menimbulkan gejala, tetapi dalam jangka panjang dapat menyebabkan kanker, termasuk ke dalam …",
+    options: [
+      "tingkat I",
+      "tingkat II",
+      "tingkat III",
+      "tingkat IV",
+    ],
+    answer: 3,
+    explanation: "Paparan radiasi yang tidak langsung menimbulkan gejala, tetapi dalam jangka panjang dapat menyebabkan kanker, termasuk ke dalam tingkat III"
+  },
+  {
+    question: "Pernyataan yang paling tepat mengenai radiasi tingkat V adalah …",
+    options:[
+      "hanya berbahaya jika terpapar berulang",
+      "tidak menimbulkan efek langsung pada tubuh",
+      "menyebabkan gangguan ringan pada sistem pencernaan",
+      "dapat merusak organ vital dan menyebabkan kematian dalam waktu singkat",
+    ],
+    answer:4,
+    explanation: "Pernyataan yang paling tepat mengenai radiasi tingkat V adalah dapat merusak organ vital dan menyebabkan kematian dalam waktu singkat"
+
+  },
+  {
+    question: "Pemanfaatan sinar-X di bidang medis dianggap efektif karena …",
+    options: [
+    "mampu menghancurkan seluruh jaringan tubuh",
+    "memiliki energi rendah sehingga tidak menembus jaringan",
+    "dapat memperlihatkan struktur organ dalam tanpa tindakan pembedahan",
+    "tidak termasuk radiasi pengion",
+  ],
+  answer: 3,
+  explanation: "Pemanfaatan sinar-X di bidang medis dianggap efektif karena dapat memperlihatkan struktur organ dalam tanpa tindakan pembedahan"
+  },
+  {
+    question: "Radioterapi digunakan dalam pengobatan kanker dengan prinsip …",
+    options: [
+      "mempercepat metabolisme sel sehat",
+      "menargetkan dan merusak sel kanker menggunakan radiasi berenergi tinggi",
+      "mengganti jaringan yang rusak dengan sel buatan",
+      "menurunkan suhu tubuh pasien",
+    ],
+    answer: 2,
+    explanation: "Radioterapi digunakan dalam pengobatan kanker dengan prinsip enargetkan dan merusak sel kanker menggunakan radiasi berenergi tinggi"
+  },
+  {
+    question: "Pemeriksaan bagasi menggunakan sinar-X di bandara relatif aman bagi petugas karena …",
+    options: [
+      "sinar-X yang digunakan berenergi sangat rendah dan dikendalikan",
+      "sinar-X tidak termasuk radiasi",
+      "paparan radiasi tidak dapat memengaruhi manusia",
+      "petugas tidak berada di sekitar sumber radiasi",
+    ],
+    answer: 1,
+    explanation: "Pemeriksaan bagasi menggunakan sinar-X di bandara relatif aman bagi petugas karena sinar-X yang digunakan berenergi sangat rendah dan dikendalikan"
+  },
+  {
+    question: "Peristiwa Chernobyl dan Hiroshima–Nagasaki memberikan pelajaran penting bahwa …",
+    options: [
+      "radiasi hanya berbahaya pada saat ledakan",
+      "radiasi tingkat tinggi dapat menimbulkan dampak jangka panjang bagi manusia dan lingkungan",
+      "teknologi nuklir selalu aman jika digunakan manusia",
+      "radiasi tidak memengaruhi generasi berikutnya",
+    ],
+    answer: 2,
+    explanation:  "Peristiwa Chernobyl dan Hiroshima–Nagasaki memberikan pelajaran penting bahwa radiasi tingkat tinggi dapat menimbulkan dampak jangka panjang bagi manusia dan lingkungan."
+  },
+  {
+    question: "Tindakan paling tepat untuk mengurangi risiko paparan radiasi berlebihan dalam kehidupan sehari-hari adalah …",
+    options: [
+      "menghindari seluruh perangkat elektronik",
+      "menggunakan perangkat elektronik selama mungkin",
+      "memahami sumber radiasi dan menjaga jarak dari sumber yang kuat",
+      "meningkatkan paparan agar tubuh kebal",
+    ],
+    answer: 3,
+    explanation: "Tindakan paling tepat untuk mengurangi risiko paparan radiasi berlebihan dalam kehidupan sehari-hari adalah memahami sumber radiasi dan menjaga jarak dari sumber yang kuat"
   },
 ];
+
+
 
 // letak variabel global
 let index = 0;

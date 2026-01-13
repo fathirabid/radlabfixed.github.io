@@ -835,6 +835,41 @@ a.tbl-biru:hover {
   font-weight: 500;
 }
 
+/* Styling Khusus Daftar (List) */
+.artikel ul {
+    list-style: none; /* Menghilangkan peluru bawaan */
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.artikel li {
+    position: relative;
+    padding-left: 30px; /* Ruang untuk ikon kustom */
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+/* Membuat peluru (bullet) kustom menggunakan pseudo-element */
+.artikel li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px; /* Menyesuaikan posisi vertikal dengan teks */
+    width: 8px;
+    height: 8px;
+    background-color: var(--glow); /* Warna biru (sesuaikan dengan tema Radlab) */
+    border-radius: 50%; /* Membuat bentuk bulat */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+}
+
+/* Styling teks tebal di dalam list agar lebih menonjol */
+.artikel li strong {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+
 /* breadcrumb kontak */
 
 .breadcrumb-wrapper-kontak {
@@ -862,7 +897,6 @@ a.tbl-biru:hover {
     color: var(--text);
     font-weight: 500;
 }
-
 
 /* SECTION SOAL */
 .breadcrumb-wrapper {

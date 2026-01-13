@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 30; //  menit
+let timeLeft = 30 * 20; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -13,94 +13,174 @@ const timerEl = document.getElementById("timer");
 // ======================
 const quizData = [
   {
-    question: "Pada simulasi Blackbody Spectrum, suhu benda dinaikkan dari 3000 K menjadi 8000 K. Perubahan utama yang terlihat pada grafik adalah …",
+    question: "Radiasi didefinisikan sebagai energi yang dipancarkan dari suatu sumber dan dapat merambat melalui ruang. Pernyataan yang paling tepat untuk menjelaskan mekanisme perambatan radiasi adalah …",
     options: [
-      "Puncak spektrum bergeser ke panjang gelombang lebih besar",
-      "Intensitas radiasi menurun dan warna tetap merah",
-      "Puncak spektrum bergeser ke panjang gelombang lebih pendek",
-      "Warna cahaya menjadi lebih gelap",
+      "didominasi oleh radiasi ionisasi",
+      "tersusun terutama dari cahaya tampak dan inframerah",
+      "seluruhnya berupa radiasi ultraviolet berenergi tinggi",
+      "radiasi hanya dapat merambat melalui udara",
     ],
-    answer: 3,
-    explanation: "C. Pada simulasi Blackbody Spectrum, ketika suhu dinaikkan dari 3000 K menjadi 8000 K, terlihat bahwa puncak kurva spektrum berpindah ke arah panjang gelombang yang lebih pendek. Hal ini menandakan bahwa energi radiasi yang dipancarkan semakin besar dan warna cahaya bergeser dari merah menuju biru. Fenomena ini sesuai dengan konsep bahwa benda yang lebih panas memancarkan radiasi dengan energi lebih tinggi, sehingga jawaban yang benar adalah C."
+    answer: 2,
+    explanation: "Radiasi didefinisikan sebagai energi yang dipancarkan dari suatu sumber dan dapat merambat melalui ruang. Pernyataan yang paling tepat untuk menjelaskan mekanisme perambatan radiasi adalah tersusun terutama dari cahaya tampak dan inframerah"
   },
   {
-    question: "Dengan menggunakan simulasi Blackbody Spectrum, warna cahaya yang dominan pada suhu sangat tinggi mendekati 10.000 K adalah …",
+    question: "Radiasi yang mampu menyebabkan mutasi DNA karena energinya cukup untuk melepaskan elektron dari atom tergolong sebagai …",
     options: [
-      "Merah",
-      "Oranye",
-      "Kuning",
-      "Biru",
+      "gelombang radio",
+      "inframerah",
+      "cahaya tampak",
+      "sinar gamma",
     ],
     answer: 4,
-    explanation: "D. Saat suhu pada simulasi mendekati 10.000 K, warna cahaya yang ditampilkan berubah menjadi kebiruan. Warna biru menunjukkan radiasi dengan energi yang tinggi dan panjang gelombang yang pendek. Inilah alasan mengapa bintang yang sangat panas tampak berwarna biru. Berdasarkan pengamatan simulasi, jawaban yang tepat adalah D."
+    explanation: "Radiasi yang mampu menyebabkan mutasi DNA karena energinya cukup untuk melepaskan elektron dari atom tergolong sebagai sinar gamma"
   },
   {
-    question: "Saat jumlah gas rumah kaca pada simulasi Greenhouse Effect ditambah, perubahan yang paling tepat adalah …",
+    question: "Perhatikan pernyataan berikut: (1) Digunakan dalam sistem komunikasi nirkabel; (2) Menyebabkan pemanasan tanpa merusak struktur kimia sel;  (3) Memerlukan pengawasan ketat karena dapat merusak DNA; (4) Tidak mampu mengionisasi atom. Pernyataan yang sesuai dengan radiasi non-ionisasi adalah ……",
     options: [
-      "Lebih banyak panas keluar ke luar angkasa",
-      "Suhu permukaan Bumi menurun",
-      "Panas lebih banyak terperangkap di atmosfer",
-      "Radiasi Matahari tidak mencapai Bumi",
-    ],
-    answer: 3,
-    explanation: "C. Pada simulasi Greenhouse Effect, ketika jumlah gas rumah kaca ditambah, terlihat bahwa lebih banyak radiasi panas yang terperangkap di atmosfer dan tidak langsung keluar ke luar angkasa. Akibatnya, suhu permukaan Bumi meningkat. Hal ini menunjukkan bahwa gas rumah kaca berfungsi menahan panas, sehingga jawaban yang benar adalah C."
-  },
-  {
-    question: "Jika jumlah gas rumah kaca dikurangi pada simulasi, maka yang terjadi adalah …",
-    options: [
-      "Suhu Bumi meningkat drastis",
-      "Panas lebih mudah keluar dari atmosfer",
-      "Cahaya Matahari terpantul seluruhnya",
-      "Cahaya Matahari terpantul seluruhnya",
+      "(1), (2), dan (3)",
+      "(1), (2), dan (4)",
+      "(1) dan (3)",
+      "(2), (3), dan (4)",
     ],
     answer: 2,
-    explanation: "B. Jika jumlah gas rumah kaca pada simulasi dikurangi, maka panas yang dipancarkan oleh permukaan Bumi lebih mudah lepas ke luar angkasa. Akibatnya, suhu permukaan menurun. Dari pengamatan ini dapat disimpulkan bahwa gas rumah kaca sangat berperan dalam menjaga suhu Bumi, sehingga jawaban yang tepat adalah B."
+    explanation: "Perhatikan pernyataan berikut: (1) Digunakan dalam sistem komunikasi nirkabel; (2) Menyebabkan pemanasan tanpa merusak struktur kimia sel;  (3) Memerlukan pengawasan ketat karena dapat merusak DNA; (4) Tidak mampu mengionisasi atom. Pernyataan yang sesuai dengan radiasi non-ionisasi adalah (1), (2), dan (4)"
   },
   {
-    question: "Saat kamu memilih mode “Additive Mixing” (pencampuran tambah), tiga slider warna utama adalah merah (R), hijau (G), dan biru (B). Jika kamu menggeser semua slider ke nilai tertinggi sekaligus (R = 100, G = 100, B = 100), warna yang dihasilkan akan menjadi …",
+    question: "Penggunaan sinar X dalam pemeriksaan medis selalu dibatasi dosisnya. Fakta ini menunjukkan bahwa sinar X …",
     options: [
-      "Hitam",
-      "Merah",
-      "Putih",
-      "Hijau",
+      "sepenuhnya aman bagi jaringan tubuh",
+      "termasuk radiasi non-ionisasi",
+      "bersifat ionisasi tetapi memiliki manfaat jika dikendalikan",
+      "hanya berinteraksi dengan tulang dan tidak dengan jaringan lain",
     ],
     answer: 3,
-    explanation: "C. Ketika semua slider warna merah, hijau, dan biru dinaikkan ke nilai maksimum pada mode Additive Mixing, simulasi menunjukkan warna putih. Hal ini terjadi karena pada pencampuran cahaya secara aditif, penjumlahan cahaya merah, hijau, dan biru dengan intensitas penuh menghasilkan cahaya putih. Inilah alasan layar televisi dan ponsel menggunakan sistem RGB untuk menghasilkan berbagai warna."
+    explanation: "Penggunaan sinar X dalam pemeriksaan medis selalu dibatasi dosisnya. Fakta ini menunjukkan bahwa sinar X bersifat ionisasi tetapi memiliki manfaat jika dikendalikan"
   },
   {
-    question: "Jika kamu mematikan warna hijau (G) dan biru (B) (nilai 0), dan hanya menaikkan nilai merah (R) pada mode “Additive Mixing”, warna yang terlihat pada layar akan cenderung …",
+    question: "Analogi radiasi non-ionisasi sebagai “hembusan angin” dan radiasi ionisasi sebagai “peluru kecil” menekankan perbedaan utama pada …",
     options: [
-      "Biru",
-      "Kuning",
-      "Merah",
-      "Putih",
+      "kecepatan rambat radiasi",
+      "bentuk fisik radiasi",
+      "besar energi dan dampaknya terhadap struktur sel",
+      "sumber radiasi yang dihasilkan",
     ],
     answer: 3,
-    explanation: "C. Saat hanya cahaya merah yang dinyalakan dan cahaya hijau serta biru dimatikan, warna yang terlihat pada simulasi adalah merah. Ini membuktikan bahwa tanpa campuran cahaya lain, warna yang tampak akan sama dengan warna sumber cahaya yang aktif. Simulasi membantu siswa memahami bahwa warna cahaya tidak selalu hasil campuran, tetapi bisa berasal dari satu komponen saja."
+    explanation: "Analogi radiasi non-ionisasi sebagai “hembusan angin” dan radiasi ionisasi sebagai “peluru kecil” menekankan perbedaan utama pada besar energi dan dampaknya terhadap struktur sel"
   },
   {
-    question: "Saat kamu menyesuaikan frekuensi gelombang radio dalam simulasi, apa yang terjadi pada jarak antara puncak gelombang (panjang gelombang)?...",
+    question: "Salah satu alasan sinar matahari dapat mencapai Bumi meskipun ruang antarplanet merupakan vakum adalah karena sinar matahari termasuk …",
     options: [
-      "Semakin tinggi frekuensi → panjang gelombang semakin besar",
-      "Semakin tinggi frekuensi → panjang gelombang semakin kecil",
-      "Frekuensi tidak berpengaruh pada panjang gelombang",
-      "Panjang gelombang tetap sama di semua frekuensi",
+      "radiasi partikel bermassa",
+      "radiasi elektromagnetik yang tidak memerlukan medium",
+      "radiasi bermuatan listrik",
+      "radiasi ionisasi berenergi tinggi",
     ],
     answer: 2,
-    explanation: "B. Dalam gelombang, frekuensi dan panjang gelombang berbanding terbalik. Ini bisa kamu lihat langsung di simulasi ketika mengubah nilai frekuensi; semakin tinggi frekuensi semakin rapat gelombangnya (panjang gelombang menurun). Jadi jawaban yang benar adalah B."
+    explanation: "Salah satu alasan sinar matahari dapat mencapai Bumi meskipun ruang antarplanet merupakan vakum adalah karena sinar matahari termasuk radiasi elektromagnetik yang tidak memerlukan medium"
   },
   {
-    question: "Dalam simulasi Radio Waves, gelombang yang memiliki frekuensi lebih rendah secara umum cenderung memiliki …",
+    question: "Urutan spektrum elektromagnetik berikut yang benar dari energi terendah ke energi tertinggi adalah …",
     options: [
-      "Panjang gelombang lebih pendek",
-      "Panjang gelombang lebih panjang",
-      "Energi lebih besar daripada frekuensi tinggi",
-      "Tidak dipengaruhi panjang gelombang",
+      "Inframerah – cahaya tampak – gelombang radio – sinar gamma",
+      "Gelombang radio – gelombang mikro – inframerah – cahaya tampak",
+      "Ultraviolet – cahaya tampak – inframerah – gelombang mikro",
+      "Gelombang mikro – gelombang radio – cahaya tampak – inframerah",
     ],
     answer: 2,
-    explanation: "B. Gelombang radio frekuensi rendah memiliki panjang gelombang lebih besar. Simulasi menunjukkan gelombang yang lebih lebar/longgar pada frekuensi rendah. Ini sesuai dengan hubungan λ= v/f. Jadi jawaban yang tepat adalah B."
+    explanation: "Urutan spektrum elektromagnetik berikut yang benar dari energi terendah ke energi tertinggi adalah Gelombang radio – gelombang mikro – inframerah – cahaya tampak"
+  },
+  {
+    question: "Radiasi elektromagnetik yang berperan penting dalam fotosintesis tumbuhan dan penglihatan manusia adalah …",
+    options: [
+      "inframerah",
+      "ultraviolet",
+      "cahaya tampak",
+      "gelombang mikro",
+    ],
+    answer: 3,
+    explanation: "Radiasi elektromagnetik yang berperan penting dalam fotosintesis tumbuhan dan penglihatan manusia adalah cahaya tampak"
+  },
+  {
+    question: "Partikel alfa memiliki daya tembus sangat rendah, namun tetap berbahaya jika masuk ke dalam tubuh. Hal ini terutama disebabkan oleh …",
+    options: [
+      "massanya kecil sehingga bergerak cepat",
+      "kemampuannya merambat di ruang hampa",
+      "energi yang diserap jaringan sangat besar pada jarak dekat",
+      "muatannya yang netral",
+    ],
+    answer: 3,
+    explanation: "Partikel alfa memiliki daya tembus sangat rendah, namun tetap berbahaya jika masuk ke dalam tubuh. Hal ini terutama disebabkan oleh energi yang diserap jaringan sangat besar pada jarak dekat"
+  },
+  {
+    question: "Jenis radiasi berikut yang tidak bermuatan listrik, memiliki daya tembus sangat tinggi, dan memerlukan pelindung berupa air atau beton adalah …",
+    options:[
+      "partikel alfa",
+      "partikel beta",
+      "sinar gamma",
+      "neutron",
+    ],
+    answer:4,
+    explanation: "Jenis radiasi berikut yang tidak bermuatan listrik, memiliki daya tembus sangat tinggi, dan memerlukan pelindung berupa air atau beton adalah neutron"
+
+  },
+  {
+    question: "Penggunaan lapisan aluminium tipis sebagai pelindung paling efektif untuk menahan radiasi …",
+    options: [
+    "alfa",
+    "beta",
+    "gamma",
+    "neutron",
+  ],
+  answer: 2,
+  explanation: "Penggunaan lapisan aluminium tipis sebagai pelindung paling efektif untuk menahan radiasi beta"
+  },
+  {
+    question: "Pernyataan berikut yang paling tepat mengenai radiasi dalam kehidupan sehari-hari adalah …",
+    options: [
+      "Semua radiasi yang berasal dari Matahari bersifat ionisasi",
+      "Gelombang radio dari HP dan WiFi termasuk radiasi partikel",
+      "Oven microwave memanaskan makanan melalui radiasi non-ionisasi",
+      "Sinar X di rumah sakit aman digunakan tanpa pembatasan dosis",
+    ],
+    answer: 3,
+    explanation: "Pernyataan berikut yang paling tepat mengenai radiasi dalam kehidupan sehari-hari adalah Oven microwave memanaskan makanan melalui radiasi non-ionisasi"
+  },
+  {
+    question: "Suatu radiasi elektromagnetik memiliki frekuensi sebesar \\( f = 5 \\times 10^{14} \\, \\text{Hz} \\). Jika konstanta Planck \\( h = 6{,}63 \\times 10^{-34} \\, \\text{J/s} \\), maka energi satu foton radiasi tersebut adalah …",
+    options: [
+      "3,3 × 10<sup>-19</sup> J",
+      "3,3 × 10<sup>-20</sup> J",
+      "1,3 × 10<sup>-19</sup> J",
+      "1,3 × 10<sup>-20</sup> J",
+    ],
+    answer: 1,
+    explanation: "Suatu radiasi elektromagnetik memiliki frekuensi sebesar \\( f = 5 \\times 10^{14} \\, \\text{Hz} \\). Jika konstanta Planck \\( h = 6{,}63 \\times 10^{-34} \\, \\text{J/s} \\), maka energi satu foton radiasi tersebut adalah 3,3 × 10<sup>-19</sup> J "
+  },
+  {
+    question: "Sinar ultraviolet memiliki panjang gelombang  &lambda; = 200 nm.<br> Jika cepat rambat cahaya  c = 3,0 × 10<sup>8</sup> m/s<br> h = 6,63 × 10<sup>-34</sup> J/s,<br> maka energi satu foton sinar tersebut adalah …",
+    options: [  
+      "9,9 × 10<sup>-19</sup> J",
+      "6,6 × 10<sup>-19</sup> J",
+      "3,3 × 10<sup>-19</sup> J",
+      "1,0 × 10<sup>-19</sup> J",
+    ],
+    answer: 1,
+    explanation:  "Sinar ultraviolet memiliki panjang gelombang  &lambda; = 200 nm.<br> Jika cepat rambat cahaya  c = 3,0 × 10<sup>8</sup> m/s<br> h = 6,63 × 10<sup>-34</sup> J/s,<br> maka energi satu foton sinar tersebut adalah 9,9 × 10<sup>-19</sup> J"
+  },
+  {
+    question: "Intensitas radiasi pada jarak 2 m dari suatu sumber adalah I<sub>1</sub> = 80 W/m<sup>2</sup>.<br> Berapakah intensitas radiasi pada jarak 4 m dari sumber yang sama?",
+    options: [
+      "40 W/m<sup>2</sup>",
+      "20 W/m<sup>2</sup>",
+      "10 W/m<sup>2</sup>",
+      "5 W/m<sup>2</sup>",
+    ],
+    answer: 3,
+    explanation: "Intensitas radiasi pada jarak 2 m dari suatu sumber adalah I<sub>1</sub> = 80 W/m<sup>2</sup>.<br> Berapakah intensitas radiasi pada jarak 4 m dari sumber yang sama 10 W/m<sup>2</sup>"
   },
 ];
+
+
 
 // letak variabel global
 let index = 0;

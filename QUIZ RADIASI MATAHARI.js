@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 30; //  menit
+let timeLeft = 30 * 20; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -13,94 +13,174 @@ const timerEl = document.getElementById("timer");
 // ======================
 const quizData = [
   {
-    question: "Pada simulasi Blackbody Spectrum, suhu benda dinaikkan dari 3000 K menjadi 8000 K. Perubahan utama yang terlihat pada grafik adalah …",
+    question: "Radiasi matahari dapat mencapai permukaan Bumi meskipun ruang antara Matahari dan Bumi merupakan ruang hampa. Hal ini terjadi karena radiasi matahari …",
     options: [
-      "Puncak spektrum bergeser ke panjang gelombang lebih besar",
-      "Intensitas radiasi menurun dan warna tetap merah",
-      "Puncak spektrum bergeser ke panjang gelombang lebih pendek",
-      "Warna cahaya menjadi lebih gelap",
-    ],
-    answer: 3,
-    explanation: "C. Pada simulasi Blackbody Spectrum, ketika suhu dinaikkan dari 3000 K menjadi 8000 K, terlihat bahwa puncak kurva spektrum berpindah ke arah panjang gelombang yang lebih pendek. Hal ini menandakan bahwa energi radiasi yang dipancarkan semakin besar dan warna cahaya bergeser dari merah menuju biru. Fenomena ini sesuai dengan konsep bahwa benda yang lebih panas memancarkan radiasi dengan energi lebih tinggi, sehingga jawaban yang benar adalah C."
-  },
-  {
-    question: "Dengan menggunakan simulasi Blackbody Spectrum, warna cahaya yang dominan pada suhu sangat tinggi mendekati 10.000 K adalah …",
-    options: [
-      "Merah",
-      "Oranye",
-      "Kuning",
-      "Biru",
-    ],
-    answer: 4,
-    explanation: "D. Saat suhu pada simulasi mendekati 10.000 K, warna cahaya yang ditampilkan berubah menjadi kebiruan. Warna biru menunjukkan radiasi dengan energi yang tinggi dan panjang gelombang yang pendek. Inilah alasan mengapa bintang yang sangat panas tampak berwarna biru. Berdasarkan pengamatan simulasi, jawaban yang tepat adalah D."
-  },
-  {
-    question: "Saat jumlah gas rumah kaca pada simulasi Greenhouse Effect ditambah, perubahan yang paling tepat adalah …",
-    options: [
-      "Lebih banyak panas keluar ke luar angkasa",
-      "Suhu permukaan Bumi menurun",
-      "Panas lebih banyak terperangkap di atmosfer",
-      "Radiasi Matahari tidak mencapai Bumi",
-    ],
-    answer: 3,
-    explanation: "C. Pada simulasi Greenhouse Effect, ketika jumlah gas rumah kaca ditambah, terlihat bahwa lebih banyak radiasi panas yang terperangkap di atmosfer dan tidak langsung keluar ke luar angkasa. Akibatnya, suhu permukaan Bumi meningkat. Hal ini menunjukkan bahwa gas rumah kaca berfungsi menahan panas, sehingga jawaban yang benar adalah C."
-  },
-  {
-    question: "Jika jumlah gas rumah kaca dikurangi pada simulasi, maka yang terjadi adalah …",
-    options: [
-      "Suhu Bumi meningkat drastis",
-      "Panas lebih mudah keluar dari atmosfer",
-      "Cahaya Matahari terpantul seluruhnya",
-      "Cahaya Matahari terpantul seluruhnya",
+      "berupa aliran partikel bermassa yang memerlukan medium",
+      "merambat sebagai gelombang elektromagnetik yang tidak memerlukan medium",
+      "hanya terdiri dari radiasi inframerah",
+      "sepenuhnya diserap oleh atmosfer",
     ],
     answer: 2,
-    explanation: "B. Jika jumlah gas rumah kaca pada simulasi dikurangi, maka panas yang dipancarkan oleh permukaan Bumi lebih mudah lepas ke luar angkasa. Akibatnya, suhu permukaan menurun. Dari pengamatan ini dapat disimpulkan bahwa gas rumah kaca sangat berperan dalam menjaga suhu Bumi, sehingga jawaban yang tepat adalah B."
+    explanation: "Radiasi matahari dapat mencapai permukaan Bumi meskipun ruang antara Matahari dan Bumi merupakan ruang hampa. Hal ini terjadi karena radiasi matahari merambat sebagai gelombang elektromagnetik yang tidak memerlukan medium"
   },
   {
-    question: "Saat kamu memilih mode “Additive Mixing” (pencampuran tambah), tiga slider warna utama adalah merah (R), hijau (G), dan biru (B). Jika kamu menggeser semua slider ke nilai tertinggi sekaligus (R = 100, G = 100, B = 100), warna yang dihasilkan akan menjadi …",
+    question: "Pernyataan yang paling tepat mengenai radiasi ultraviolet (UV) dari Matahari adalah …",
     options: [
-      "Hitam",
-      "Merah",
-      "Putih",
-      "Hijau",
-    ],
-    answer: 3,
-    explanation: "C. Ketika semua slider warna merah, hijau, dan biru dinaikkan ke nilai maksimum pada mode Additive Mixing, simulasi menunjukkan warna putih. Hal ini terjadi karena pada pencampuran cahaya secara aditif, penjumlahan cahaya merah, hijau, dan biru dengan intensitas penuh menghasilkan cahaya putih. Inilah alasan layar televisi dan ponsel menggunakan sistem RGB untuk menghasilkan berbagai warna."
-  },
-  {
-    question: "Jika kamu mematikan warna hijau (G) dan biru (B) (nilai 0), dan hanya menaikkan nilai merah (R) pada mode “Additive Mixing”, warna yang terlihat pada layar akan cenderung …",
-    options: [
-      "Biru",
-      "Kuning",
-      "Merah",
-      "Putih",
-    ],
-    answer: 3,
-    explanation: "C. Saat hanya cahaya merah yang dinyalakan dan cahaya hijau serta biru dimatikan, warna yang terlihat pada simulasi adalah merah. Ini membuktikan bahwa tanpa campuran cahaya lain, warna yang tampak akan sama dengan warna sumber cahaya yang aktif. Simulasi membantu siswa memahami bahwa warna cahaya tidak selalu hasil campuran, tetapi bisa berasal dari satu komponen saja."
-  },
-  {
-    question: "Saat kamu menyesuaikan frekuensi gelombang radio dalam simulasi, apa yang terjadi pada jarak antara puncak gelombang (panjang gelombang)?...",
-    options: [
-      "Semakin tinggi frekuensi → panjang gelombang semakin besar",
-      "Semakin tinggi frekuensi → panjang gelombang semakin kecil",
-      "Frekuensi tidak berpengaruh pada panjang gelombang",
-      "Panjang gelombang tetap sama di semua frekuensi",
+      "Seluruh radiasi UV bersifat ionisasi dan langsung merusak DNA",
+      "Radiasi UV termasuk non-ionisasi tetapi dapat menimbulkan efek biologis",
+      "Radiasi UV tidak memiliki dampak bagi kesehatan manusia",
+      "Radiasi UV hanya bermanfaat dan tidak berbahaya",
     ],
     answer: 2,
-    explanation: "B. Dalam gelombang, frekuensi dan panjang gelombang berbanding terbalik. Ini bisa kamu lihat langsung di simulasi ketika mengubah nilai frekuensi; semakin tinggi frekuensi semakin rapat gelombangnya (panjang gelombang menurun). Jadi jawaban yang benar adalah B."
+    explanation: "Pernyataan yang paling tepat mengenai radiasi ultraviolet (UV) dari Matahari adalah Radiasi UV termasuk non-ionisasi tetapi dapat menimbulkan efek biologis"
   },
   {
-    question: "Dalam simulasi Radio Waves, gelombang yang memiliki frekuensi lebih rendah secara umum cenderung memiliki …",
+    question: "Jenis sinar UV yang paling banyak mencapai permukaan Bumi dan berperan besar dalam penuaan kulit jangka panjang adalah …",
     options: [
-      "Panjang gelombang lebih pendek",
-      "Panjang gelombang lebih panjang",
-      "Energi lebih besar daripada frekuensi tinggi",
-      "Tidak dipengaruhi panjang gelombang",
+      "UVC",
+      "UVB",
+      "UVA",
+      "Sinar Inframerah",
+    ],
+    answer: 3,
+    explanation: "Jenis sinar UV yang paling banyak mencapai permukaan Bumi dan berperan besar dalam penuaan kulit jangka panjang adalah UVA"
+  },
+  {
+    question: "Seorang siswa mengalami kulit memerah dan perih setelah berjemur di bawah sinar matahari dalam waktu singkat pada siang hari. Jenis radiasi UV yang paling berperan dalam kejadian tersebut adalah …",
+    options: [
+      "UVA",
+      "UVB",
+      "UVC",
+      "Cahaya Tampak",
     ],
     answer: 2,
-    explanation: "B. Gelombang radio frekuensi rendah memiliki panjang gelombang lebih besar. Simulasi menunjukkan gelombang yang lebih lebar/longgar pada frekuensi rendah. Ini sesuai dengan hubungan λ= v/f. Jadi jawaban yang tepat adalah B."
+    explanation: "Seorang siswa mengalami kulit memerah dan perih setelah berjemur di bawah sinar matahari dalam waktu singkat pada siang hari. Jenis radiasi UV yang paling berperan dalam kejadian tersebut adalah UVB "
+  },
+  {
+    question: "Radiasi UVC dari Matahari tidak menimbulkan dampak langsung bagi manusia di permukaan Bumi karena …",
+    options: [
+      "energinya terlalu kecil untuk memengaruhi tubuh",
+      "panjang gelombangnya paling besar",
+      "hampir seluruhnya diserap oleh atmosfer Bumi",
+      "hanya dipancarkan pada malam hari",
+    ],
+    answer: 3,
+    explanation: "Radiasi UVC dari Matahari tidak menimbulkan dampak langsung bagi manusia di permukaan Bumi karena hampir seluruhnya diserap oleh atmosfer Bumi"
+  },
+  {
+    question: "Paparan sinar matahari dalam durasi singkat dan terkontrol justru dianjurkan bagi kesehatan karena …",
+    options: [
+      "seluruh radiasi UV aman bagi kulit",
+      "membantu pembentukan vitamin D yang penting bagi tulang dan sistem imun",
+      "mencegah penuaan kulit secara total",
+      "menghilangkan risiko kanker kulit",
+    ],
+    answer: 2,
+    explanation: "Paparan sinar matahari dalam durasi singkat dan terkontrol justru dianjurkan bagi kesehatan karena membantu pembentukan vitamin D yang penting bagi tulang dan sistem imun "
+  },
+  {
+    question: "Seorang siswa sering beraktivitas di luar ruangan tanpa perlindungan dan mulai mengalami keriput serta noda kulit meskipun masih muda. Dampak tersebut paling tepat disebabkan oleh …",
+    options: [
+      "paparan UVB jangka pendek",
+      "paparan UVA jangka panjang",
+      "radiasi inframerah dari Matahari",
+      "kekurangan vitamin D",
+    ],
+    answer: 2,
+    explanation: "Seorang siswa sering beraktivitas di luar ruangan tanpa perlindungan dan mulai mengalami keriput serta noda kulit meskipun masih muda. Dampak tersebut paling tepat disebabkan oleh paparan UVA jangka panjang "
+  },
+  {
+    question: "Seorang pekerja mengalami kulit memerah dan nyeri setelah bekerja di bawah terik Matahari selama beberapa jam. Gejala ini merupakan indikasi terjadinya …",
+    options: [
+      "photoaging akibat UVA",
+      "sunburn akibat UVB",
+      "imunosupresi akibat UVC",
+      "katarak akibat cahaya tampak",
+    ],
+    answer: 2,
+    explanation: "Seorang pekerja mengalami kulit memerah dan nyeri setelah bekerja di bawah terik Matahari selama beberapa jam. Gejala ini merupakan indikasi terjadinya sunburn akibat UVB"
+  },
+  {
+    question: "Intensitas radiasi UV cenderung paling tinggi pada rentang waktu pukul 10.00–16.00 karena …",
+    options: [
+      "Matahari memancarkan lebih banyak energi pada waktu tersebut",
+      "posisi Matahari lebih rendah sehingga sinar menyebar",
+      "jalur radiasi melalui atmosfer lebih pendek",
+      "refleksi permukaan Bumi berkurang",
+    ],
+    answer: 3,
+    explanation: "Intensitas radiasi UV cenderung paling tinggi pada rentang waktu pukul 10.00–16.00 karena jalur radiasi melalui atmosfer lebih pendek"
+  },
+  {
+    question: "Paparan radiasi UV tetap dapat berbahaya meskipun cuaca mendung. Hal ini disebabkan oleh …",
+    options:[
+      "awan memantulkan seluruh radiasi UV ke permukaan",
+      "radiasi UV dapat menembus awan dalam jumlah tertentu",
+      "suhu udara rendah meningkatkan energi UV",
+      "cahaya tampak berubah menjadi UV",
+    ],
+    answer:2,
+    explanation: "Paparan radiasi UV tetap dapat berbahaya meskipun cuaca mendung. Hal ini disebabkan oleh radiasi UV dapat menembus awan dalam jumlah tertentu"
+
+  },
+  {
+    question: "Paparan radiasi UV pada manusia tidak dinilai hanya dari satu kali kejadian, melainkan dari akumulasi paparan selama bertahun-tahun. Hal ini terutama karena …",
+    options: [
+    "efek radiasi UV hanya muncul pada usia lanjut",
+    "tubuh manusia tidak mampu memperbaiki kerusakan akibat UV",
+    "radiasi UV dapat menyebabkan kerusakan kronis yang bersifat kumulatif",
+    "intensitas UV selalu sama setiap hari",
+  ],
+  answer: 3,
+  explanation: "Paparan radiasi UV pada manusia tidak dinilai hanya dari satu kali kejadian, melainkan dari akumulasi paparan selama bertahun-tahun. Hal ini terutama karena radiasi UV dapat menyebabkan kerusakan kronis yang bersifat kumulatif"
+  },
+  {
+    question: "Seorang petugas keamanan bekerja di luar ruangan dari pukul 09.00 hingga 16.00 setiap hari. Risiko kesehatan yang paling meningkat akibat kondisi tersebut adalah …",
+    options: [
+      "gangguan pendengaran",
+      "penurunan suhu tubuh",
+      "kerusakan kulit dan mata akibat paparan UV berulang",
+      "kekurangan vitamin D",
+    ],
+    answer: 3,
+    explanation: "Seorang petugas keamanan bekerja di luar ruangan dari pukul 09.00 hingga 16.00 setiap hari. Risiko kesehatan yang paling meningkat akibat kondisi tersebut adalah kerusakan kulit dan mata akibat paparan UV berulang"
+  },
+  {
+    question: "Penggunaan sunscreen dengan SPF 30 dan bersifat broad-spectrum dianjurkan karena …",
+    options: [
+      "sepenuhnya menghilangkan paparan radiasi UV",
+      "hanya melindungi dari radiasi UVA",
+      "mampu mengurangi paparan UVA dan UVB secara bersamaan",
+      "menggantikan fungsi pakaian pelindung",
+    ],
+    answer: 3,
+    explanation: "Penggunaan sunscreen dengan SPF 30 dan bersifat broad-spectrum dianjurkan karena mampu mengurangi paparan UVA dan UVB secara bersamaan "
+  },
+  {
+    question: "Meskipun menggunakan sunscreen, tubuh masih dapat memproduksi vitamin D apabila …",
+    options: [  
+      "paparan dilakukan singkat dan tidak sampai menyebabkan sunburn",
+      "paparan dilakukan pada jam puncak UV",
+      "sunscreen digunakan dengan SPF sangat tinggi sepanjang hari",
+      "paparan hanya berasal dari cahaya tampak",
+    ],
+    answer: 1,
+    explanation:  "Meskipun menggunakan sunscreen, tubuh masih dapat memproduksi vitamin D apabila paparan dilakukan singkat dan tidak sampai menyebabkan sunburn"
+  },
+  {
+    question: "Alasan utama mengapa upaya perlindungan terhadap radiasi matahari dianjurkan sejak usia muda adalah …",
+    options: [
+      "kulit remaja lebih tebal dibandingkan orang dewasa",
+      "dampak radiasi UV bersifat langsung dan tidak berjangka panjang",
+      "efek paparan UV dapat terakumulasi dan baru tampak setelah bertahun-tahun",
+      "radiasi UV hanya berbahaya bagi anak-anak",
+    ],
+    answer: 3,
+    explanation: "Alasan utama mengapa upaya perlindungan terhadap radiasi matahari dianjurkan sejak usia muda adalah efek paparan UV dapat terakumulasi dan baru tampak setelah bertahun-tahun"
   },
 ];
+
+
 
 // letak variabel global
 let index = 0;
