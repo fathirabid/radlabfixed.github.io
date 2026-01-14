@@ -600,11 +600,99 @@ a.tbl-biru:hover {
     text-align: center;
     margin-top: 0px;      /* Jarak minimal ke card di atasnya */
     padding-top: 10px;
-    margin-bottom: 100px;
 }
 
 .pusat-tombol .tbl-biru {
     padding: 10px 30px;   /* Ukuran tombol lebih proporsional */
+}
+
+/* SECTION PETA */
+/* SECTION PETA PENGGUNA - VERSI RAMPING */
+#peta-pengguna {
+    background: #0f172a; /* Menyesuaikan warna background RADLAB */
+    padding: 60px 8%; /* Padding lebih kecil agar tidak terlalu tinggi */
+    overflow: hidden;
+}
+
+.peta-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.peta-visual {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* KUNCI: Membatasi tinggi area gambar agar ramping */
+    max-height: 350px; 
+}
+
+.peta-visual img {
+    width: 100%;
+    max-width: 920px; /* Batas lebar peta agar tidak raksasa */
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(127, 124, 255, 0.2));
+    margin-bottom: 50px;
+}
+
+.peta-teks {
+    flex: 0.8;
+}
+
+.judul-peta {
+    font-size: 32px; /* Ukuran disesuaikan agar proporsional */
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.judul-peta span {
+    color: #7f7cff; /* Aksen ungu sesuai RADLAB */
+}
+
+.peta-teks p {
+    color: #b6c2d9; /* Warna muted agar teks tidak terlalu tajam */
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Tombol ungu sesuai referensi gambar Gradient */
+.tbl-ungu {
+    background: #6366f1; /* Warna aksen ungu RADLAB */
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.tbl-ungu:hover {
+    background: #4f46e5;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+    .peta-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .peta-visual {
+        max-height: 250px;
+    }
+
+    .judul-peta {
+        font-size: 24px;
+    }
 }
 
 /* SECTION VIDEO & ARTIKEL, dan MATERI */
