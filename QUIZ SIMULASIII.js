@@ -20,7 +20,7 @@ const quizData = [
       "Puncak spektrum bergeser ke panjang gelombang lebih pendek",
       "Warna cahaya menjadi lebih gelap",
     ],
-    answer: 3,
+    answer: 2,
     explanation: "C. Pada simulasi Blackbody Spectrum, ketika suhu dinaikkan dari 3000 K menjadi 8000 K, terlihat bahwa puncak kurva spektrum berpindah ke arah panjang gelombang yang lebih pendek. Hal ini menandakan bahwa energi radiasi yang dipancarkan semakin besar dan warna cahaya bergeser dari merah menuju biru. Fenomena ini sesuai dengan konsep bahwa benda yang lebih panas memancarkan radiasi dengan energi lebih tinggi, sehingga jawaban yang benar adalah C."
   },
   {
@@ -31,7 +31,7 @@ const quizData = [
       "Kuning",
       "Biru",
     ],
-    answer: 4,
+    answer: 3,
     explanation: "D. Saat suhu pada simulasi mendekati 10.000 K, warna cahaya yang ditampilkan berubah menjadi kebiruan. Warna biru menunjukkan radiasi dengan energi yang tinggi dan panjang gelombang yang pendek. Inilah alasan mengapa bintang yang sangat panas tampak berwarna biru. Berdasarkan pengamatan simulasi, jawaban yang tepat adalah D."
   },
   {
@@ -42,7 +42,7 @@ const quizData = [
       "Panas lebih banyak terperangkap di atmosfer",
       "Radiasi Matahari tidak mencapai Bumi",
     ],
-    answer: 3,
+    answer: 2,
     explanation: "C. Pada simulasi Greenhouse Effect, ketika jumlah gas rumah kaca ditambah, terlihat bahwa lebih banyak radiasi panas yang terperangkap di atmosfer dan tidak langsung keluar ke luar angkasa. Akibatnya, suhu permukaan Bumi meningkat. Hal ini menunjukkan bahwa gas rumah kaca berfungsi menahan panas, sehingga jawaban yang benar adalah C."
   },
   {
@@ -53,7 +53,7 @@ const quizData = [
       "Cahaya Matahari terpantul seluruhnya",
       "Cahaya Matahari terpantul seluruhnya",
     ],
-    answer: 2,
+    answer: 1,
     explanation: "B. Jika jumlah gas rumah kaca pada simulasi dikurangi, maka panas yang dipancarkan oleh permukaan Bumi lebih mudah lepas ke luar angkasa. Akibatnya, suhu permukaan menurun. Dari pengamatan ini dapat disimpulkan bahwa gas rumah kaca sangat berperan dalam menjaga suhu Bumi, sehingga jawaban yang tepat adalah B."
   },
   {
@@ -64,7 +64,7 @@ const quizData = [
       "Putih",
       "Hijau",
     ],
-    answer: 3,
+    answer: 2,
     explanation: "C. Ketika semua slider warna merah, hijau, dan biru dinaikkan ke nilai maksimum pada mode Additive Mixing, simulasi menunjukkan warna putih. Hal ini terjadi karena pada pencampuran cahaya secara aditif, penjumlahan cahaya merah, hijau, dan biru dengan intensitas penuh menghasilkan cahaya putih. Inilah alasan layar televisi dan ponsel menggunakan sistem RGB untuk menghasilkan berbagai warna."
   },
   {
@@ -75,7 +75,7 @@ const quizData = [
       "Merah",
       "Putih",
     ],
-    answer: 3,
+    answer: 2,
     explanation: "C. Saat hanya cahaya merah yang dinyalakan dan cahaya hijau serta biru dimatikan, warna yang terlihat pada simulasi adalah merah. Ini membuktikan bahwa tanpa campuran cahaya lain, warna yang tampak akan sama dengan warna sumber cahaya yang aktif. Simulasi membantu siswa memahami bahwa warna cahaya tidak selalu hasil campuran, tetapi bisa berasal dari satu komponen saja."
   },
   {
@@ -86,7 +86,7 @@ const quizData = [
       "Frekuensi tidak berpengaruh pada panjang gelombang",
       "Panjang gelombang tetap sama di semua frekuensi",
     ],
-    answer: 2,
+    answer: 1,
     explanation: "B. Dalam gelombang, frekuensi dan panjang gelombang berbanding terbalik. Ini bisa kamu lihat langsung di simulasi ketika mengubah nilai frekuensi; semakin tinggi frekuensi semakin rapat gelombangnya (panjang gelombang menurun). Jadi jawaban yang benar adalah B."
   },
   {
@@ -97,7 +97,7 @@ const quizData = [
       "Energi lebih besar daripada frekuensi tinggi",
       "Tidak dipengaruhi panjang gelombang",
     ],
-    answer: 2,
+    answer: 1,
     explanation: "B. Gelombang radio frekuensi rendah memiliki panjang gelombang lebih besar. Simulasi menunjukkan gelombang yang lebih lebar/longgar pada frekuensi rendah. Ini sesuai dengan hubungan λ= v/f. Jadi jawaban yang tepat adalah B."
   },
 ];
