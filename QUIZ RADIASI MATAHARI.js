@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 20; //  menit
+let timeLeft = 30 * 40; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -20,8 +20,8 @@ const quizData = [
       "hanya terdiri dari radiasi inframerah",
       "sepenuhnya diserap oleh atmosfer",
     ],
-    answer: 2,
-    explanation: "Radiasi matahari dapat mencapai permukaan Bumi meskipun ruang antara Matahari dan Bumi merupakan ruang hampa. Hal ini terjadi karena radiasi matahari merambat sebagai gelombang elektromagnetik yang tidak memerlukan medium"
+    answer: 1,
+    explanation: "B. Radiasi matahari dapat mencapai permukaan Bumi meskipun ruang antara Matahari dan Bumi merupakan ruang hampa. Hal ini terjadi karena radiasi matahari merambat sebagai gelombang elektromagnetik yang tidak memerlukan medium"
   },
   {
     question: "Pernyataan yang paling tepat mengenai radiasi ultraviolet (UV) dari Matahari adalah …",
@@ -31,8 +31,8 @@ const quizData = [
       "Radiasi UV tidak memiliki dampak bagi kesehatan manusia",
       "Radiasi UV hanya bermanfaat dan tidak berbahaya",
     ],
-    answer: 2,
-    explanation: "Pernyataan yang paling tepat mengenai radiasi ultraviolet (UV) dari Matahari adalah Radiasi UV termasuk non-ionisasi tetapi dapat menimbulkan efek biologis"
+    answer: 1,
+    explanation: "B. Pernyataan yang paling tepat mengenai radiasi ultraviolet (UV) dari Matahari adalah Radiasi UV termasuk non-ionisasi tetapi dapat menimbulkan efek biologis"
   },
   {
     question: "Jenis sinar UV yang paling banyak mencapai permukaan Bumi dan berperan besar dalam penuaan kulit jangka panjang adalah …",
@@ -42,8 +42,8 @@ const quizData = [
       "UVA",
       "Sinar Inframerah",
     ],
-    answer: 3,
-    explanation: "Jenis sinar UV yang paling banyak mencapai permukaan Bumi dan berperan besar dalam penuaan kulit jangka panjang adalah UVA"
+    answer: 2,
+    explanation: "C. Jenis sinar UV yang paling banyak mencapai permukaan Bumi dan berperan besar dalam penuaan kulit jangka panjang adalah UVA"
   },
   {
     question: "Seorang siswa mengalami kulit memerah dan perih setelah berjemur di bawah sinar matahari dalam waktu singkat pada siang hari. Jenis radiasi UV yang paling berperan dalam kejadian tersebut adalah …",
@@ -53,8 +53,8 @@ const quizData = [
       "UVC",
       "Cahaya Tampak",
     ],
-    answer: 2,
-    explanation: "Seorang siswa mengalami kulit memerah dan perih setelah berjemur di bawah sinar matahari dalam waktu singkat pada siang hari. Jenis radiasi UV yang paling berperan dalam kejadian tersebut adalah UVB "
+    answer: 1,
+    explanation: "B. Seorang siswa mengalami kulit memerah dan perih setelah berjemur di bawah sinar matahari dalam waktu singkat pada siang hari. Jenis radiasi UV yang paling berperan dalam kejadian tersebut adalah UVB "
   },
   {
     question: "Radiasi UVC dari Matahari tidak menimbulkan dampak langsung bagi manusia di permukaan Bumi karena …",
@@ -64,8 +64,8 @@ const quizData = [
       "hampir seluruhnya diserap oleh atmosfer Bumi",
       "hanya dipancarkan pada malam hari",
     ],
-    answer: 3,
-    explanation: "Radiasi UVC dari Matahari tidak menimbulkan dampak langsung bagi manusia di permukaan Bumi karena hampir seluruhnya diserap oleh atmosfer Bumi"
+    answer: 2,
+    explanation: "C. Radiasi UVC dari Matahari tidak menimbulkan dampak langsung bagi manusia di permukaan Bumi karena hampir seluruhnya diserap oleh atmosfer Bumi"
   },
   {
     question: "Paparan sinar matahari dalam durasi singkat dan terkontrol justru dianjurkan bagi kesehatan karena …",
@@ -75,8 +75,8 @@ const quizData = [
       "mencegah penuaan kulit secara total",
       "menghilangkan risiko kanker kulit",
     ],
-    answer: 2,
-    explanation: "Paparan sinar matahari dalam durasi singkat dan terkontrol justru dianjurkan bagi kesehatan karena membantu pembentukan vitamin D yang penting bagi tulang dan sistem imun "
+    answer: 1,
+    explanation: "B. Paparan sinar matahari dalam durasi singkat dan terkontrol justru dianjurkan bagi kesehatan karena membantu pembentukan vitamin D yang penting bagi tulang dan sistem imun "
   },
   {
     question: "Seorang siswa sering beraktivitas di luar ruangan tanpa perlindungan dan mulai mengalami keriput serta noda kulit meskipun masih muda. Dampak tersebut paling tepat disebabkan oleh …",
@@ -86,8 +86,8 @@ const quizData = [
       "radiasi inframerah dari Matahari",
       "kekurangan vitamin D",
     ],
-    answer: 2,
-    explanation: "Seorang siswa sering beraktivitas di luar ruangan tanpa perlindungan dan mulai mengalami keriput serta noda kulit meskipun masih muda. Dampak tersebut paling tepat disebabkan oleh paparan UVA jangka panjang "
+    answer: 1,
+    explanation: "B. Seorang siswa sering beraktivitas di luar ruangan tanpa perlindungan dan mulai mengalami keriput serta noda kulit meskipun masih muda. Dampak tersebut paling tepat disebabkan oleh paparan UVA jangka panjang "
   },
   {
     question: "Seorang pekerja mengalami kulit memerah dan nyeri setelah bekerja di bawah terik Matahari selama beberapa jam. Gejala ini merupakan indikasi terjadinya …",
@@ -97,8 +97,8 @@ const quizData = [
       "imunosupresi akibat UVC",
       "katarak akibat cahaya tampak",
     ],
-    answer: 2,
-    explanation: "Seorang pekerja mengalami kulit memerah dan nyeri setelah bekerja di bawah terik Matahari selama beberapa jam. Gejala ini merupakan indikasi terjadinya sunburn akibat UVB"
+    answer: 1,
+    explanation: "B. Seorang pekerja mengalami kulit memerah dan nyeri setelah bekerja di bawah terik Matahari selama beberapa jam. Gejala ini merupakan indikasi terjadinya sunburn akibat UVB"
   },
   {
     question: "Intensitas radiasi UV cenderung paling tinggi pada rentang waktu pukul 10.00–16.00 karena …",
@@ -108,8 +108,8 @@ const quizData = [
       "jalur radiasi melalui atmosfer lebih pendek",
       "refleksi permukaan Bumi berkurang",
     ],
-    answer: 3,
-    explanation: "Intensitas radiasi UV cenderung paling tinggi pada rentang waktu pukul 10.00–16.00 karena jalur radiasi melalui atmosfer lebih pendek"
+    answer: 2,
+    explanation: "C. Intensitas radiasi UV cenderung paling tinggi pada rentang waktu pukul 10.00–16.00 karena jalur radiasi melalui atmosfer lebih pendek"
   },
   {
     question: "Paparan radiasi UV tetap dapat berbahaya meskipun cuaca mendung. Hal ini disebabkan oleh …",
@@ -119,8 +119,8 @@ const quizData = [
       "suhu udara rendah meningkatkan energi UV",
       "cahaya tampak berubah menjadi UV",
     ],
-    answer:2,
-    explanation: "Paparan radiasi UV tetap dapat berbahaya meskipun cuaca mendung. Hal ini disebabkan oleh radiasi UV dapat menembus awan dalam jumlah tertentu"
+    answer: 1,
+    explanation: "B. Paparan radiasi UV tetap dapat berbahaya meskipun cuaca mendung. Hal ini disebabkan oleh radiasi UV dapat menembus awan dalam jumlah tertentu"
 
   },
   {
@@ -131,8 +131,8 @@ const quizData = [
     "radiasi UV dapat menyebabkan kerusakan kronis yang bersifat kumulatif",
     "intensitas UV selalu sama setiap hari",
   ],
-  answer: 3,
-  explanation: "Paparan radiasi UV pada manusia tidak dinilai hanya dari satu kali kejadian, melainkan dari akumulasi paparan selama bertahun-tahun. Hal ini terutama karena radiasi UV dapat menyebabkan kerusakan kronis yang bersifat kumulatif"
+  answer: 2,
+  explanation: "C. Paparan radiasi UV pada manusia tidak dinilai hanya dari satu kali kejadian, melainkan dari akumulasi paparan selama bertahun-tahun. Hal ini terutama karena radiasi UV dapat menyebabkan kerusakan kronis yang bersifat kumulatif"
   },
   {
     question: "Seorang petugas keamanan bekerja di luar ruangan dari pukul 09.00 hingga 16.00 setiap hari. Risiko kesehatan yang paling meningkat akibat kondisi tersebut adalah …",
@@ -142,8 +142,8 @@ const quizData = [
       "kerusakan kulit dan mata akibat paparan UV berulang",
       "kekurangan vitamin D",
     ],
-    answer: 3,
-    explanation: "Seorang petugas keamanan bekerja di luar ruangan dari pukul 09.00 hingga 16.00 setiap hari. Risiko kesehatan yang paling meningkat akibat kondisi tersebut adalah kerusakan kulit dan mata akibat paparan UV berulang"
+    answer: 2,
+    explanation: "C. Seorang petugas keamanan bekerja di luar ruangan dari pukul 09.00 hingga 16.00 setiap hari. Risiko kesehatan yang paling meningkat akibat kondisi tersebut adalah kerusakan kulit dan mata akibat paparan UV berulang"
   },
   {
     question: "Penggunaan sunscreen dengan SPF 30 dan bersifat broad-spectrum dianjurkan karena …",
@@ -153,8 +153,8 @@ const quizData = [
       "mampu mengurangi paparan UVA dan UVB secara bersamaan",
       "menggantikan fungsi pakaian pelindung",
     ],
-    answer: 3,
-    explanation: "Penggunaan sunscreen dengan SPF 30 dan bersifat broad-spectrum dianjurkan karena mampu mengurangi paparan UVA dan UVB secara bersamaan "
+    answer: 2,
+    explanation: "C. Penggunaan sunscreen dengan SPF 30 dan bersifat broad-spectrum dianjurkan karena mampu mengurangi paparan UVA dan UVB secara bersamaan "
   },
   {
     question: "Meskipun menggunakan sunscreen, tubuh masih dapat memproduksi vitamin D apabila …",
@@ -164,8 +164,8 @@ const quizData = [
       "sunscreen digunakan dengan SPF sangat tinggi sepanjang hari",
       "paparan hanya berasal dari cahaya tampak",
     ],
-    answer: 1,
-    explanation:  "Meskipun menggunakan sunscreen, tubuh masih dapat memproduksi vitamin D apabila paparan dilakukan singkat dan tidak sampai menyebabkan sunburn"
+    answer: 0,
+    explanation:  "A. Meskipun menggunakan sunscreen, tubuh masih dapat memproduksi vitamin D apabila paparan dilakukan singkat dan tidak sampai menyebabkan sunburn"
   },
   {
     question: "Alasan utama mengapa upaya perlindungan terhadap radiasi matahari dianjurkan sejak usia muda adalah …",
@@ -175,8 +175,8 @@ const quizData = [
       "efek paparan UV dapat terakumulasi dan baru tampak setelah bertahun-tahun",
       "radiasi UV hanya berbahaya bagi anak-anak",
     ],
-    answer: 3,
-    explanation: "Alasan utama mengapa upaya perlindungan terhadap radiasi matahari dianjurkan sejak usia muda adalah efek paparan UV dapat terakumulasi dan baru tampak setelah bertahun-tahun"
+    answer: 2,
+    explanation: "C. Alasan utama mengapa upaya perlindungan terhadap radiasi matahari dianjurkan sejak usia muda adalah efek paparan UV dapat terakumulasi dan baru tampak setelah bertahun-tahun"
   },
 ];
 

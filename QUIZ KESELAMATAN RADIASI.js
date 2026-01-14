@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 20; //  menit
+let timeLeft = 30 * 40; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -20,8 +20,8 @@ const quizData = [
       "Radiasi hanya berbahaya pada kecelakaan besar",
       "Radiasi hanya memengaruhi jaringan luar tubuh",
     ],
-    answer: 2,
-    explanation: "Radiasi sering disebut berbahaya karena tidak dapat dirasakan secara langsung oleh indra manusia. Konsekuensi paling krusial dari sifat ini dalam konteks keselamatan radiasi adalah Paparan dapat terakumulasi tanpa disadari hingga melampaui batas aman"
+    answer: 1,
+    explanation: "B. Radiasi sering disebut berbahaya karena tidak dapat dirasakan secara langsung oleh indra manusia. Konsekuensi paling krusial dari sifat ini dalam konteks keselamatan radiasi adalah Paparan dapat terakumulasi tanpa disadari hingga melampaui batas aman"
   },
   {
     question: "Seorang tenaga medis bekerja bertahun-tahun di ruang radiologi dengan paparan kecil tetapi berulang. Risiko kesehatan yang paling mungkin dialaminya dibandingkan efek akut adalah …",
@@ -31,8 +31,8 @@ const quizData = [
       "Peningkatan kemungkinan mutasi sel dan kanker",
       "Kehilangan kesadaran mendadak",
     ],
-    answer: 3,
-    explanation: "Seorang tenaga medis bekerja bertahun-tahun di ruang radiologi dengan paparan kecil tetapi berulang. Risiko kesehatan yang paling mungkin dialaminya dibandingkan efek akut adalah Peningkatan kemungkinan mutasi sel dan kanker"
+    answer: 2,
+    explanation: "C. Seorang tenaga medis bekerja bertahun-tahun di ruang radiologi dengan paparan kecil tetapi berulang. Risiko kesehatan yang paling mungkin dialaminya dibandingkan efek akut adalah Peningkatan kemungkinan mutasi sel dan kanker"
   },
   {
     question: "Prinsip keselamatan radiasi diterapkan baik pada radiasi alam maupun buatan. Pernyataan berikut yang paling tepat menggambarkan kesamaan keduanya adalah …",
@@ -42,8 +42,8 @@ const quizData = [
       "Keduanya dapat menimbulkan efek biologis jika paparannya berlebihan",
       "Radiasi alam lebih berbahaya daripada radiasi buatan",
     ],
-    answer: 3,
-    explanation: "Prinsip keselamatan radiasi diterapkan baik pada radiasi alam maupun buatan. Pernyataan berikut yang paling tepat menggambarkan kesamaan keduanya adalah Keduanya dapat menimbulkan efek biologis jika paparannya berlebihan"
+    answer: 2,
+    explanation: "C. Prinsip keselamatan radiasi diterapkan baik pada radiasi alam maupun buatan. Pernyataan berikut yang paling tepat menggambarkan kesamaan keduanya adalah Keduanya dapat menimbulkan efek biologis jika paparannya berlebihan"
   },
   {
     question: "Mengapa efek biologis radiasi, seperti kanker, sering kali baru muncul bertahun-tahun setelah paparan awal?",
@@ -53,8 +53,8 @@ const quizData = [
       "Radiasi hanya bekerja saat usia lanjut",
       "Sel tubuh tidak terpengaruh oleh radiasi kecil",
     ],
-    answer: 2,
-    explanation: "Mengapa efek biologis radiasi, seperti kanker, sering kali baru muncul bertahun-tahun setelah paparan awal karena Kerusakan DNA memerlukan waktu untuk berkembang menjadi gangguan fungsi sel"
+    answer: 1,
+    explanation: "B. Mengapa efek biologis radiasi, seperti kanker, sering kali baru muncul bertahun-tahun setelah paparan awal karena Kerusakan DNA memerlukan waktu untuk berkembang menjadi gangguan fungsi sel"
   },
   {
     question: "Seorang pekerja luar ruangan mengabaikan perlindungan dari sinar matahari karena merasa tidak ada efek langsung yang dirasakan. Berdasarkan konsep keselamatan radiasi, sikap tersebut berbahaya karena …",
@@ -64,8 +64,8 @@ const quizData = [
       "Paparan kronis UV dapat merusak DNA dan meningkatkan risiko kanker kulit",
       "Radiasi matahari hanya memengaruhi suhu tubuh",
     ],
-    answer: 3,
-    explanation: "Seorang pekerja luar ruangan mengabaikan perlindungan dari sinar matahari karena merasa tidak ada efek langsung yang dirasakan. Berdasarkan konsep keselamatan radiasi, sikap tersebut berbahaya karena Paparan kronis UV dapat merusak DNA dan meningkatkan risiko kanker kulit"
+    answer: 2,
+    explanation: "C. Seorang pekerja luar ruangan mengabaikan perlindungan dari sinar matahari karena merasa tidak ada efek langsung yang dirasakan. Berdasarkan konsep keselamatan radiasi, sikap tersebut berbahaya karena Paparan kronis UV dapat merusak DNA dan meningkatkan risiko kanker kulit"
   },
   {
     question: "Seorang petugas radiasi harus bekerja di area dengan sumber radiasi aktif. Ia telah menggunakan apron timbal, namun masih berada cukup lama dan berdiri sangat dekat dengan sumber radiasi tersebut. Berdasarkan prinsip Time, Distance, dan Shielding, tindakan paling tepat untuk menurunkan risiko paparan tanpa mengganti APD adalah …",
@@ -75,8 +75,8 @@ const quizData = [
       "Mematikan sumber radiasi sementara selama bekerja",
       "Mengganti apron timbal dengan pakaian biasa agar lebih nyaman",
     ],
-    answer: 2,
-    explanation: "Seorang petugas radiasi harus bekerja di area dengan sumber radiasi aktif. Ia telah menggunakan apron timbal, namun masih berada cukup lama dan berdiri sangat dekat dengan sumber radiasi tersebut. Berdasarkan prinsip Time, Distance, dan Shielding, tindakan paling tepat untuk menurunkan risiko paparan tanpa mengganti APD adalah Mengurangi waktu berada di area radiasi dan menjaga jarak dari sumber"
+    answer: 1,
+    explanation: "B. Seorang petugas radiasi harus bekerja di area dengan sumber radiasi aktif. Ia telah menggunakan apron timbal, namun masih berada cukup lama dan berdiri sangat dekat dengan sumber radiasi tersebut. Berdasarkan prinsip Time, Distance, dan Shielding, tindakan paling tepat untuk menurunkan risiko paparan tanpa mengganti APD adalah Mengurangi waktu berada di area radiasi dan menjaga jarak dari sumber"
   },
   {
     question: "Penggunaan beton sebagai dinding pelindung pada fasilitas nuklir lebih efektif dibandingkan aluminium karena …",
@@ -86,8 +86,8 @@ const quizData = [
       "Beton dapat menyerap semua jenis radiasi",
       "Beton mengurangi waktu paparan radiasi",
     ],
-    answer: 2,
-    explanation: "Penggunaan beton sebagai dinding pelindung pada fasilitas nuklir lebih efektif dibandingkan aluminium karena Beton memiliki densitas dan ketebalan efektif yang lebih besar"
+    answer: 1,
+    explanation: "B. Penggunaan beton sebagai dinding pelindung pada fasilitas nuklir lebih efektif dibandingkan aluminium karena Beton memiliki densitas dan ketebalan efektif yang lebih besar"
   },
   {
     question: "Seorang tenaga medis sudah memakai apron timbal, namun tetap berdiri sangat dekat dengan sumber sinar X dan berada di ruang penyinaran terlalu lama. Berdasarkan prinsip keselamatan radiasi, pernyataan yang paling tepat adalah …",
@@ -97,8 +97,8 @@ const quizData = [
       "Shielding selalu lebih dominan daripada prinsip lainnya",
       "Risiko hanya ditentukan oleh kekuatan sumber radiasi",
     ],
-    answer: 2,
-    explanation: "Seorang tenaga medis sudah memakai apron timbal, namun tetap berdiri sangat dekat dengan sumber sinar X dan berada di ruang penyinaran terlalu lama. Berdasarkan prinsip keselamatan radiasi, pernyataan yang paling tepat adalah Risiko tetap tinggi karena prinsip time dan distance diabaikan"
+    answer: 1,
+    explanation: "B. Seorang tenaga medis sudah memakai apron timbal, namun tetap berdiri sangat dekat dengan sumber sinar X dan berada di ruang penyinaran terlalu lama. Berdasarkan prinsip keselamatan radiasi, pernyataan yang paling tepat adalah Risiko tetap tinggi karena prinsip time dan distance diabaikan"
   },
   {
     question: "Dalam prosedur medis tertentu, dokter memilih metode pencitraan alternatif tanpa radiasi meskipun kualitas gambarnya sedikit lebih rendah. Keputusan ini mencerminkan prinsip …",
@@ -108,8 +108,8 @@ const quizData = [
       "Distance",
       "ALARA",
     ],
-    answer: 4,
-    explanation: "Dalam prosedur medis tertentu, dokter memilih metode pencitraan alternatif tanpa radiasi meskipun kualitas gambarnya sedikit lebih rendah. Keputusan ini mencerminkan prinsip ALARA"
+    answer: 3,
+    explanation: "D. Dalam prosedur medis tertentu, dokter memilih metode pencitraan alternatif tanpa radiasi meskipun kualitas gambarnya sedikit lebih rendah. Keputusan ini mencerminkan prinsip ALARA"
   },
   {
     question: "Perbedaan utama APD untuk radiasi ionisasi dan non-ionisasi adalah …",
@@ -119,8 +119,8 @@ const quizData = [
       "APD ionisasi dirancang menyerap radiasi berenergi tinggi, sedangkan APD non-ionisasi lebih bersifat penghalang fisik",
       "Keduanya memiliki prinsip kerja yang sama persis",
     ],
-    answer:3,
-    explanation: "Perbedaan utama APD untuk radiasi ionisasi dan non-ionisasi adalah APD ionisasi dirancang menyerap radiasi berenergi tinggi, sedangkan APD non-ionisasi lebih bersifat penghalang fisik"
+    answer:2,
+    explanation: "C. Perbedaan utama APD untuk radiasi ionisasi dan non-ionisasi adalah APD ionisasi dirancang menyerap radiasi berenergi tinggi, sedangkan APD non-ionisasi lebih bersifat penghalang fisik"
 
   },
   {
@@ -131,8 +131,8 @@ const quizData = [
     "Radiasi medis selalu lebih berbahaya dibanding radiasi alam",
     "Dosimeter tidak mampu mengukur semua jenis radiasi",
   ],
-  answer: 1,
-  explanation: "Seorang petugas radiologi selalu mencatat dosis paparan hariannya masih di bawah batas tahunan yang diizinkan. Namun, rumah sakit tetap mewajibkan evaluasi prosedur kerja secara berkala. Alasan ilmiah paling tepat dari kebijakan tersebut adalah Dosis rendah tidak selalu aman jika terakumulasi dalam waktu lama"
+  answer: 0,
+  explanation: "A. Seorang petugas radiologi selalu mencatat dosis paparan hariannya masih di bawah batas tahunan yang diizinkan. Namun, rumah sakit tetap mewajibkan evaluasi prosedur kerja secara berkala. Alasan ilmiah paling tepat dari kebijakan tersebut adalah Dosis rendah tidak selalu aman jika terakumulasi dalam waktu lama"
   },
   {
     question: "Dua rumah sakit menggunakan alat sinar X dengan spesifikasi sama. Rumah sakit A memiliki SOP ketat, pelindung timbal lengkap, dan pelatihan rutin, sedangkan rumah sakit B tidak. Pernyataan yang paling tepat terkait risiko radiasi adalah …",
@@ -142,8 +142,8 @@ const quizData = [
       "Risiko radiasi lebih ditentukan oleh pengelolaan dan penerapan prinsip keselamatan",
       "Rumah sakit B lebih aman karena paparan terjadi secara alami",
     ],
-    answer: 3,
-    explanation: "Dua rumah sakit menggunakan alat sinar X dengan spesifikasi sama. Rumah sakit A memiliki SOP ketat, pelindung timbal lengkap, dan pelatihan rutin, sedangkan rumah sakit B tidak. Pernyataan yang paling tepat terkait risiko radiasi adalah Risiko radiasi lebih ditentukan oleh pengelolaan dan penerapan prinsip keselamatan"
+    answer: 2,
+    explanation: "C. Dua rumah sakit menggunakan alat sinar X dengan spesifikasi sama. Rumah sakit A memiliki SOP ketat, pelindung timbal lengkap, dan pelatihan rutin, sedangkan rumah sakit B tidak. Pernyataan yang paling tepat terkait risiko radiasi adalah Risiko radiasi lebih ditentukan oleh pengelolaan dan penerapan prinsip keselamatan"
   },
   {
     question: "Prinsip ALARA tidak hanya diterapkan pada pekerja radiasi, tetapi juga pada pasien. Hal ini menunjukkan bahwa …",
@@ -153,8 +153,8 @@ const quizData = [
       "Manfaat medis harus selalu lebih besar daripada potensi risiko radiasi",
       "Radiasi diagnostik tidak memiliki efek biologis",
     ],
-    answer: 3,
-    explanation: "Prinsip ALARA tidak hanya diterapkan pada pekerja radiasi, tetapi juga pada pasien. Hal ini menunjukkan bahwa Manfaat medis harus selalu lebih besar daripada potensi risiko radiasi"
+    answer: 2,
+    explanation: "C. Prinsip ALARA tidak hanya diterapkan pada pekerja radiasi, tetapi juga pada pasien. Hal ini menunjukkan bahwa Manfaat medis harus selalu lebih besar daripada potensi risiko radiasi"
   },
   {
     question: "Dalam konteks perlindungan lingkungan, pengawasan radiasi dilakukan tidak hanya di fasilitas nuklir tetapi juga pada udara, air, dan tanah. Hal ini didasarkan pada pemahaman bahwa …",
@@ -164,8 +164,8 @@ const quizData = [
       "Radiasi lingkungan selalu berasal dari aktivitas manusia",
       "Organisme non-hidup lebih sensitif terhadap radiasi",
     ],
-    answer: 2,
-    explanation:  "Dalam konteks perlindungan lingkungan, pengawasan radiasi dilakukan tidak hanya di fasilitas nuklir tetapi juga pada udara, air, dan tanah. Hal ini didasarkan pada pemahaman bahwa Radiasi dapat berpindah dan berdampak tidak langsung melalui ekosistem"
+    answer: 1,
+    explanation:  "B. Dalam konteks perlindungan lingkungan, pengawasan radiasi dilakukan tidak hanya di fasilitas nuklir tetapi juga pada udara, air, dan tanah. Hal ini didasarkan pada pemahaman bahwa Radiasi dapat berpindah dan berdampak tidak langsung melalui ekosistem"
   },
   {
     question: "Seorang siswa berpendapat bahwa selama seseorang tidak merasakan panas, nyeri, atau perubahan fisik, maka paparan radiasi dapat dianggap aman. Tanggapan ilmiah paling tepat terhadap pendapat tersebut adalah …",
@@ -175,8 +175,8 @@ const quizData = [
       "Keliru, karena radiasi dapat menimbulkan efek biologis tanpa gejala awal",
       "Keliru, karena radiasi hanya berdampak pada lingkungan, bukan manusia",
     ],
-    answer: 3,
-    explanation: "Seorang siswa berpendapat bahwa selama seseorang tidak merasakan panas, nyeri, atau perubahan fisik, maka paparan radiasi dapat dianggap aman. Tanggapan ilmiah paling tepat terhadap pendapat tersebut adalah Keliru, karena radiasi dapat menimbulkan efek biologis tanpa gejala awal"
+    answer: 2,
+    explanation: "C. Seorang siswa berpendapat bahwa selama seseorang tidak merasakan panas, nyeri, atau perubahan fisik, maka paparan radiasi dapat dianggap aman. Tanggapan ilmiah paling tepat terhadap pendapat tersebut adalah Keliru, karena radiasi dapat menimbulkan efek biologis tanpa gejala awal"
   },
 ];
 

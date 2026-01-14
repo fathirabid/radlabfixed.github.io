@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 20; //  menit
+let timeLeft = 30 * 40; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -20,8 +20,8 @@ const quizData = [
       "radiasi merupakan bentuk perpindahan energi dalam bentuk gelombang atau partikel",
       "radiasi hanya dapat merambat melalui udara",
     ],
-    answer: 3,
-    explanation: "Radiasi didefinisikan sebagai energi yang dipancarkan dari suatu sumber dan dapat merambat melalui ruang. Pernyataan yang paling tepat untuk menjelaskan mekanisme perambatan radiasi adalah radiasi merupakan bentuk perpindahan energi dalam bentuk gelombang atau partikel"
+    answer: 2,
+    explanation: "C. Radiasi didefinisikan sebagai energi yang dipancarkan dari suatu sumber dan dapat merambat melalui ruang. Pernyataan yang paling tepat untuk menjelaskan mekanisme perambatan radiasi adalah radiasi merupakan bentuk perpindahan energi dalam bentuk gelombang atau partikel"
   },
   {
     question: "Banyak orang menganggap radiasi selalu berasal dari ledakan nuklir. Pernyataan yang paling tepat untuk meluruskan anggapan tersebut adalah …",
@@ -31,8 +31,8 @@ const quizData = [
       "sumber radiasi terbesar berasal dari senjata nuklir",
       "radiasi juga berasal dari sumber alami seperti matahari dan unsur radioaktif",
     ],
-    answer: 4,
-    explanation: "Banyak orang menganggap radiasi selalu berasal dari ledakan nuklir. Pernyataan yang paling tepat untuk meluruskan anggapan tersebut adalah radiasi juga berasal dari sumber alami seperti matahari dan unsur radioaktif"
+    answer: 3,
+    explanation: "D. Banyak orang menganggap radiasi selalu berasal dari ledakan nuklir. Pernyataan yang paling tepat untuk meluruskan anggapan tersebut adalah radiasi juga berasal dari sumber alami seperti matahari dan unsur radioaktif"
   },
   {
     question: "Radiasi kosmik tidak menimbulkan bahaya besar bagi kehidupan di Bumi karena …",
@@ -42,8 +42,8 @@ const quizData = [
       "radiasi kosmik memiliki energi sangat kecil",
       "radiasi kosmik tidak dapat menembus makhluk hidup",
     ],
-    answer: 1,
-    explanation: "Radiasi kosmik tidak menimbulkan bahaya besar bagi kehidupan di Bumi karena atmosfer Bumi menyerap dan mengurangi sebagian besar radiasi kosmik"
+    answer: 0,
+    explanation: "A. Radiasi kosmik tidak menimbulkan bahaya besar bagi kehidupan di Bumi karena atmosfer Bumi menyerap dan mengurangi sebagian besar radiasi kosmik"
   },
   {
     question: "Unsur radioaktif alami seperti uranium dan radon dapat memancarkan radiasi tanpa pengaruh luar karena …",
@@ -53,8 +53,8 @@ const quizData = [
       "memiliki jumlah proton yang sangat besar",
       "terpapar sinar matahari secara terus-menerus",
     ],
-    answer: 2,
-    explanation: "Unsur radioaktif alami seperti uranium dan radon dapat memancarkan radiasi tanpa pengaruh luar karena inti atomnya tidak stabil dan mengalami peluruhan"
+    answer: 1,
+    explanation: "B. Unsur radioaktif alami seperti uranium dan radon dapat memancarkan radiasi tanpa pengaruh luar karena inti atomnya tidak stabil dan mengalami peluruhan"
   },
   {
     question: "Radiasi dari tubuh manusia, misalnya yang berasal dari kalium-40, tidak berbahaya bagi kesehatan karena …",
@@ -64,8 +64,8 @@ const quizData = [
       "berasal dari proses buatan manusia",
       "intensitas dan energi radiasinya sangat kecil",
     ],
-    answer: 4,
-    explanation: "Radiasi dari tubuh manusia, misalnya yang berasal dari kalium-40, tidak berbahaya bagi kesehatan karena intensitas dan energi radiasinya sangat kecil"
+    answer: 3,
+    explanation: "D. Radiasi dari tubuh manusia, misalnya yang berasal dari kalium-40, tidak berbahaya bagi kesehatan karena intensitas dan energi radiasinya sangat kecil"
   },
   {
     question: "Sinar-X diklasifikasikan sebagai radiasi elektromagnetik dan radiasi pengion karena …",
@@ -75,8 +75,8 @@ const quizData = [
       "mampu menghasilkan ion saat berinteraksi dengan materi",
       "tidak dapat merambat di ruang hampa",
     ],
-    answer: 3,
-    explanation: "Sinar-X diklasifikasikan sebagai radiasi elektromagnetik dan radiasi pengion karena mampu menghasilkan ion saat berinteraksi dengan materi"
+    answer: 2,
+    explanation: "C. Sinar-X diklasifikasikan sebagai radiasi elektromagnetik dan radiasi pengion karena mampu menghasilkan ion saat berinteraksi dengan materi"
   },
   {
     question: "Perbedaan utama antara radiasi elektromagnetik dan radiasi partikel berdasarkan massa adalah …",
@@ -86,8 +86,8 @@ const quizData = [
       "radiasi elektromagnetik memiliki energi lebih besar",
       "radiasi partikel tidak dapat berinteraksi dengan materi",
     ],
-    answer: 1,
-    explanation: "Perbedaan utama antara radiasi elektromagnetik dan radiasi partikel berdasarkan massa adalah radiasi elektromagnetik tidak memiliki massa, sedangkan radiasi partikel memiliki massa"
+    answer: 0,
+    explanation: "A. Perbedaan utama antara radiasi elektromagnetik dan radiasi partikel berdasarkan massa adalah radiasi elektromagnetik tidak memiliki massa, sedangkan radiasi partikel memiliki massa"
   },
   {
     question: "Radiasi non-pengion umumnya dianggap lebih aman dibandingkan radiasi pengion karena …",
@@ -97,8 +97,8 @@ const quizData = [
       "tidak berasal dari sumber buatan",
       "selalu memiliki intensitas sangat kecil",
     ],
-    answer: 2,
-    explanation: "Radiasi non-pengion umumnya dianggap lebih aman dibandingkan radiasi pengion karena energinya tidak cukup untuk mengionisasi atom"
+    answer: 1,
+    explanation: "B. Radiasi non-pengion umumnya dianggap lebih aman dibandingkan radiasi pengion karena energinya tidak cukup untuk mengionisasi atom"
   },
   {
     question: "Paparan radiasi yang tidak langsung menimbulkan gejala, tetapi dalam jangka panjang dapat menyebabkan kanker, termasuk ke dalam …",
@@ -108,8 +108,8 @@ const quizData = [
       "tingkat III",
       "tingkat IV",
     ],
-    answer: 3,
-    explanation: "Paparan radiasi yang tidak langsung menimbulkan gejala, tetapi dalam jangka panjang dapat menyebabkan kanker, termasuk ke dalam tingkat III"
+    answer: 2,
+    explanation: "C. Paparan radiasi yang tidak langsung menimbulkan gejala, tetapi dalam jangka panjang dapat menyebabkan kanker, termasuk ke dalam tingkat III"
   },
   {
     question: "Pernyataan yang paling tepat mengenai radiasi tingkat V adalah …",
@@ -119,8 +119,8 @@ const quizData = [
       "menyebabkan gangguan ringan pada sistem pencernaan",
       "dapat merusak organ vital dan menyebabkan kematian dalam waktu singkat",
     ],
-    answer:4,
-    explanation: "Pernyataan yang paling tepat mengenai radiasi tingkat V adalah dapat merusak organ vital dan menyebabkan kematian dalam waktu singkat"
+    answer:3,
+    explanation: "D. Pernyataan yang paling tepat mengenai radiasi tingkat V adalah dapat merusak organ vital dan menyebabkan kematian dalam waktu singkat"
 
   },
   {
@@ -131,8 +131,8 @@ const quizData = [
     "dapat memperlihatkan struktur organ dalam tanpa tindakan pembedahan",
     "tidak termasuk radiasi pengion",
   ],
-  answer: 3,
-  explanation: "Pemanfaatan sinar-X di bidang medis dianggap efektif karena dapat memperlihatkan struktur organ dalam tanpa tindakan pembedahan"
+  answer: 2,
+  explanation: "C. Pemanfaatan sinar-X di bidang medis dianggap efektif karena dapat memperlihatkan struktur organ dalam tanpa tindakan pembedahan"
   },
   {
     question: "Radioterapi digunakan dalam pengobatan kanker dengan prinsip …",
@@ -142,8 +142,8 @@ const quizData = [
       "mengganti jaringan yang rusak dengan sel buatan",
       "menurunkan suhu tubuh pasien",
     ],
-    answer: 2,
-    explanation: "Radioterapi digunakan dalam pengobatan kanker dengan prinsip enargetkan dan merusak sel kanker menggunakan radiasi berenergi tinggi"
+    answer: 1,
+    explanation: "B. Radioterapi digunakan dalam pengobatan kanker dengan prinsip enargetkan dan merusak sel kanker menggunakan radiasi berenergi tinggi"
   },
   {
     question: "Pemeriksaan bagasi menggunakan sinar-X di bandara relatif aman bagi petugas karena …",
@@ -153,8 +153,8 @@ const quizData = [
       "paparan radiasi tidak dapat memengaruhi manusia",
       "petugas tidak berada di sekitar sumber radiasi",
     ],
-    answer: 1,
-    explanation: "Pemeriksaan bagasi menggunakan sinar-X di bandara relatif aman bagi petugas karena sinar-X yang digunakan berenergi sangat rendah dan dikendalikan"
+    answer: 0,
+    explanation: "A. Pemeriksaan bagasi menggunakan sinar-X di bandara relatif aman bagi petugas karena sinar-X yang digunakan berenergi sangat rendah dan dikendalikan"
   },
   {
     question: "Peristiwa Chernobyl dan Hiroshima–Nagasaki memberikan pelajaran penting bahwa …",
@@ -164,8 +164,8 @@ const quizData = [
       "teknologi nuklir selalu aman jika digunakan manusia",
       "radiasi tidak memengaruhi generasi berikutnya",
     ],
-    answer: 2,
-    explanation:  "Peristiwa Chernobyl dan Hiroshima–Nagasaki memberikan pelajaran penting bahwa radiasi tingkat tinggi dapat menimbulkan dampak jangka panjang bagi manusia dan lingkungan."
+    answer: 1,
+    explanation:  "B. Peristiwa Chernobyl dan Hiroshima–Nagasaki memberikan pelajaran penting bahwa radiasi tingkat tinggi dapat menimbulkan dampak jangka panjang bagi manusia dan lingkungan."
   },
   {
     question: "Tindakan paling tepat untuk mengurangi risiko paparan radiasi berlebihan dalam kehidupan sehari-hari adalah …",
@@ -175,8 +175,8 @@ const quizData = [
       "memahami sumber radiasi dan menjaga jarak dari sumber yang kuat",
       "meningkatkan paparan agar tubuh kebal",
     ],
-    answer: 3,
-    explanation: "Tindakan paling tepat untuk mengurangi risiko paparan radiasi berlebihan dalam kehidupan sehari-hari adalah memahami sumber radiasi dan menjaga jarak dari sumber yang kuat"
+    answer: 2,
+    explanation: "C. Tindakan paling tepat untuk mengurangi risiko paparan radiasi berlebihan dalam kehidupan sehari-hari adalah memahami sumber radiasi dan menjaga jarak dari sumber yang kuat"
   },
 ];
 

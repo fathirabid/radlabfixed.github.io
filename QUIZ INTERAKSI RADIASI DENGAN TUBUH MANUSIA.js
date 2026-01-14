@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 20; //  menit
+let timeLeft = 30 * 40; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -20,8 +20,8 @@ const quizData = [
       "Jenis radiasi dan energi yang dibawanya menentukan cara interaksi dengan materi",
       "Radiasi selalu menyebabkan ionisasi pada setiap atom yang dilewatinya",
     ],
-    answer: 3,
-    explanation: "Pernyataan berikut yang paling tepat menjelaskan mengapa radiasi tidak selalu menimbulkan efek biologis yang sama pada setiap benda atau tubuh manusia adalah Jenis radiasi dan energi yang dibawanya menentukan cara interaksi dengan materi"
+    answer: 2,
+    explanation: "C. Pernyataan berikut yang paling tepat menjelaskan mengapa radiasi tidak selalu menimbulkan efek biologis yang sama pada setiap benda atau tubuh manusia adalah Jenis radiasi dan energi yang dibawanya menentukan cara interaksi dengan materi"
   },
   {
     question: "Ketika radiasi berenergi rendah melewati suatu bahan dan hanya mengubah arah rambatnya tanpa perubahan energi yang signifikan, proses yang paling mungkin terjadi adalah …",
@@ -31,8 +31,8 @@ const quizData = [
       "Penyerapan total",
       "Hamburan (scatter)",
     ],
-    answer: 3,
-    explanation: "Ketika radiasi berenergi rendah melewati suatu bahan dan hanya mengubah arah rambatnya tanpa perubahan energi yang signifikan, proses yang paling mungkin terjadi adalah Penyerapan total"
+    answer: 2,
+    explanation: "C. Ketika radiasi berenergi rendah melewati suatu bahan dan hanya mengubah arah rambatnya tanpa perubahan energi yang signifikan, proses yang paling mungkin terjadi adalah Penyerapan total"
   },
   {
     question: "Perbedaan utama antara proses ionisasi dan eksitasi akibat interaksi radiasi dengan atom adalah …",
@@ -42,8 +42,8 @@ const quizData = [
       "Ionisasi menghasilkan atom bermuatan, sedangkan eksitasi tidak",
       "Ionisasi hanya terjadi pada molekul air, eksitasi hanya pada DNA",
     ],
-    answer: 2,
-    explanation: "Perbedaan utama antara proses ionisasi dan eksitasi akibat interaksi radiasi dengan atom adalah Ionisasi menyebabkan elektron berpindah orbit, eksitasi melepaskan elektron"
+    answer: 1,
+    explanation: "B. Perbedaan utama antara proses ionisasi dan eksitasi akibat interaksi radiasi dengan atom adalah Ionisasi menyebabkan elektron berpindah orbit, eksitasi melepaskan elektron"
   },
   {
     question: "Kerusakan DNA akibat interaksi tidak langsung radiasi terutama disebabkan oleh …",
@@ -53,8 +53,8 @@ const quizData = [
       "Pemanasan jaringan akibat radiasi",
       "Penyerapan energi oleh protein membran sel",
     ],
-    answer: 3,
-    explanation: "Kerusakan DNA akibat interaksi tidak langsung radiasi terutama disebabkan oleh Pemanasan jaringan akibat radiasi"
+    answer: 2,
+    explanation: "C. Kerusakan DNA akibat interaksi tidak langsung radiasi terutama disebabkan oleh Pemanasan jaringan akibat radiasi"
   },
   {
     question: "Pernyataan berikut yang paling tepat menggambarkan perbedaan interaksi langsung dan tidak langsung radiasi pada tubuh manusia adalah …",
@@ -64,8 +64,8 @@ const quizData = [
       "Interaksi langsung melibatkan radiasi mengenai biomolekul penting secara langsung",
       "Interaksi tidak langsung tidak menimbulkan kerusakan sel",
     ],
-    answer: 3,
-    explanation: "Pernyataan berikut yang paling tepat menggambarkan perbedaan interaksi langsung dan tidak langsung radiasi pada tubuh manusia adalah Interaksi langsung melibatkan radiasi mengenai biomolekul penting secara langsung"
+    answer: 2,
+    explanation: "C. Pernyataan berikut yang paling tepat menggambarkan perbedaan interaksi langsung dan tidak langsung radiasi pada tubuh manusia adalah Interaksi langsung melibatkan radiasi mengenai biomolekul penting secara langsung"
   },
   {
     question: "Dalam pemeriksaan rontgen, tulang tampak lebih putih dibandingkan jaringan lunak. Fenomena ini terutama disebabkan oleh …",
@@ -75,8 +75,8 @@ const quizData = [
       "Produksi pasangan yang terjadi pada energi sinar X diagnostik",
       "Penetrasi sinar X yang sama pada semua jenis jaringan",
     ],
-    answer: 2,
-    explanation: "Dalam pemeriksaan rontgen, tulang tampak lebih putih dibandingkan jaringan lunak. Fenomena ini terutama disebabkan oleh Efek fotoelektrik yang lebih sering terjadi pada atom bernomor atom tinggi"
+    answer: 1,
+    explanation: "B. Dalam pemeriksaan rontgen, tulang tampak lebih putih dibandingkan jaringan lunak. Fenomena ini terutama disebabkan oleh Efek fotoelektrik yang lebih sering terjadi pada atom bernomor atom tinggi"
   },
   {
     question: "Mekanisme interaksi sinar X/gamma yang menyebabkan foton tetap ada setelah tumbukan, namun energinya berkurang dan arah rambatnya berubah, adalah …",
@@ -86,8 +86,8 @@ const quizData = [
       "Hamburan Compton",
       "Produksi pasangan",
     ],
-    answer: 3,
-    explanation: "Mekanisme interaksi sinar X/gamma yang menyebabkan foton tetap ada setelah tumbukan, namun energinya berkurang dan arah rambatnya berubah, adalah Hamburan Compton"
+    answer: 2,
+    explanation: "C. Mekanisme interaksi sinar X/gamma yang menyebabkan foton tetap ada setelah tumbukan, namun energinya berkurang dan arah rambatnya berubah, adalah Hamburan Compton"
   },
   {
     question: "Urutan tahapan yang paling tepat menggambarkan proses terjadinya efek biologis akibat radiasi pengion adalah …",
@@ -97,8 +97,8 @@ const quizData = [
       "Interaksi fisik → tahap kimia → respon biologis",
       "Interaksi fisik → respon biologis → tahap kimia",
     ],
-    answer: 3,
-    explanation: "rutan tahapan yang paling tepat menggambarkan proses terjadinya efek biologis akibat radiasi pengion adalah Interaksi fisik → tahap kimia → respon biologis"
+    answer: 2,
+    explanation: "C. Urutan tahapan yang paling tepat menggambarkan proses terjadinya efek biologis akibat radiasi pengion adalah Interaksi fisik → tahap kimia → respon biologis"
   },
   {
     question: "Pernyataan yang paling tepat menjelaskan mengapa dampak radiasi seperti kanker sering baru muncul bertahun-tahun setelah paparan adalah …",
@@ -108,8 +108,8 @@ const quizData = [
       "Ionisasi baru terjadi lama setelah radiasi mengenai tubuh",
       "Radiasi pengion baru aktif setelah usia tertentu",
     ],
-    answer: 2,
-    explanation: "Pernyataan yang paling tepat menjelaskan mengapa dampak radiasi seperti kanker sering baru muncul bertahun-tahun setelah paparan adalah Efek biologis merupakan hasil akumulasi kerusakan DNA dan proses seluler jangka panjang"
+    answer: 1,
+    explanation: "B. Pernyataan yang paling tepat menjelaskan mengapa dampak radiasi seperti kanker sering baru muncul bertahun-tahun setelah paparan adalah Efek biologis merupakan hasil akumulasi kerusakan DNA dan proses seluler jangka panjang"
   },
   {
     question: "Cahaya dari layar HP dapat menyebabkan kelelahan mata, tetapi tidak merusak DNA seperti sinar X. Hal ini terutama karena …",
@@ -119,8 +119,8 @@ const quizData = [
       "Intensitas cahaya layar selalu lebih kecil dari sinar X",
       "Mata manusia kebal terhadap semua radiasi elektromagnetik",
     ],
-    answer:1,
-    explanation: "Cahaya dari layar HP dapat menyebabkan kelelahan mata, tetapi tidak merusak DNA seperti sinar X. Hal ini terutama karena Energi cahaya layar terlalu kecil untuk menyebabkan ionisasi atom"
+    answer: 0,
+    explanation: "A. Cahaya dari layar HP dapat menyebabkan kelelahan mata, tetapi tidak merusak DNA seperti sinar X. Hal ini terutama karena Energi cahaya layar terlalu kecil untuk menyebabkan ionisasi atom"
 
   },
   {
@@ -131,8 +131,8 @@ const quizData = [
     "DNA selalu berada di permukaan sel",
     "DNA tidak memiliki mekanisme perbaikan",
   ],
-  answer: 2,
-  explanation: "Kerusakan DNA akibat radiasi dianggap sangat berbahaya bagi sel karena DNA menyimpan informasi genetik yang mengatur pembelahan dan fungsi sel"
+  answer: 1,
+  explanation: "B. Kerusakan DNA akibat radiasi dianggap sangat berbahaya bagi sel karena DNA menyimpan informasi genetik yang mengatur pembelahan dan fungsi sel"
   },
   {
     question: "Pernyataan yang paling tepat mengenai peran radikal bebas dalam kerusakan sel akibat radiasi adalah …",
@@ -142,8 +142,8 @@ const quizData = [
       "Radikal bebas dapat merusak DNA, lipid membran, dan protein",
       "Radikal bebas hanya terbentuk pada jaringan tulang",
     ],
-    answer: 3,
-    explanation: "Pernyataan yang paling tepat mengenai peran radikal bebas dalam kerusakan sel akibat radiasi adalah Radikal bebas dapat merusak DNA, lipid membran, dan protein"
+    answer: 2,
+    explanation: "C. Pernyataan yang paling tepat mengenai peran radikal bebas dalam kerusakan sel akibat radiasi adalah Radikal bebas dapat merusak DNA, lipid membran, dan protein"
   },
   {
     question: "Mengapa kerusakan akibat radikal bebas dapat lebih luas dibandingkan daerah awal yang terkena radiasi?",
@@ -153,8 +153,8 @@ const quizData = [
       "DNA menarik radikal bebas secara aktif",
       "Semua sel memiliki sensitivitas yang sama terhadap radiasi",
     ],
-    answer: 2,
-    explanation: "Mengapa kerusakan akibat radikal bebas dapat lebih luas dibandingkan daerah awal yang terkena radiasi karena Radikal bebas dapat bereaksi berantai dan menyebar di dalam sel "
+    answer: 1,
+    explanation: "B. Mengapa kerusakan akibat radikal bebas dapat lebih luas dibandingkan daerah awal yang terkena radiasi karena Radikal bebas dapat bereaksi berantai dan menyebar di dalam sel "
   },
   {
     question: "Jika sejumlah besar sel dalam suatu jaringan mengalami kerusakan berat akibat radiasi, maka efek yang paling mungkin terjadi adalah …",
@@ -164,8 +164,8 @@ const quizData = [
       "Penurunan jumlah radikal bebas",
       "Percepatan pembelahan sel normal",
     ],
-    answer: 2,
-    explanation:  "Jika sejumlah besar sel dalam suatu jaringan mengalami kerusakan berat akibat radiasi, maka efek yang paling mungkin terjadi adalah Gangguan fungsi jaringan atau organ"
+    answer: 1,
+    explanation:  "B. Jika sejumlah besar sel dalam suatu jaringan mengalami kerusakan berat akibat radiasi, maka efek yang paling mungkin terjadi adalah Gangguan fungsi jaringan atau organ"
   },
   {
     question: "Material seperti timbal (Pb) digunakan sebagai pelindung radiasi karena …",
@@ -175,8 +175,8 @@ const quizData = [
       "Memiliki nomor atom dan kerapatan tinggi sehingga efektif menyerap foton berenergi tinggi",
       "Tidak dapat berinteraksi dengan radiasi",
     ],
-    answer: 3,
-    explanation: "Material seperti timbal (Pb) digunakan sebagai pelindung radiasi karena Memiliki nomor atom dan kerapatan tinggi sehingga efektif menyerap foton berenergi tinggi"
+    answer: 2,
+    explanation: "C. Material seperti timbal (Pb) digunakan sebagai pelindung radiasi karena Memiliki nomor atom dan kerapatan tinggi sehingga efektif menyerap foton berenergi tinggi"
   },
 ];
 

@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 20; //  menit
+let timeLeft = 30 * 40; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -20,8 +20,8 @@ const quizData = [
       "seluruhnya berupa radiasi ultraviolet berenergi tinggi",
       "radiasi hanya dapat merambat melalui udara",
     ],
-    answer: 2,
-    explanation: "Radiasi didefinisikan sebagai energi yang dipancarkan dari suatu sumber dan dapat merambat melalui ruang. Pernyataan yang paling tepat untuk menjelaskan mekanisme perambatan radiasi adalah tersusun terutama dari cahaya tampak dan inframerah"
+    answer: 1,
+    explanation: "B. Radiasi didefinisikan sebagai energi yang dipancarkan dari suatu sumber dan dapat merambat melalui ruang. Pernyataan yang paling tepat untuk menjelaskan mekanisme perambatan radiasi adalah tersusun terutama dari cahaya tampak dan inframerah"
   },
   {
     question: "Radiasi yang mampu menyebabkan mutasi DNA karena energinya cukup untuk melepaskan elektron dari atom tergolong sebagai …",
@@ -31,8 +31,8 @@ const quizData = [
       "cahaya tampak",
       "sinar gamma",
     ],
-    answer: 4,
-    explanation: "Radiasi yang mampu menyebabkan mutasi DNA karena energinya cukup untuk melepaskan elektron dari atom tergolong sebagai sinar gamma"
+    answer: 3,
+    explanation: "D. Radiasi yang mampu menyebabkan mutasi DNA karena energinya cukup untuk melepaskan elektron dari atom tergolong sebagai sinar gamma"
   },
   {
     question: "Perhatikan pernyataan berikut: (1) Digunakan dalam sistem komunikasi nirkabel; (2) Menyebabkan pemanasan tanpa merusak struktur kimia sel;  (3) Memerlukan pengawasan ketat karena dapat merusak DNA; (4) Tidak mampu mengionisasi atom. Pernyataan yang sesuai dengan radiasi non-ionisasi adalah ……",
@@ -42,8 +42,8 @@ const quizData = [
       "(1) dan (3)",
       "(2), (3), dan (4)",
     ],
-    answer: 2,
-    explanation: "Perhatikan pernyataan berikut: (1) Digunakan dalam sistem komunikasi nirkabel; (2) Menyebabkan pemanasan tanpa merusak struktur kimia sel;  (3) Memerlukan pengawasan ketat karena dapat merusak DNA; (4) Tidak mampu mengionisasi atom. Pernyataan yang sesuai dengan radiasi non-ionisasi adalah (1), (2), dan (4)"
+    answer: 1,
+    explanation: "B. Perhatikan pernyataan berikut: (1) Digunakan dalam sistem komunikasi nirkabel; (2) Menyebabkan pemanasan tanpa merusak struktur kimia sel;  (3) Memerlukan pengawasan ketat karena dapat merusak DNA; (4) Tidak mampu mengionisasi atom. Pernyataan yang sesuai dengan radiasi non-ionisasi adalah (1), (2), dan (4)"
   },
   {
     question: "Penggunaan sinar X dalam pemeriksaan medis selalu dibatasi dosisnya. Fakta ini menunjukkan bahwa sinar X …",
@@ -53,8 +53,8 @@ const quizData = [
       "bersifat ionisasi tetapi memiliki manfaat jika dikendalikan",
       "hanya berinteraksi dengan tulang dan tidak dengan jaringan lain",
     ],
-    answer: 3,
-    explanation: "Penggunaan sinar X dalam pemeriksaan medis selalu dibatasi dosisnya. Fakta ini menunjukkan bahwa sinar X bersifat ionisasi tetapi memiliki manfaat jika dikendalikan"
+    answer: 2,
+    explanation: "C. Penggunaan sinar X dalam pemeriksaan medis selalu dibatasi dosisnya. Fakta ini menunjukkan bahwa sinar X bersifat ionisasi tetapi memiliki manfaat jika dikendalikan"
   },
   {
     question: "Analogi radiasi non-ionisasi sebagai “hembusan angin” dan radiasi ionisasi sebagai “peluru kecil” menekankan perbedaan utama pada …",
@@ -64,8 +64,8 @@ const quizData = [
       "besar energi dan dampaknya terhadap struktur sel",
       "sumber radiasi yang dihasilkan",
     ],
-    answer: 3,
-    explanation: "Analogi radiasi non-ionisasi sebagai “hembusan angin” dan radiasi ionisasi sebagai “peluru kecil” menekankan perbedaan utama pada besar energi dan dampaknya terhadap struktur sel"
+    answer: 2,
+    explanation: "C. Analogi radiasi non-ionisasi sebagai “hembusan angin” dan radiasi ionisasi sebagai “peluru kecil” menekankan perbedaan utama pada besar energi dan dampaknya terhadap struktur sel"
   },
   {
     question: "Salah satu alasan sinar matahari dapat mencapai Bumi meskipun ruang antarplanet merupakan vakum adalah karena sinar matahari termasuk …",
@@ -75,8 +75,8 @@ const quizData = [
       "radiasi bermuatan listrik",
       "radiasi ionisasi berenergi tinggi",
     ],
-    answer: 2,
-    explanation: "Salah satu alasan sinar matahari dapat mencapai Bumi meskipun ruang antarplanet merupakan vakum adalah karena sinar matahari termasuk radiasi elektromagnetik yang tidak memerlukan medium"
+    answer: 1,
+    explanation: "B. Salah satu alasan sinar matahari dapat mencapai Bumi meskipun ruang antarplanet merupakan vakum adalah karena sinar matahari termasuk radiasi elektromagnetik yang tidak memerlukan medium"
   },
   {
     question: "Urutan spektrum elektromagnetik berikut yang benar dari energi terendah ke energi tertinggi adalah …",
@@ -86,8 +86,8 @@ const quizData = [
       "Ultraviolet – cahaya tampak – inframerah – gelombang mikro",
       "Gelombang mikro – gelombang radio – cahaya tampak – inframerah",
     ],
-    answer: 2,
-    explanation: "Urutan spektrum elektromagnetik berikut yang benar dari energi terendah ke energi tertinggi adalah Gelombang radio – gelombang mikro – inframerah – cahaya tampak"
+    answer: 1,
+    explanation: "B. Urutan spektrum elektromagnetik berikut yang benar dari energi terendah ke energi tertinggi adalah Gelombang radio – gelombang mikro – inframerah – cahaya tampak"
   },
   {
     question: "Radiasi elektromagnetik yang berperan penting dalam fotosintesis tumbuhan dan penglihatan manusia adalah …",
@@ -97,8 +97,8 @@ const quizData = [
       "cahaya tampak",
       "gelombang mikro",
     ],
-    answer: 3,
-    explanation: "Radiasi elektromagnetik yang berperan penting dalam fotosintesis tumbuhan dan penglihatan manusia adalah cahaya tampak"
+    answer: 2,
+    explanation: "C. Radiasi elektromagnetik yang berperan penting dalam fotosintesis tumbuhan dan penglihatan manusia adalah cahaya tampak"
   },
   {
     question: "Partikel alfa memiliki daya tembus sangat rendah, namun tetap berbahaya jika masuk ke dalam tubuh. Hal ini terutama disebabkan oleh …",
@@ -108,8 +108,8 @@ const quizData = [
       "energi yang diserap jaringan sangat besar pada jarak dekat",
       "muatannya yang netral",
     ],
-    answer: 3,
-    explanation: "Partikel alfa memiliki daya tembus sangat rendah, namun tetap berbahaya jika masuk ke dalam tubuh. Hal ini terutama disebabkan oleh energi yang diserap jaringan sangat besar pada jarak dekat"
+    answer: 2,
+    explanation: "C. Partikel alfa memiliki daya tembus sangat rendah, namun tetap berbahaya jika masuk ke dalam tubuh. Hal ini terutama disebabkan oleh energi yang diserap jaringan sangat besar pada jarak dekat"
   },
   {
     question: "Jenis radiasi berikut yang tidak bermuatan listrik, memiliki daya tembus sangat tinggi, dan memerlukan pelindung berupa air atau beton adalah …",
@@ -119,8 +119,8 @@ const quizData = [
       "sinar gamma",
       "neutron",
     ],
-    answer:4,
-    explanation: "Jenis radiasi berikut yang tidak bermuatan listrik, memiliki daya tembus sangat tinggi, dan memerlukan pelindung berupa air atau beton adalah neutron"
+    answer:3,
+    explanation: "D. Jenis radiasi berikut yang tidak bermuatan listrik, memiliki daya tembus sangat tinggi, dan memerlukan pelindung berupa air atau beton adalah neutron"
 
   },
   {
@@ -131,8 +131,8 @@ const quizData = [
     "gamma",
     "neutron",
   ],
-  answer: 2,
-  explanation: "Penggunaan lapisan aluminium tipis sebagai pelindung paling efektif untuk menahan radiasi beta"
+  answer: 1,
+  explanation: "B. Penggunaan lapisan aluminium tipis sebagai pelindung paling efektif untuk menahan radiasi beta"
   },
   {
     question: "Pernyataan berikut yang paling tepat mengenai radiasi dalam kehidupan sehari-hari adalah …",
@@ -142,8 +142,8 @@ const quizData = [
       "Oven microwave memanaskan makanan melalui radiasi non-ionisasi",
       "Sinar X di rumah sakit aman digunakan tanpa pembatasan dosis",
     ],
-    answer: 3,
-    explanation: "Pernyataan berikut yang paling tepat mengenai radiasi dalam kehidupan sehari-hari adalah Oven microwave memanaskan makanan melalui radiasi non-ionisasi"
+    answer: 2,
+    explanation: "C. Pernyataan berikut yang paling tepat mengenai radiasi dalam kehidupan sehari-hari adalah Oven microwave memanaskan makanan melalui radiasi non-ionisasi"
   },
   {
     question: "Suatu radiasi elektromagnetik memiliki frekuensi sebesar \\( f = 5 \\times 10^{14} \\, \\text{Hz} \\). Jika konstanta Planck \\( h = 6{,}63 \\times 10^{-34} \\, \\text{J/s} \\), maka energi satu foton radiasi tersebut adalah …",
@@ -153,8 +153,8 @@ const quizData = [
       "1,3 × 10<sup>-19</sup> J",
       "1,3 × 10<sup>-20</sup> J",
     ],
-    answer: 1,
-    explanation: "Suatu radiasi elektromagnetik memiliki frekuensi sebesar \\( f = 5 \\times 10^{14} \\, \\text{Hz} \\). Jika konstanta Planck \\( h = 6{,}63 \\times 10^{-34} \\, \\text{J/s} \\), maka energi satu foton radiasi tersebut adalah 3,3 × 10<sup>-19</sup> J "
+    answer: 0,
+    explanation: "A. Suatu radiasi elektromagnetik memiliki frekuensi sebesar \\( f = 5 \\times 10^{14} \\, \\text{Hz} \\). Jika konstanta Planck \\( h = 6{,}63 \\times 10^{-34} \\, \\text{J/s} \\), maka energi satu foton radiasi tersebut adalah 3,3 × 10<sup>-19</sup> J "
   },
   {
     question: "Sinar ultraviolet memiliki panjang gelombang  &lambda; = 200 nm.<br> Jika cepat rambat cahaya  c = 3,0 × 10<sup>8</sup> m/s<br> h = 6,63 × 10<sup>-34</sup> J/s,<br> maka energi satu foton sinar tersebut adalah …",
@@ -164,8 +164,8 @@ const quizData = [
       "3,3 × 10<sup>-19</sup> J",
       "1,0 × 10<sup>-19</sup> J",
     ],
-    answer: 1,
-    explanation:  "Sinar ultraviolet memiliki panjang gelombang  &lambda; = 200 nm.<br> Jika cepat rambat cahaya  c = 3,0 × 10<sup>8</sup> m/s<br> h = 6,63 × 10<sup>-34</sup> J/s,<br> maka energi satu foton sinar tersebut adalah 9,9 × 10<sup>-19</sup> J"
+    answer: 0,
+    explanation:  "A. Sinar ultraviolet memiliki panjang gelombang  &lambda; = 200 nm.<br> Jika cepat rambat cahaya  c = 3,0 × 10<sup>8</sup> m/s<br> h = 6,63 × 10<sup>-34</sup> J/s,<br> maka energi satu foton sinar tersebut adalah 9,9 × 10<sup>-19</sup> J"
   },
   {
     question: "Intensitas radiasi pada jarak 2 m dari suatu sumber adalah I<sub>1</sub> = 80 W/m<sup>2</sup>.<br> Berapakah intensitas radiasi pada jarak 4 m dari sumber yang sama?",
@@ -175,8 +175,8 @@ const quizData = [
       "10 W/m<sup>2</sup>",
       "5 W/m<sup>2</sup>",
     ],
-    answer: 3,
-    explanation: "Intensitas radiasi pada jarak 2 m dari suatu sumber adalah I<sub>1</sub> = 80 W/m<sup>2</sup>.<br> Berapakah intensitas radiasi pada jarak 4 m dari sumber yang sama 10 W/m<sup>2</sup>"
+    answer: 2,
+    explanation: "C. Intensitas radiasi pada jarak 2 m dari suatu sumber adalah I<sub>1</sub> = 80 W/m<sup>2</sup>.<br> Berapakah intensitas radiasi pada jarak 4 m dari sumber yang sama 10 W/m<sup>2</sup>"
   },
 ];
 

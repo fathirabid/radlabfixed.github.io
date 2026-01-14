@@ -1,7 +1,7 @@
 // ======================
 // TIMER
 // ======================
-let timeLeft = 30 * 20; //  menit
+let timeLeft = 30 * 40; //  menit
 
 // ======================
 // ELEMENT HTML TIMER
@@ -20,8 +20,8 @@ const quizData = [
       "Bahaya radiasi bergantung pada dosis, jenis, dan cara penggunaannya",
       "Radiasi berbahaya hanya pada bidang kesehatan",
     ],
-    answer: 3,
-    explanation: "Pernyataan yang paling tepat menjelaskan mengapa radiasi tidak selalu berbahaya bagi manusia adalah Bahaya radiasi bergantung pada dosis, jenis, dan cara penggunaannya"
+    answer: 2,
+    explanation: "C. Pernyataan yang paling tepat menjelaskan mengapa radiasi tidak selalu berbahaya bagi manusia adalah Bahaya radiasi bergantung pada dosis, jenis, dan cara penggunaannya"
   },
   {
     question: "Prinsip utama yang dimanfaatkan dalam radiologi diagnostik sehingga tulang tampak lebih jelas dibandingkan jaringan lunak pada foto rontgen adalah …",
@@ -31,8 +31,8 @@ const quizData = [
       "Produksi pasangan di dalam tulang",
       "Emisi radiasi sekunder dari jaringan lunak",
     ],
-    answer: 2,
-    explanation: "Prinsip utama yang dimanfaatkan dalam radiologi diagnostik sehingga tulang tampak lebih jelas dibandingkan jaringan lunak pada foto rontgen adalah Perbedaan kemampuan penyerapan sinar X oleh jaringan"
+    answer: 1,
+    explanation: "B. Prinsip utama yang dimanfaatkan dalam radiologi diagnostik sehingga tulang tampak lebih jelas dibandingkan jaringan lunak pada foto rontgen adalah Perbedaan kemampuan penyerapan sinar X oleh jaringan"
   },
   {
     question: "Radioterapi dapat menghancurkan sel kanker tetapi tetap berusaha melindungi jaringan sehat di sekitarnya karena …",
@@ -42,8 +42,8 @@ const quizData = [
       "Berkas radiasi dapat difokuskan dan dosisnya direncanakan secara presisi",
       "Jaringan sehat kebal terhadap radiasi",
     ],
-    answer: 3,
-    explanation: "Radioterapi dapat menghancurkan sel kanker tetapi tetap berusaha melindungi jaringan sehat di sekitarnya karena Berkas radiasi dapat difokuskan dan dosisnya direncanakan secara presisi"
+    answer: 2,
+    explanation: "C. Radioterapi dapat menghancurkan sel kanker tetapi tetap berusaha melindungi jaringan sehat di sekitarnya karena Berkas radiasi dapat difokuskan dan dosisnya direncanakan secara presisi"
   },
   {
     question: "Perbedaan utama antara CT scan dan PET scan adalah …",
@@ -53,8 +53,8 @@ const quizData = [
       "CT scan menekankan citra anatomi, sedangkan PET scan menilai fungsi/metabolisme",
       "Keduanya sama-sama hanya menampilkan tulang",
     ],
-    answer: 3,
-    explanation: "Perbedaan utama antara CT scan dan PET scan adalah CT scan menekankan citra anatomi, sedangkan PET scan menilai fungsi/metabolisme"
+    answer: 2,
+    explanation: "C. Perbedaan utama antara CT scan dan PET scan adalah CT scan menekankan citra anatomi, sedangkan PET scan menilai fungsi/metabolisme"
   },
   {
     question: "Penggunaan radiasi dalam radiografi industri dianggap penting karena …",
@@ -64,8 +64,8 @@ const quizData = [
       "Menghasilkan panas untuk menguji kekuatan bahan",
       "Hanya digunakan pada material plastik",
     ],
-    answer: 2,
-    explanation: "Penggunaan radiasi dalam radiografi industri dianggap penting karena mampu mendeteksi kerusakan internal tanpa merusak objek"
+    answer: 1,
+    explanation: "B. Penggunaan radiasi dalam radiografi industri dianggap penting karena mampu mendeteksi kerusakan internal tanpa merusak objek"
   },
   {
     question: "Salah satu kesalahpahaman tentang iradiasi pangan adalah anggapan bahwa makanan menjadi radioaktif. Pernyataan yang paling tepat untuk meluruskan hal tersebut adalah …",
@@ -75,8 +75,8 @@ const quizData = [
       "Radiasi melewati makanan dan tidak meninggalkan radioaktivitas",
       "Radiasi berubah menjadi zat kimia baru di dalam makanan",
     ],
-    answer: 3,
-    explanation: "Salah satu kesalahpahaman tentang iradiasi pangan adalah anggapan bahwa makanan menjadi radioaktif. Pernyataan yang paling tepat untuk meluruskan hal tersebut adalah radiasi melewati makanan dan tidak meninggalkan radioaktivitas"
+    answer: 2,
+    explanation: "C. Salah satu kesalahpahaman tentang iradiasi pangan adalah anggapan bahwa makanan menjadi radioaktif. Pernyataan yang paling tepat untuk meluruskan hal tersebut adalah radiasi melewati makanan dan tidak meninggalkan radioaktivitas"
   },
   {
     question: "Iradiasi fitosanitasi dalam perdagangan internasional dianggap lebih menguntungkan dibandingkan penggunaan pestisida kimia karena …",
@@ -86,8 +86,8 @@ const quizData = [
       "Mengendalikan hama tanpa residu kimia berbahaya",
       "Menjadikan produk pertanian radioaktif",
     ],
-    answer: 3,
-    explanation: "Iradiasi fitosanitasi dalam perdagangan internasional dianggap lebih menguntungkan dibandingkan penggunaan pestisida kimia karena mengendalikan hama tanpa residu kimia berbahaya"
+    answer: 2,
+    explanation: "C. Iradiasi fitosanitasi dalam perdagangan internasional dianggap lebih menguntungkan dibandingkan penggunaan pestisida kimia karena mengendalikan hama tanpa residu kimia berbahaya"
   },
   {
     question: "Gelombang radio dan gelombang mikro dapat digunakan untuk komunikasi jarak jauh terutama karena …",
@@ -97,8 +97,8 @@ const quizData = [
       "Memiliki energi sangat besar",
       "Dapat merusak molekul udara",
     ],
-    answer: 2,
-    explanation: "Gelombang radio dan gelombang mikro dapat digunakan untuk komunikasi jarak jauh terutama karena mampu membawa informasi melalui proses modulasi sinyal"
+    answer: 1,
+    explanation: "B. Gelombang radio dan gelombang mikro dapat digunakan untuk komunikasi jarak jauh terutama karena mampu membawa informasi melalui proses modulasi sinyal"
   },
   {
     question: "Perbedaan utama pemanfaatan radiasi pada pembangkit listrik tenaga nuklir dibandingkan dengan radiografi atau iradiasi pangan adalah …",
@@ -108,8 +108,8 @@ const quizData = [
       "Radiasi digunakan untuk membunuh mikroorganisme",
       "Radiasi tidak memerlukan sistem pengendalian",
     ],
-    answer: 2,
-    explanation: "Perbedaan utama pemanfaatan radiasi pada pembangkit listrik tenaga nuklir dibandingkan dengan radiografi atau iradiasi pangan adalah radiasi berfungsi sebagai sumber panas dari reaksi fisi inti"
+    answer: 1,
+    explanation: "B. Perbedaan utama pemanfaatan radiasi pada pembangkit listrik tenaga nuklir dibandingkan dengan radiografi atau iradiasi pangan adalah radiasi berfungsi sebagai sumber panas dari reaksi fisi inti"
   },
   {
     question: "Penggunaan sinar X dan neutron dalam penelitian material canggih bertujuan utama untuk …",
@@ -119,8 +119,8 @@ const quizData = [
       "Menyelidiki susunan atom dan sifat material",
       "Mengurangi massa material",
     ],
-    answer:3,
-    explanation: "Penggunaan sinar X dan neutron dalam penelitian material canggih bertujuan utama untuk menyelidiki susunan atom dan sifat material"
+    answer:2,
+    explanation: "C. Penggunaan sinar X dan neutron dalam penelitian material canggih bertujuan utama untuk menyelidiki susunan atom dan sifat material"
 
   },
   {
@@ -131,8 +131,8 @@ const quizData = [
     "Radiasi hanya mengenai benda logam",
     "Radiasi tidak berinteraksi dengan tubuh manusia",
   ],
-  answer: 2,
-  explanation: "Pemanfaatan radiasi pada sistem pemindai bagasi di bandara dianggap aman bagi penumpang karena Paparan radiasi diatur sangat rendah dan berada di bawah batas keselamatan"
+  answer: 1,
+  explanation: "B. Pemanfaatan radiasi pada sistem pemindai bagasi di bandara dianggap aman bagi penumpang karena Paparan radiasi diatur sangat rendah dan berada di bawah batas keselamatan"
   },
   {
     question: "Prinsip utama yang digunakan dalam penanggalan radiokarbon (carbon-14 dating) adalah …",
@@ -142,8 +142,8 @@ const quizData = [
       "Laju peluruhan radioaktif isotop karbon-14 yang tetap",
       "Perubahan warna bahan organik seiring waktu",
     ],
-    answer: 3,
-    explanation: "Prinsip utama yang digunakan dalam penanggalan radiokarbon (carbon-14 dating) adalah Laju peluruhan radioaktif isotop karbon-14 yang tetap"
+    answer: 2,
+    explanation: "C. Prinsip utama yang digunakan dalam penanggalan radiokarbon (carbon-14 dating) adalah Laju peluruhan radioaktif isotop karbon-14 yang tetap"
   },
   {
     question: "Dosimeter digital digunakan di lingkungan kerja yang melibatkan radiasi terutama untuk …",
@@ -153,8 +153,8 @@ const quizData = [
       "Memantau akumulasi dosis radiasi yang diterima pekerja",
       "Mengubah radiasi menjadi energi listrik",
     ],
-    answer: 3,
-    explanation: "Dosimeter digital digunakan di lingkungan kerja yang melibatkan radiasi terutama untuk Memantau akumulasi dosis radiasi yang diterima pekerja"
+    answer: 2,
+    explanation: "C. Dosimeter digital digunakan di lingkungan kerja yang melibatkan radiasi terutama untuk Memantau akumulasi dosis radiasi yang diterima pekerja"
   },
   {
     question: "Pernyataan yang paling tepat membedakan radiasi yang digunakan dalam keamanan penerbangan dengan radiasi yang berperan dalam efek rumah kaca adalah …",
@@ -164,8 +164,8 @@ const quizData = [
       "Efek rumah kaca melibatkan radiasi inframerah non-ionisasi yang diserap atmosfer",
       "Radiasi bandara menyebabkan pemanasan global",
     ],
-    answer: 3,
-    explanation:  "Pernyataan yang paling tepat membedakan radiasi yang digunakan dalam keamanan penerbangan dengan radiasi yang berperan dalam efek rumah kaca adalah Efek rumah kaca melibatkan radiasi inframerah non-ionisasi yang diserap atmosfer"
+    answer: 2,
+    explanation:  "C. Pernyataan yang paling tepat membedakan radiasi yang digunakan dalam keamanan penerbangan dengan radiasi yang berperan dalam efek rumah kaca adalah Efek rumah kaca melibatkan radiasi inframerah non-ionisasi yang diserap atmosfer"
   },
   {
     question: "Efek rumah kaca terjadi karena …",
@@ -175,8 +175,8 @@ const quizData = [
       "Gelombang radio dipantulkan oleh awan",
       "Sinar X Matahari menembus atmosfer dan memanaskan Bumi",
     ],
-    answer: 2,
-    explanation: "Efek rumah kaca terjadi karena Radiasi inframerah dari permukaan Bumi diserap dan dipancarkan kembali oleh gas rumah kaca"
+    answer: 1,
+    explanation: "B. Efek rumah kaca terjadi karena Radiasi inframerah dari permukaan Bumi diserap dan dipancarkan kembali oleh gas rumah kaca"
   },
 ];
 
