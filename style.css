@@ -1062,6 +1062,110 @@ a.tbl-biru:hover {
   font-weight: 500;
 }
 
+/* button reset pengguna */
+/* Styling Tombol Ganti Pengguna RADLAB */
+.btn-user-session {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto; /* Mendorong ke kanan pada desktop */
+}
+
+.btn-user-session:hover {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: #6366f1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #6366f1, #4fd1c5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-avatar i {
+    width: 18px;
+    height: 18px;
+    color: white;
+}
+
+.session-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.session-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.icon-logout {
+    width: 16px;
+    height: 16px;
+    color: #ff4757;
+    margin-left: 8px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.btn-user-session:hover .icon-logout {
+    opacity: 1;
+    transform: translateX(2px);
+}
+
+.session-text {
+    display: flex;
+    flex-direction: column; /* Membuat teks bertumpuk (Sesi Aktif di atas, Nama di bawah) */
+    align-items: flex-start;
+    line-height: 1.2;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 700; /* Lebih tebal agar jelas */
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.5); /* Efek glow tipis */
+}
+
+/* Responsif Mobile */
+@media (max-width: 768px) {
+    .soal-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .btn-user-session {
+        margin-left: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
 .soal-header-wrapper {
     margin-bottom: 16px;
     padding-bottom: 16px;

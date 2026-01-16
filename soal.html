@@ -22,43 +22,59 @@
 <body>
 
         <!-- menu -->
-    <nav class="menu">
-        <a href="index.html" class="menu-logo">RAD<span>LAB.</span></a>
-        
-        <!-- Sidebar -->
-        <div class="menu-nav">
-            <a href="javascript:void(0)" id="close-menu"><i data-feather="x"></i></a>
-            <div class="dropdown">
-                <a href="index.html"><i data-feather="user"></i>Profil</a>
-            </div>
-            <div class="dropdown">
-                <a href="materi.html"><i data-feather="book-open"></i>Materi</a>
-            </div>
-             <div class="dropdown">
-                <a href="simulasi.html"><i data-feather="monitor"></i>Simulasi</a>
-             </div>
-            
-             <div class="dropdown">
-                <a href="soal.html"><i data-feather="edit-3"></i>Soal</a>
-             </div>
-             <div class="dropdown">
-                <a href="deteksi.html"><i data-feather="eye"></i>Deteksi</a>
-             </div>
-        </div>
+            <nav class="menu">
+                <a href="index.html" class="menu-logo">RAD<span>LAB.</span></a>
+                
+                <!-- Sidebar -->
+                <div class="menu-nav">
+                    <a href="javascript:void(0)" id="close-menu"><i data-feather="x"></i></a>
+                    <div class="dropdown">
+                        <a href="index.html"><i data-feather="user"></i>Profil</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="materi.html"><i data-feather="book-open"></i>Materi</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="simulasi.html"><i data-feather="monitor"></i>Simulasi</a>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <a href="soal.html"><i data-feather="edit-3"></i>Soal</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="deteksi.html"><i data-feather="eye"></i>Deteksi</a>
+                    </div>
+                </div>
 
-        <!-- SEARCH BAR -->
-        <div class="menu-search">
-            <i data-feather="search"></i>
-            <input type="text" placeholder="Cari materi..."/>
-        </div>
+                <!-- SEARCH BAR -->
+                <div class="menu-search">
+                    <i data-feather="search"></i>
+                    <input type="text" placeholder="Cari materi..."/>
+                </div>
 
-        <!-- menu tambahan -->
-        <!-- Buttton to toggle side -->
-        <div class="menu-tambahan">
-            <a href="javascript:void(0)" id="hamburger-menu"><i data-feather="menu"></i></a>
+                <!-- menu tambahan -->
+                <!-- Buttton to toggle side -->
+                <div class="menu-tambahan">
+                    <a href="javascript:void(0)" id="hamburger-menu"><i data-feather="menu"></i></a>
+                </div>
+            </nav>
+        <!-- menu end -->
+
+    <!-- modal nama pengguna -->
+    <div id="nameModal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-icon">
+                <i data-feather="user"></i>
+            </div>
+            <h3>Selamat Datang di RADLAB</h3>
+            <p>Masukkan namamu untuk menyimpan progres belajar hari ini.</p>
+            <input type="text" id="userNameInput" placeholder="Ketik namamu..." 
+                style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #333; background: #222; color: #fff; margin-top: 15px;">
+            <div class="modal-actions">
+                <button id="startSession" class="btn-primary" style="width: 100%;">Mulai Belajar</button>
+            </div>
         </div>
-    </nav>
-<!-- menu end -->
+    </div>
 
 
     <!-- section soal -->
@@ -78,6 +94,16 @@
             <div class="soal-header-wrapper reveal">
                 <div class="soal-header">
                     <h1>Soal dan Quiz</h1>
+                    <button onclick="logoutSession()" class="btn-user-session">
+                        <div class="user-avatar">
+                            <i data-feather="user"></i>
+                        </div>
+                        <div class="session-text">
+                            <span class="session-label">Sesi Aktif</span>
+                            <span id="displayUserName" class="user-name">Pengguna</span>
+                        </div>
+                        <i data-feather="log-out" class="icon-logout"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -369,6 +395,71 @@
         <script src="web.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
+            const nameModal = document.getElementById("nameModal");
+            const displayUserName = document.getElementById("displayUserName");
+            const sessionName = sessionStorage.getItem("activeUser");
+
+            if (!sessionName) {
+                // Jika belum ada nama tersimpan, munculkan modal input
+                if (nameModal) nameModal.style.display = "flex"; 
+            } else {
+                // Jika sudah ada, sembunyikan modal
+                if (nameModal) nameModal.style.display = "none";
+                
+                // TAMPILKAN NAMA LENGKAP SESUAI INPUT
+                // Kita langsung masukkan sessionName tanpa memotongnya
+                displayUserName.textContent = sessionName;
+                
+                // Load progress kuis berdasarkan nama tersebut
+                loadUserProgress(sessionName);
+            }
+
+            // Logika saat tombol "Mulai Belajar" diklik
+            const startBtn = document.getElementById("startSession");
+            if (startBtn) {
+                startBtn.addEventListener("click", () => {
+                    const fullName = document.getElementById("userNameInput").value.trim();
+                    if (fullName) {
+                        sessionStorage.setItem("activeUser", fullName);
+                        window.location.reload();
+                    } else {
+                        alert("Mohon masukkan nama lengkap Anda.");
+                    }
+                });
+            }
+        });
+
+            document.addEventListener("DOMContentLoaded", () => {
+            const nameModal = document.getElementById("nameModal");
+            const sessionName = sessionStorage.getItem("activeUser");
+
+            // Jika belum ada nama di sesi ini, tampilkan modal
+            if (!sessionName) {
+                nameModal.classList.remove("hidden");
+            } else {
+                nameModal.style.display = "none";
+                loadUserProgress(sessionName);
+            }
+
+            document.getElementById("startSession").addEventListener("click", () => {
+                const name = document.getElementById("userNameInput").value.trim();
+                if (name) {
+                    sessionStorage.setItem("activeUser", name);
+                    window.location.reload();
+                }
+            });
+        });
+
+        function loadUserProgress(userName) {
+            const allCards = document.querySelectorAll(".soal-card");
+            allCards.forEach(card => {
+                const title = card.querySelector(".soal-title").textContent.trim();
+                // ID sekarang unik per nama: quiz_fathir_sosialisasi
+                const quizID = `quiz_${userName.toLowerCase()}_${title.toLowerCase().replace(/\s+/g, '_')}`;
+                const savedProgress = localStorage.getItem(quizID);
+            });
+        }
+            document.addEventListener("DOMContentLoaded", () => {
                 // Daftar semua kartu soal
                 const allCards = document.querySelectorAll(".soal-card");
 
@@ -435,6 +526,14 @@
                     localStorage.removeItem(quizID);
                 }
             });
+
+                function logoutSession() {
+                if(confirm("Keluar dari sesi ini? Progresmu tetap tersimpan di perangkat ini atas namamu.")) {
+                    sessionStorage.removeItem("activeUser");
+                    window.location.reload();
+                }
+            }
+
         </script>
     
 </body>
