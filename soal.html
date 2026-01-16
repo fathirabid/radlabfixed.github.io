@@ -182,7 +182,7 @@
                     </div>
 
                     <!-- tombol -->
-                    <a href="jenis-radiasi soal.html"><button class="btn-mulai">Mulai</button></a>
+                    <a href="quiz-jenis-radiasi.html"><button class="btn-mulai">Mulai</button></a>
                 </div>
 
                 <!-- card 2 -->
@@ -292,7 +292,7 @@
                         <span class="soal-badge">Soal</span>
                     </div>
 
-                    <h3 class="soal-title">Keselematan Radiasi dan Perlindungan Diri</h3>
+                    <h3 class="soal-title">Keselamatan Radiasi dan Perlindungan Diri</h3>
 
                     <!-- info pill -->
                     <div class="soal-info">
@@ -367,7 +367,75 @@
 
        <!-- javascript -->
         <script src="web.js"></script>
-        <script src="quis-jenis.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Daftar semua kartu soal
+                const allCards = document.querySelectorAll(".soal-card");
+
+                allCards.forEach(card => {
+                    const titleElement = card.querySelector(".soal-title");
+                    if (!titleElement) return;
+
+                    const title = titleElement.textContent.trim();
+                    // Buat ID unik berdasarkan judul (contoh: "Sosialisasi" -> "quiz_sosialisasi")
+                    const quizID = "quiz_" + title.toLowerCase().replace(/\s+/g, '_');
+                    
+                    // Ambil data progres dari localStorage
+                    const savedProgress = localStorage.getItem(quizID);
+
+                    if (savedProgress) {
+                        const data = JSON.parse(savedProgress);
+                        const fill = card.querySelector(".progress-fill");
+                        const text = card.querySelector(".progress-text");
+                        const btnMulai = card.querySelector(".btn-mulai");
+                        
+                        // 1. Update Progress Bar
+                        if (fill && text) {
+                            fill.style.width = data.percent + "%";
+                            text.textContent = data.percent + "%";
+                        }
+
+                        // 2. Logika Tombol Lanjutkan & Reset
+                        if (data.percent > 0 && data.percent < 100) {
+                            btnMulai.textContent = "Lanjutkan";
+
+                            if (!card.querySelector(".btn-reset-dashboard")) {
+                                const container = document.createElement("div");
+                                container.className = "quiz-action-container";
+
+                                const resetBtn = document.createElement("button");
+                                resetBtn.textContent = "Reset";
+                                resetBtn.className = "btn-reset-dashboard";
+
+                                btnMulai.parentNode.insertBefore(container, btnMulai);
+                                container.appendChild(btnMulai);
+                                container.appendChild(resetBtn);
+
+                                resetBtn.addEventListener("click", (e) => {
+                                    e.preventDefault();
+                                    if (confirm(`Mulai kuis "${title}" dari awal?`)) {
+                                        localStorage.removeItem(quizID);
+                                        window.location.reload();
+                                    }
+                                });
+                            }
+                        } else if (data.percent === 100) {
+                            btnMulai.textContent = "Ulangi Quiz";
+                        }
+                    }
+                });
+            });
+
+            // Event Listener Global untuk tombol "Ulangi Quiz" pada grid soal
+            document.querySelector(".soal-grid").addEventListener("click", (e) => {
+                if (e.target.classList.contains("btn-mulai") && e.target.textContent === "Ulangi Quiz") {
+                    const card = e.target.closest(".soal-card");
+                    const title = card.querySelector(".soal-title").textContent.trim();
+                    const quizID = "quiz_" + title.toLowerCase().replace(/\s+/g, '_');
+                    localStorage.removeItem(quizID);
+                }
+            });
+        </script>
     
 </body>
 </html>

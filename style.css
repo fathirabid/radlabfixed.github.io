@@ -191,6 +191,51 @@ body {
     transform: scale(0.95);
 }
 
+/* Styling Dropdown Hasil Search */
+.menu-search {
+    position: relative; /* Supaya dropdown nempel di bawahnya */
+}
+
+.search-results-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    z-index: 999;
+}
+
+.result-item a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.result-item a:hover {
+    background: #f0f4ff;
+}
+
+.result-item small {
+    color: #7d2ae8; /* Warna ungu brand kamu */
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.result-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
 /* ================================================= */
 /* RESPONSIVE MOBILE STYLES */
 /* ================================================= */
@@ -1159,6 +1204,36 @@ a.tbl-biru:hover {
   background: #4f46e5;
 }
 
+/* Container untuk membungkus dua tombol agar sejajar */
+.quiz-action-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    width: 100%;
+}
+
+/* Tombol Reset Dashboard dengan bentuk sama seperti .btn-mulai */
+.btn-reset-dashboard {
+    flex: 1;
+    padding: 10px 0;
+    border-radius: 999px;
+    border: none;
+    background: #ef4444; /* Merah solid */
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-reset-dashboard:hover {
+    background: #dc2626; /* Merah lebih gelap saat hover */
+}
+
+.quiz-action-container .btn-mulai {
+    flex: 1;
+    margin-top: 0; /* Menghilangkan margin bawaan karena sudah ada di container */
+}
+
 /* TOP BADGE */
 .soal-badge {
   display: flex;
@@ -1408,7 +1483,7 @@ a.tbl-biru:hover {
   font-size: 14px;
 }
 
-/* FOOTER */
+/* QUIZ FOOTER */
 .quiz-footer {
   margin-top: 30px;
   display: flex;
@@ -1551,21 +1626,43 @@ a.tbl-biru:hover {
 .ok { color: #22c55e; }
 .no { color: #ef4444; }
 
-.btn-review {
-  margin-top: 20px;
-  padding: 12px;
-  border-radius: 999px;
-  border: none;
-  background: #6366f1;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3 ease;
+/* Container utama agar tombol di tengah */
+.result-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    justify-content: center;
+    width: 100%;
 }
 
-.btn-review:hover {
-  transform: translateY(-3px);
-  background: #4f46e5;
+/* Style agar tombol berukuran sama dan solid */
+.result-actions button {
+    flex: 1;               /* Membuat kedua tombol lebarnya seimbang */
+    max-width: 180px;      /* Membatasi lebar agar tidak terlalu raksasa */
+    padding: 12px 0;
+    font-size: 14px;
+    border-radius: 999px;  /* Lonjong seperti tombol Lanjutkan */
+    font-weight: 600;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Warna Solid */
+.btn-review { background-color: #6366f1 !important; }
+.btn-reset { background-color: #ff4757 !important; }
+
+/* Penyesuaian khusus HP */
+@media (max-width: 768px) {
+    .result-actions {
+        padding: 0 20px;
+        gap: 10px;
+    }
+    .result-actions button {
+        max-width: 150px; /* Lebih kecil sedikit untuk layar HP */
+        font-size: 13px;
+    }
 }
 
 /* RIGHT */
@@ -2859,7 +2956,7 @@ a.tbl-biru:hover {
     /* Memastikan video card tampil penuh dan cantik */
     .profil-video {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .video-card {
@@ -2875,26 +2972,35 @@ a.tbl-biru:hover {
 
     /* 3. Highlight Section (Peran Radiasi) */
     .highlight-section {
-        padding: 40px 0;
+        padding: 60px 0;
+        background: rgba(255, 255, 255, 0.02); /* Bedakan sedikit warna section */
+    }
+
+    .highlight-container {
+        flex-direction: column !important; /* Gambar di atas, teks di bawah */
+        gap: 35px !important;
+        padding: 0 5%;
     }
 
     .highlight-image {
-      width: 90%;
+        width: 100% !important;
+        transform: scale(1.02);
     }
-    
-    .highlight-container {
-        flex-direction: column-reverse; /* Teks dulu baru gambar, atau sebaliknya */
-        gap: 20px;
+
+    .highlight-content {
+        max-width: 100% !important;
+        text-align: left !important;
     }
 
     .highlight-content h2 {
-        font-size: 24px;
-        text-align: center;
+        font-size: 24px !important;
+        margin-bottom: 15px;
     }
 
     .highlight-content p {
-        font-size: 14px;
-        text-align: center; /* Lebih rapi untuk paragraf pendek di mobile */
+        font-size: 14px !important;
+        line-height: 1.8;
+        color: var(--muted);
     }
 
     /* 4. Slider & Cards */
@@ -2913,13 +3019,13 @@ a.tbl-biru:hover {
 
     .pusat-tombol-materi {
       width: 80%;
-      margin: auto;
+      margin-bottom: 70px;
+      margin-left: 70px;
     }
 
     .pusat-tombol {
       width: 80%;
       margin: auto;
-      margin-bottom: 150px;
     }
 
     /* MATERI SECTION */
@@ -3301,110 +3407,6 @@ a.tbl-biru:hover {
         margin: 15px 0 !important;
     }
 
-    /* TOMBOL LIHAT PEMBAHASAN */
-    .btn-review {
-        display: block !important;
-        width: 100% !important;
-        margin-top: 30px !important;
-    }
-
-    /* ////////// */
-    /* DETEKSI */
-    /* ///////// */
-    .section-content.eye-section {
-        padding-top: 40px !important; /* Disamakan dengan section lain */
-        margin-top: 50px;    /* Menghapus margin-top 80px */
-    }
-
-    .breadcrumb-wrapper-deteksi {
-        margin: 20px auto 10px ;
-        padding: 0 15px !important;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-
-    .result-wrapper {
-        display: flex !important;
-        flex-direction: column !important; 
-        align-items: center !important;
-        gap: 25px !important;
-        padding: 10px !important;
-        text-align: center !important;
-    }
-
-    /* Membuat area skor mengambil lebar penuh */
-    .score, .score-info {
-        width: 100% !important;
-        margin: 0 auto !important;
-    }
-
-    /* Merapikan Grid Nomor Soal agar tidak tumpang tindih */
-    .result-grid {
-        display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important; /* Tetap 5 kolom tapi di bawah skor */
-        gap: 8px !important;
-        width: 100% !important;
-        max-width: 280px !important; /* Membatasi lebar agar kotak tetap simetris */
-        margin: 0 auto !important;
-    }
-
-    /* 2. PERBAIKAN HALAMAN DETEKSI (deteksi.html) */
-    /* Mengubah grid deteksi menjadi satu kolom vertikal */
-    .eye-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 20px !important;
-        padding: 0 10px !important;
-    }
-
-    /* Panel Data Sensor */
-    .eye-card.utama {
-        width: 100% !important;
-        padding: 20px !important;
-        text-align: center !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    /* Panel Grafik */
-    .eye-card:not(.utama) {
-        width: 100% !important;
-        padding: 15px !important;
-        overflow: hidden; /* Mencegah grafik meluber keluar kartu */
-    }
-
-    /* Penyesuaian Canvas Grafik agar pas dengan layar HP */
-    .eye-card canvas {
-        width: 100% !important; /* Paksa grafik selebar layar HP */
-        height: auto !important; /* Jaga proporsi grafik */
-        margin-left: 0 !important; /* Hapus margin kiri dari desktop */
-        display: block !important;
-    }
-
-    /* Angka-angka indikator di perkecil sedikit agar proporsional */
-    .nilai h1 {
-        font-size: 2.5rem !important;
-    }
-
-    .nilai h2 {
-        font-size: 1.8rem !important;
-    }
-
-    /* Indikator status (ESI Number) */
-    #esiNumber, #esiIndicator {
-        display: inline-block !important;
-        margin: 10px auto !important;
-        width: auto !important;
-    }
-
-    /* Tombol Reset & Hubungkan disusun tumpuk */
-    .reset-btn {
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-top: 10px !important;
-        padding: 12px !important;
-    }
-
     /* /////////////// */
     /* Footer Section */
     /* /////////////// */
@@ -3432,5 +3434,153 @@ a.tbl-biru:hover {
         text-align: center;
         margin-left: 0 !important;
         font-size: 12px;
+    }  
+}
+
+/* --- OPTIMASI FINAL SECTION DETEKSI MOBILE --- */
+@media (max-width: 768px) {
+    /* 1. Memperbaiki Posisi Atas (Mencegah Terlalu Turun) */
+    .eye-section {
+        padding-top: 40px !important; /* Mengurangi padding bawaan desktop */
+        margin-top: 70px !important; 
+    }
+
+    /* 2. Rata Kiri untuk Breadcrumb & Judul */
+    .breadcrumb-wrapper-deteksi {
+        margin: 15px 0 10px 0 !important;
+        padding: 0 5% !important; /* Sinkron dengan padding logo */
+        text-align: left !important;
+    }
+
+    .judul-konten, .subjudul {
+        text-align: left !important;
+        padding-left: 5% !important;
+        margin-left: 0 !important;
+    }
+
+    .judul-konten {
+        font-size: 1.8rem !important; /* Ukuran lebih pas untuk HP */
+        line-height: 1.3;
+    }
+
+    /* 3. Perbaikan Grid Panel agar Menumpuk (Mencegah Tabrakan) */
+    .eye-grid {
+        display: flex !important;
+        flex-direction: column !important; /* Panel sensor di atas, grafik di bawah */
+        gap: 20px !important;
+        padding: 0 5% !important;
+    }
+
+    /* 4. Penyesuaian Kartu Sensor (Panel Utama) */
+    .eye-card.utama {
+        width: 100% !important;
+        padding: 25px 15px !important;
+        text-align: center !important; /* Konten angka tetap center agar fokus */
+    }
+
+    .nilai-blok h1 {
+        font-size: 2.8rem !important; /* Angka lux lebih kecil di HP */
+    }
+
+    /* Menata tombol agar tumpuk vertikal */
+    .aksi-tombol {
+        flex-direction: column !important;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .reset-btn {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    /* 5. Penyesuaian Panel Grafik (Mencegah Melebar Keluar) */
+    .eye-card canvas {
+        width: 100% !important; /* Grafik selebar kartu */
+        height: auto !important;
+        margin-left: 15% !important; /* Menghapus margin kiri desktop */
+        display: block;
+    }
+
+    /* 6. Perbaikan Hasil Prototype & Tabel Referensi */
+    .prototype-container {
+        grid-template-columns: 1fr !important; /* Gambar di atas, deskripsi di bawah */
+        gap: 20px;
+    }
+
+    .info-lux-section {
+        padding: 15px !important;
+    }
+
+    .tabel-lux {
+        font-size: 0.8rem !important; /* Teks tabel lebih kecil agar tidak scroll jauh */
+    }
+
+    .tabel-lux th, .tabel-lux td {
+        padding: 8px !important;
+    }
+}
+
+
+/* --- KHUSUS OPTIMASI SECTION KONTAK MOBILE --- */
+@media (max-width: 768px) {
+    /* 1. Memberi ruang dari Navigasi dan merapikan Breadcrumb */
+    .section-kontak {
+        padding: 100px 15px 40px !important;
+    }
+
+    .breadcrumb-kontak {
+        margin-left: 10px !important;
+        font-size: 12px;
+    }
+
+    /* 2. Banner: Membuat Banner lebih ramping dan proporsional */
+    .kontak-banner {
+        height: 100px !important; 
+        margin-bottom: 30px !important;
+        border-radius: 15px !important;
+    }
+
+    .kontak-banner h2 {
+        font-size: 32px !important;
+        margin-top: 15px !important;
+    }
+
+    /* 3. Grid Kartu Kontak: Menjadi 1 kolom agar teks tidak berdesakan */
+    .kontak-cards {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
+    .kontak-card {
+        padding: 15px 20px !important;
+        gap: 12px !important;
+    }
+
+    .kontak-card h4 {
+        font-size: 16px !important;
+    }
+
+    .kontak-card p {
+        font-size: 13px !important;
+    }
+
+    /* 4. Alamat: Menyusun Ikon, Judul, dan Teks secara vertikal */
+    .kontak-alamat {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 25px 20px !important;
+        gap: 10px !important;
+    }
+
+    .kontak-alamat p {
+        margin-left: 0 !important;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+
+    .kontak-alamat i {
+        margin-bottom: 5px;
     }
 }

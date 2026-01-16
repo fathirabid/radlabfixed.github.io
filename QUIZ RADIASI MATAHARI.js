@@ -181,11 +181,13 @@ const quizData = [
 ];
 
 
+// --- IDENTITAS KUIS & PENGAMBILAN DATA ---
+const QUIZ_ID = "quiz_radiasi_matahari_dan_paparan_sehari-hari"; // ID ini harus sama dengan logika di soal.html
+const savedData = JSON.parse(localStorage.getItem(QUIZ_ID));
 
-// letak variabel global
-let index = 0;
+let index = (savedData && savedData.lastIndex) ? savedData.lastIndex : 0;
 let score = 0;
-let userAnswers = new Array(quizData.length).fill(null);
+let userAnswers = (savedData && savedData.answers) ? savedData.answers : new Array(quizData.length).fill(null);
 let reviewIndex = 0;
 let resultHTML = "";
 
@@ -572,12 +574,20 @@ prevBtn.onclick = () => {
 function updateProgress() {
   const answered = getAnsweredCount();
   const total = quizData.length;
-
-  const percent = (answered / total) * 100;
+  const percent = Math.round((answered / total) * 100);
 
   document.getElementById("progressFill").style.width = percent + "%";
-  document.getElementById("progressText").textContent =
-    `${answered} / ${total}`;
+  document.getElementById("progressText").textContent = `${answered} / ${total}`;
+
+  // --- SIMPAN DATA KE LOCALSTORAGE AGAR soal.html BISA MEMBACA ---
+  const progressData = {
+    answered: answered,
+    total: total,
+    percent: percent,
+    answers: userAnswers,
+    lastIndex: index
+  };
+  localStorage.setItem(QUIZ_ID, JSON.stringify(progressData));
 }
 
 optionsEl.addEventListener("change", (e) => {
@@ -590,7 +600,7 @@ optionsEl.addEventListener("change", (e) => {
 
     e.target.closest(".option").classList.add("active");
 
-    updateProgress(); // 🔥 PENTING
+    updateProgress(); 
   }
 });
 
@@ -627,7 +637,17 @@ function finishQuiz(timeUp) {
   userAnswers.forEach((ans, i) => {
     if (ans === quizData[i].answer) correct++;
     else wrong++;
-  });
+
+    // PAKSA PROGRESS JADI 100% SAAT SELESAI
+  const finalProgress = {
+    answered: quizData.length,
+    total: quizData.length,
+    percent: 100,
+    answers: userAnswers,
+    lastIndex: 0 // Reset ke 0 agar jika diulang mulai dari awal
+  };
+  localStorage.setItem(QUIZ_ID, JSON.stringify(finalProgress));
+});
 
   const scorePercent = ((correct / quizData.length) * 100).toFixed(2);
 
@@ -648,35 +668,35 @@ function finishQuiz(timeUp) {
   });
 
   resultHTML = `
-  <div class="result-wrapper">
+    <div class="result-wrapper">
+      <div class="result-left">
+        <h2>${timeUp ? "Waktu Habis ⏱" : "Selamat, Nilai Akhir Kamu"}</h2>
+        <div class="score">${scorePercent} <span>/ 100</span></div>
 
-    <div class="result-left">
-      <h2>${timeUp ? "Waktu Habis ⏱" : "Selamat, Nilai Akhir Kamu"}</h2>
+        <div class="result-bar">
+          <div class="bar-correct" style="width:${(correct / quizData.length) * 100}%"></div>
+          <div class="bar-wrong" style="width:${(wrong / quizData.length) * 100}%"></div>
+        </div>
 
-      <div class="score">${scorePercent} <span>/ 100</span></div>
+        <p>
+          <span class="ok">${correct} Soal</span> benar ·
+          <span class="no">${wrong} Soal</span> salah
+        </p>
 
-      <div class="result-bar">
-        <div class="bar-correct" style="width:${(correct / quizData.length) * 100}%"></div>
-        <div class="bar-wrong" style="width:${(wrong / quizData.length) * 100}%"></div>
+        <div class="result-actions" >
+          <button id="reviewBtn" class="btn-review">Lihat Pembahasan</button>
+          <button id="resetBtn" class="btn-reset">Ulangi Kuis</button>
+        </div>
       </div>
 
-      <p>
-        <span class="ok">${correct} Soal</span> benar ·
-        <span class="no">${wrong} Soal</span> salah
-      </p>
-
-      <button id="reviewBtn" class="btn-review">Lihat Pembahasan</button>
-    </div>
-
-    <div class="result-right">
-      <h3>Detail Jawaban Per Soal</h3>
-      <div class="result-grid">
-        ${detailHTML}
+      <div class="result-right">
+        <h3>Detail Jawaban Per Soal</h3>
+        <div class="result-grid">
+          ${detailHTML}
+        </div>
       </div>
     </div>
-
-  </div>
-`;
+  `;
 
 document.querySelector(".quiz-card").innerHTML = resultHTML;
 
@@ -694,7 +714,7 @@ document.querySelector(".quiz-card").innerHTML = resultHTML;
     showReview(reviewIndex);
   });
 });
-
+  
 }
 
 function getAnsweredCount() {

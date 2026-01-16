@@ -1,0 +1,32 @@
+/* 3. Highlight Section (Peran Radiasi) */
+    .highlight-section {
+        padding: 60px 0;
+        background: rgba(255, 255, 255, 0.02); /* Bedakan sedikit warna section */
+    }
+
+    .highlight-container {
+        flex-direction: column !important; /* Gambar di atas, teks di bawah */
+        gap: 35px !important;
+        padding: 0 5%;
+    }
+
+    .highlight-image {
+        width: 100% !important;
+        transform: scale(1.02);
+    }
+
+    .highlight-content {
+        max-width: 100% !important;
+        text-align: left !important;
+    }
+
+    .highlight-content h2 {
+        font-size: 24px !important;
+        margin-bottom: 15px;
+    }
+
+    .highlight-content p {
+        font-size: 14px !important;
+        line-height: 1.8;
+        color: var(--muted);
+    }
