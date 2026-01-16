@@ -1151,7 +1151,7 @@ a.tbl-biru:hover {
     text-shadow: 0 0 10px rgba(99, 102, 241, 0.5); /* Efek glow tipis */
 }
 
-/* Responsif Mobile */
+/* pengguna mobile */
 @media (max-width: 768px) {
     .soal-header {
         flex-direction: column;
