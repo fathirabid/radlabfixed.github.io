@@ -66,7 +66,7 @@
             <div class="modal-icon">
                 <i data-feather="user"></i>
             </div>
-            <h3>Selamat Datang di RADLAB</h3>
+            <h3>Selamat Datang di Quiz RADLAB</h3>
             <p>Masukkan namamu untuk menyimpan progres belajar hari ini.</p>
             <input type="text" id="userNameInput" placeholder="Ketik namamu..." 
                 style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #333; background: #222; color: #fff; margin-top: 15px;">
@@ -528,8 +528,19 @@
             });
 
                 function logoutSession() {
-                if(confirm("Keluar dari sesi ini? Progresmu tetap tersimpan di perangkat ini atas namamu.")) {
+                if(confirm("Keluar dari sesi ini? Semua progres kuis pada perangkat ini akan direset untuk pengguna baru.")) {
+                    // 1. Hapus nama pengguna dari sesi aktif
                     sessionStorage.removeItem("activeUser");
+
+                    // 2. Hapus semua data progres kuis dari localStorage
+                    // Kita mencari semua kunci yang diawali dengan 'quiz_'
+                    Object.keys(localStorage).forEach(key => {
+                        if (key.startsWith('quiz_')) {
+                            localStorage.removeItem(key);
+                        }
+                    });
+
+                    // 3. Muat ulang halaman agar kembali ke modal input nama
                     window.location.reload();
                 }
             }
