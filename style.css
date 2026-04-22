@@ -3898,3 +3898,82 @@ body {
         -webkit-text-fill-color: transparent !important;
     }
 }
+
+/* ================================================= */
+/* KHUSUS HALAMAN TENTANG RADLAB (MOBILE OPTIMIZATION) */
+/* ================================================= */
+@media (max-width: 768px) {
+    /* 1. Memperbaiki Grid Tim Pengembang (Memaksa jadi 1 kolom ke bawah) */
+    .section-content .container-grid[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 15px !important;
+    }
+
+    /* 2. Merapikan Header "Tentang RADLAB" */
+    .section-content h1.judul-konten[style*="font-size: clamp"] {
+        font-size: 28px !important;
+        text-align: left !important;
+        margin-left: 15px !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Meratakan Garis Bawah Judul ke Kiri */
+    .section-content div[style*="width: 60px; height: 4px"] {
+        margin-left: 15px !important;
+        margin-right: auto !important;
+    }
+
+    /* Deskripsi Utama RADLAB */
+    .section-content p.profil-deskripsi[style*="margin: 0 auto;"] {
+        text-align: left !important;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        font-size: 15px !important;
+    }
+
+    /* 3. Merapikan Section Misi Kami & Sosialisasi */
+    .highlight-container[style*="align-items: center; gap: 80px;"],
+    .highlight-container[style*="align-items: center; gap: 60px;"] {
+        flex-direction: column !important;
+        gap: 30px !important;
+        padding: 0 15px !important;
+    }
+
+    /* Memperbaiki Judul di dalam Highlight */
+    .highlight-content h2[style*="font-size: 2.8rem;"],
+    .highlight-content h2[style*="font-size: 2.5rem;"] {
+        font-size: 24px !important;
+        margin: 15px 0 !important;
+    }
+
+    .highlight-content p {
+        font-size: 14px !important;
+    }
+
+    /* 4. Menyesuaikan Tombol "Lihat Laporan Kompasiana" */
+    .highlight-content .tbl-biru {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center !important;
+        font-size: 14px !important;
+        padding: 12px 15px !important;
+    }
+
+    /* 5. Memperbaiki Gambar Sosialisasi dan Badge Lokasi Bekasi */
+    .highlight-image {
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    /* Menarik Badge "Bekasi, Jawa Barat" agar tidak keluar layar */
+    .highlight-image div[style*="position: absolute; bottom: -20px; right: -20px;"] {
+        position: relative !important;
+        bottom: auto !important;
+        right: auto !important;
+        margin-top: 15px !important;
+        width: 100% !important;
+        justify-content: center !important;
+        border-radius: 12px !important;
+    }
+}
