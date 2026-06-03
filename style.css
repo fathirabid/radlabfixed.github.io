@@ -3790,9 +3790,10 @@ body {
 
     /* 5. Penyesuaian Panel Grafik (Mencegah Melebar Keluar) */
     .eye-card canvas {
-        width: 100% !important; /* Grafik selebar kartu */
+        width: 100% !important; 
+        max-width: 100% !important; /* Memastikan tidak ada batasan kaku */
         height: auto !important;
-        margin-left: 15% !important; /* Menghapus margin kiri desktop */
+        margin: 0 auto 15px auto !important; /* MENGHAPUS margin-left 15% dan menggantinya ke tengah */
         display: block;
     }
 
