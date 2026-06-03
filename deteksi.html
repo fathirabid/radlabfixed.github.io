@@ -107,9 +107,6 @@
                 <div class="aksi-tombol"><button class="reset-btn" onclick="resetSimulation()">
                     Reset Simulasi
                     </button>
-                    <button class="reset-btn" onclick="connectSerial()">
-                    Hubungkan Arduino
-                    </button>
                 </div>
             </div>
 
@@ -172,21 +169,21 @@
             </div>
 
             <div class="eye-card prototype-section reveal" style="margin-top: 30px;">
-                <h3>Hasil Prototype Hardware</h3>
-                <p class="subjudul" style="margin-bottom: 15px;">Integrasi Sensor BH1750 dengan Microcontroller Arduino</p>
+                <h3>Hasil Prototype Hardware (Sistem IoT)</h3>
+                <p class="subjudul" style="margin-bottom: 15px;">Integrasi Sensor BH1750 dengan Mikrokontroler ESP32 DevKit V1 & Firebase</p>
                 
                 <div class="prototype-container">
                     <div class="prototype-image-wrapper">
                         <img src="images/foto prototipe.jpeg" alt="Prototype RADLAB" id="prototypeImg">
                         <div class="image-overlay">
-                            <span>Sensor BH1750 & Arduino</span>
+                            <span>Sensor BH1750 & ESP32 (Wi-Fi)</span>
                         </div>
                     </div>
                     
                     <div class="prototype-description">
                         <ul>
                             <li><strong>Sensor BH1750:</strong> Mendeteksi intensitas cahaya secara presisi dalam satuan Lux.</li>
-                            <li><strong>Proses AI:</strong> Data dikirim ke web untuk diprediksi menggunakan Machine Learning (kecerdasan buatan) model Random Forest.</li>
+                            <li><strong>Sistem IoT & AI:</strong> ESP32 mengirimkan data sensor secara real-time via Wi-Fi ke Firebase Database. Web kemudian mengolah data tersebut menggunakan Machine Learning (Random Forest) untuk memprediksi Eye Strain Index.</li>
                             <li><strong>Feedback LED:</strong> Lampu pada alat akan berubah warna sesuai tingkat ESI di layar.</li>
                         </ul>
                     </div>
